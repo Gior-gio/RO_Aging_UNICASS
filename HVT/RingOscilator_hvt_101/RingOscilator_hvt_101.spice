@@ -1,0 +1,351 @@
+** sch_path: /foss/designs/UNICASS/RingOscilator_hvt_101.sch
+.subckt RingOscilator_hvt_101 DUT_FOOTER VDD DUT_HEADER VSS DUT_GATE NOT_RO_CON RO_CON DRAIN_SENSE A[1] DRAIN_FORCE
+*.PININFO VDD:B VSS:B NOT_RO_CON:B RO_CON:B DUT_FOOTER:B DUT_HEADER:B DUT_GATE:B DRAIN_SENSE:B DRAIN_FORCE:B A[1]:B
+x1[1] VDD A[2] A[1] VSS inverter
+x1[2] VDD A[3] A[2] VSS inverter
+x1[3] VDD A[4] A[3] VSS inverter
+x1[4] VDD A[5] A[4] VSS inverter
+x1[5] VDD A[6] A[5] VSS inverter
+x1[6] VDD A[7] A[6] VSS inverter
+x1[7] VDD A[8] A[7] VSS inverter
+x1[8] VDD A[9] A[8] VSS inverter
+x1[9] VDD A[10] A[9] VSS inverter
+x1[10] VDD A[11] A[10] VSS inverter
+x1[11] VDD A[12] A[11] VSS inverter
+x1[12] VDD A[13] A[12] VSS inverter
+x1[13] VDD A[14] A[13] VSS inverter
+x1[14] VDD A[15] A[14] VSS inverter
+x1[15] VDD A[16] A[15] VSS inverter
+x1[16] VDD A[17] A[16] VSS inverter
+x1[17] VDD A[18] A[17] VSS inverter
+x1[18] VDD A[19] A[18] VSS inverter
+x1[19] VDD A[20] A[19] VSS inverter
+x1[20] VDD A[21] A[20] VSS inverter
+x1[21] VDD A[22] A[21] VSS inverter
+x1[22] VDD A[23] A[22] VSS inverter
+x1[23] VDD A[24] A[23] VSS inverter
+x1[24] VDD A[25] A[24] VSS inverter
+x1[25] VDD A[26] A[25] VSS inverter
+x1[26] VDD A[27] A[26] VSS inverter
+x1[27] VDD A[28] A[27] VSS inverter
+x1[28] VDD A[29] A[28] VSS inverter
+x1[29] VDD A[30] A[29] VSS inverter
+x1[30] VDD A[31] A[30] VSS inverter
+x1[31] VDD A[32] A[31] VSS inverter
+x1[32] VDD A[33] A[32] VSS inverter
+x1[33] VDD A[34] A[33] VSS inverter
+x1[34] VDD A[35] A[34] VSS inverter
+x1[35] VDD A[36] A[35] VSS inverter
+x1[36] VDD A[37] A[36] VSS inverter
+x1[37] VDD A[38] A[37] VSS inverter
+x1[38] VDD A[39] A[38] VSS inverter
+x1[39] VDD A[40] A[39] VSS inverter
+x1[40] VDD A[41] A[40] VSS inverter
+x1[41] VDD A[42] A[41] VSS inverter
+x1[42] VDD A[43] A[42] VSS inverter
+x1[43] VDD A[44] A[43] VSS inverter
+x1[44] VDD A[45] A[44] VSS inverter
+x1[45] VDD A[46] A[45] VSS inverter
+x1[46] VDD A[47] A[46] VSS inverter
+x1[47] VDD A[48] A[47] VSS inverter
+x1[48] VDD A[49] A[48] VSS inverter
+x1[49] VDD A[50] A[49] VSS inverter
+x1[50] VDD A[51] A[50] VSS inverter
+x1[51] VDD A[52] A[51] VSS inverter
+x1[52] VDD A[53] A[52] VSS inverter
+x1[53] VDD A[54] A[53] VSS inverter
+x1[54] VDD A[55] A[54] VSS inverter
+x1[55] VDD A[56] A[55] VSS inverter
+x1[56] VDD A[57] A[56] VSS inverter
+x1[57] VDD A[58] A[57] VSS inverter
+x1[58] VDD A[59] A[58] VSS inverter
+x1[59] VDD A[60] A[59] VSS inverter
+x1[60] VDD A[61] A[60] VSS inverter
+x1[61] VDD A[62] A[61] VSS inverter
+x1[62] VDD A[63] A[62] VSS inverter
+x1[63] VDD A[64] A[63] VSS inverter
+x1[64] VDD A[65] A[64] VSS inverter
+x1[65] VDD A[66] A[65] VSS inverter
+x1[66] VDD A[67] A[66] VSS inverter
+x1[67] VDD A[68] A[67] VSS inverter
+x1[68] VDD A[69] A[68] VSS inverter
+x1[69] VDD A[70] A[69] VSS inverter
+x1[70] VDD A[71] A[70] VSS inverter
+x1[71] VDD A[72] A[71] VSS inverter
+x1[72] VDD A[73] A[72] VSS inverter
+x1[73] VDD A[74] A[73] VSS inverter
+x1[74] VDD A[75] A[74] VSS inverter
+x1[75] VDD A[76] A[75] VSS inverter
+x1[76] VDD A[77] A[76] VSS inverter
+x1[77] VDD A[78] A[77] VSS inverter
+x1[78] VDD A[79] A[78] VSS inverter
+x1[79] VDD A[80] A[79] VSS inverter
+x1[80] VDD A[81] A[80] VSS inverter
+x1[81] VDD A[82] A[81] VSS inverter
+x1[82] VDD A[83] A[82] VSS inverter
+x1[83] VDD A[84] A[83] VSS inverter
+x1[84] VDD A[85] A[84] VSS inverter
+x1[85] VDD A[86] A[85] VSS inverter
+x1[86] VDD A[87] A[86] VSS inverter
+x1[87] VDD A[88] A[87] VSS inverter
+x1[88] VDD A[89] A[88] VSS inverter
+x1[89] VDD A[90] A[89] VSS inverter
+x1[90] VDD A[91] A[90] VSS inverter
+x1[91] VDD A[92] A[91] VSS inverter
+x1[92] VDD A[93] A[92] VSS inverter
+x1[93] VDD A[94] A[93] VSS inverter
+x1[94] VDD A[95] A[94] VSS inverter
+x1[95] VDD A[96] A[95] VSS inverter
+x1[96] VDD A[97] A[96] VSS inverter
+x1[97] VDD A[98] A[97] VSS inverter
+x2[1] A[2] VDD VSS VDD VSS net1[96] passGate_hvt
+x2[2] A[3] VDD VSS VDD VSS net1[95] passGate_hvt
+x2[3] A[4] VDD VSS VDD VSS net1[94] passGate_hvt
+x2[4] A[5] VDD VSS VDD VSS net1[93] passGate_hvt
+x2[5] A[6] VDD VSS VDD VSS net1[92] passGate_hvt
+x2[6] A[7] VDD VSS VDD VSS net1[91] passGate_hvt
+x2[7] A[8] VDD VSS VDD VSS net1[90] passGate_hvt
+x2[8] A[9] VDD VSS VDD VSS net1[89] passGate_hvt
+x2[9] A[10] VDD VSS VDD VSS net1[88] passGate_hvt
+x2[10] A[11] VDD VSS VDD VSS net1[87] passGate_hvt
+x2[11] A[12] VDD VSS VDD VSS net1[86] passGate_hvt
+x2[12] A[13] VDD VSS VDD VSS net1[85] passGate_hvt
+x2[13] A[14] VDD VSS VDD VSS net1[84] passGate_hvt
+x2[14] A[15] VDD VSS VDD VSS net1[83] passGate_hvt
+x2[15] A[16] VDD VSS VDD VSS net1[82] passGate_hvt
+x2[16] A[17] VDD VSS VDD VSS net1[81] passGate_hvt
+x2[17] A[18] VDD VSS VDD VSS net1[80] passGate_hvt
+x2[18] A[19] VDD VSS VDD VSS net1[79] passGate_hvt
+x2[19] A[20] VDD VSS VDD VSS net1[78] passGate_hvt
+x2[20] A[21] VDD VSS VDD VSS net1[77] passGate_hvt
+x2[21] A[22] VDD VSS VDD VSS net1[76] passGate_hvt
+x2[22] A[23] VDD VSS VDD VSS net1[75] passGate_hvt
+x2[23] A[24] VDD VSS VDD VSS net1[74] passGate_hvt
+x2[24] A[25] VDD VSS VDD VSS net1[73] passGate_hvt
+x2[25] A[26] VDD VSS VDD VSS net1[72] passGate_hvt
+x2[26] A[27] VDD VSS VDD VSS net1[71] passGate_hvt
+x2[27] A[28] VDD VSS VDD VSS net1[70] passGate_hvt
+x2[28] A[29] VDD VSS VDD VSS net1[69] passGate_hvt
+x2[29] A[30] VDD VSS VDD VSS net1[68] passGate_hvt
+x2[30] A[31] VDD VSS VDD VSS net1[67] passGate_hvt
+x2[31] A[32] VDD VSS VDD VSS net1[66] passGate_hvt
+x2[32] A[33] VDD VSS VDD VSS net1[65] passGate_hvt
+x2[33] A[34] VDD VSS VDD VSS net1[64] passGate_hvt
+x2[34] A[35] VDD VSS VDD VSS net1[63] passGate_hvt
+x2[35] A[36] VDD VSS VDD VSS net1[62] passGate_hvt
+x2[36] A[37] VDD VSS VDD VSS net1[61] passGate_hvt
+x2[37] A[38] VDD VSS VDD VSS net1[60] passGate_hvt
+x2[38] A[39] VDD VSS VDD VSS net1[59] passGate_hvt
+x2[39] A[40] VDD VSS VDD VSS net1[58] passGate_hvt
+x2[40] A[41] VDD VSS VDD VSS net1[57] passGate_hvt
+x2[41] A[42] VDD VSS VDD VSS net1[56] passGate_hvt
+x2[42] A[43] VDD VSS VDD VSS net1[55] passGate_hvt
+x2[43] A[44] VDD VSS VDD VSS net1[54] passGate_hvt
+x2[44] A[45] VDD VSS VDD VSS net1[53] passGate_hvt
+x2[45] A[46] VDD VSS VDD VSS net1[52] passGate_hvt
+x2[46] A[47] VDD VSS VDD VSS net1[51] passGate_hvt
+x2[47] A[48] VDD VSS VDD VSS net1[50] passGate_hvt
+x2[48] A[49] VDD VSS VDD VSS net1[49] passGate_hvt
+x2[49] A[50] VDD VSS VDD VSS net1[48] passGate_hvt
+x2[50] A[51] VDD VSS VDD VSS net1[47] passGate_hvt
+x2[51] A[52] VDD VSS VDD VSS net1[46] passGate_hvt
+x2[52] A[53] VDD VSS VDD VSS net1[45] passGate_hvt
+x2[53] A[54] VDD VSS VDD VSS net1[44] passGate_hvt
+x2[54] A[55] VDD VSS VDD VSS net1[43] passGate_hvt
+x2[55] A[56] VDD VSS VDD VSS net1[42] passGate_hvt
+x2[56] A[57] VDD VSS VDD VSS net1[41] passGate_hvt
+x2[57] A[58] VDD VSS VDD VSS net1[40] passGate_hvt
+x2[58] A[59] VDD VSS VDD VSS net1[39] passGate_hvt
+x2[59] A[60] VDD VSS VDD VSS net1[38] passGate_hvt
+x2[60] A[61] VDD VSS VDD VSS net1[37] passGate_hvt
+x2[61] A[62] VDD VSS VDD VSS net1[36] passGate_hvt
+x2[62] A[63] VDD VSS VDD VSS net1[35] passGate_hvt
+x2[63] A[64] VDD VSS VDD VSS net1[34] passGate_hvt
+x2[64] A[65] VDD VSS VDD VSS net1[33] passGate_hvt
+x2[65] A[66] VDD VSS VDD VSS net1[32] passGate_hvt
+x2[66] A[67] VDD VSS VDD VSS net1[31] passGate_hvt
+x2[67] A[68] VDD VSS VDD VSS net1[30] passGate_hvt
+x2[68] A[69] VDD VSS VDD VSS net1[29] passGate_hvt
+x2[69] A[70] VDD VSS VDD VSS net1[28] passGate_hvt
+x2[70] A[71] VDD VSS VDD VSS net1[27] passGate_hvt
+x2[71] A[72] VDD VSS VDD VSS net1[26] passGate_hvt
+x2[72] A[73] VDD VSS VDD VSS net1[25] passGate_hvt
+x2[73] A[74] VDD VSS VDD VSS net1[24] passGate_hvt
+x2[74] A[75] VDD VSS VDD VSS net1[23] passGate_hvt
+x2[75] A[76] VDD VSS VDD VSS net1[22] passGate_hvt
+x2[76] A[77] VDD VSS VDD VSS net1[21] passGate_hvt
+x2[77] A[78] VDD VSS VDD VSS net1[20] passGate_hvt
+x2[78] A[79] VDD VSS VDD VSS net1[19] passGate_hvt
+x2[79] A[80] VDD VSS VDD VSS net1[18] passGate_hvt
+x2[80] A[81] VDD VSS VDD VSS net1[17] passGate_hvt
+x2[81] A[82] VDD VSS VDD VSS net1[16] passGate_hvt
+x2[82] A[83] VDD VSS VDD VSS net1[15] passGate_hvt
+x2[83] A[84] VDD VSS VDD VSS net1[14] passGate_hvt
+x2[84] A[85] VDD VSS VDD VSS net1[13] passGate_hvt
+x2[85] A[86] VDD VSS VDD VSS net1[12] passGate_hvt
+x2[86] A[87] VDD VSS VDD VSS net1[11] passGate_hvt
+x2[87] A[88] VDD VSS VDD VSS net1[10] passGate_hvt
+x2[88] A[89] VDD VSS VDD VSS net1[9] passGate_hvt
+x2[89] A[90] VDD VSS VDD VSS net1[8] passGate_hvt
+x2[90] A[91] VDD VSS VDD VSS net1[7] passGate_hvt
+x2[91] A[92] VDD VSS VDD VSS net1[6] passGate_hvt
+x2[92] A[93] VDD VSS VDD VSS net1[5] passGate_hvt
+x2[93] A[94] VDD VSS VDD VSS net1[4] passGate_hvt
+x2[94] A[95] VDD VSS VDD VSS net1[3] passGate_hvt
+x2[95] A[96] VDD VSS VDD VSS net1[2] passGate_hvt
+x2[96] A[97] VDD VSS VDD VSS net1[1] passGate_hvt
+x2[97] A[98] VDD VSS VDD VSS net1[0] passGate_hvt
+x3[1] A[2] VDD VSS VDD VSS net2[96] passGate_hvt
+x3[2] A[3] VDD VSS VDD VSS net2[95] passGate_hvt
+x3[3] A[4] VDD VSS VDD VSS net2[94] passGate_hvt
+x3[4] A[5] VDD VSS VDD VSS net2[93] passGate_hvt
+x3[5] A[6] VDD VSS VDD VSS net2[92] passGate_hvt
+x3[6] A[7] VDD VSS VDD VSS net2[91] passGate_hvt
+x3[7] A[8] VDD VSS VDD VSS net2[90] passGate_hvt
+x3[8] A[9] VDD VSS VDD VSS net2[89] passGate_hvt
+x3[9] A[10] VDD VSS VDD VSS net2[88] passGate_hvt
+x3[10] A[11] VDD VSS VDD VSS net2[87] passGate_hvt
+x3[11] A[12] VDD VSS VDD VSS net2[86] passGate_hvt
+x3[12] A[13] VDD VSS VDD VSS net2[85] passGate_hvt
+x3[13] A[14] VDD VSS VDD VSS net2[84] passGate_hvt
+x3[14] A[15] VDD VSS VDD VSS net2[83] passGate_hvt
+x3[15] A[16] VDD VSS VDD VSS net2[82] passGate_hvt
+x3[16] A[17] VDD VSS VDD VSS net2[81] passGate_hvt
+x3[17] A[18] VDD VSS VDD VSS net2[80] passGate_hvt
+x3[18] A[19] VDD VSS VDD VSS net2[79] passGate_hvt
+x3[19] A[20] VDD VSS VDD VSS net2[78] passGate_hvt
+x3[20] A[21] VDD VSS VDD VSS net2[77] passGate_hvt
+x3[21] A[22] VDD VSS VDD VSS net2[76] passGate_hvt
+x3[22] A[23] VDD VSS VDD VSS net2[75] passGate_hvt
+x3[23] A[24] VDD VSS VDD VSS net2[74] passGate_hvt
+x3[24] A[25] VDD VSS VDD VSS net2[73] passGate_hvt
+x3[25] A[26] VDD VSS VDD VSS net2[72] passGate_hvt
+x3[26] A[27] VDD VSS VDD VSS net2[71] passGate_hvt
+x3[27] A[28] VDD VSS VDD VSS net2[70] passGate_hvt
+x3[28] A[29] VDD VSS VDD VSS net2[69] passGate_hvt
+x3[29] A[30] VDD VSS VDD VSS net2[68] passGate_hvt
+x3[30] A[31] VDD VSS VDD VSS net2[67] passGate_hvt
+x3[31] A[32] VDD VSS VDD VSS net2[66] passGate_hvt
+x3[32] A[33] VDD VSS VDD VSS net2[65] passGate_hvt
+x3[33] A[34] VDD VSS VDD VSS net2[64] passGate_hvt
+x3[34] A[35] VDD VSS VDD VSS net2[63] passGate_hvt
+x3[35] A[36] VDD VSS VDD VSS net2[62] passGate_hvt
+x3[36] A[37] VDD VSS VDD VSS net2[61] passGate_hvt
+x3[37] A[38] VDD VSS VDD VSS net2[60] passGate_hvt
+x3[38] A[39] VDD VSS VDD VSS net2[59] passGate_hvt
+x3[39] A[40] VDD VSS VDD VSS net2[58] passGate_hvt
+x3[40] A[41] VDD VSS VDD VSS net2[57] passGate_hvt
+x3[41] A[42] VDD VSS VDD VSS net2[56] passGate_hvt
+x3[42] A[43] VDD VSS VDD VSS net2[55] passGate_hvt
+x3[43] A[44] VDD VSS VDD VSS net2[54] passGate_hvt
+x3[44] A[45] VDD VSS VDD VSS net2[53] passGate_hvt
+x3[45] A[46] VDD VSS VDD VSS net2[52] passGate_hvt
+x3[46] A[47] VDD VSS VDD VSS net2[51] passGate_hvt
+x3[47] A[48] VDD VSS VDD VSS net2[50] passGate_hvt
+x3[48] A[49] VDD VSS VDD VSS net2[49] passGate_hvt
+x3[49] A[50] VDD VSS VDD VSS net2[48] passGate_hvt
+x3[50] A[51] VDD VSS VDD VSS net2[47] passGate_hvt
+x3[51] A[52] VDD VSS VDD VSS net2[46] passGate_hvt
+x3[52] A[53] VDD VSS VDD VSS net2[45] passGate_hvt
+x3[53] A[54] VDD VSS VDD VSS net2[44] passGate_hvt
+x3[54] A[55] VDD VSS VDD VSS net2[43] passGate_hvt
+x3[55] A[56] VDD VSS VDD VSS net2[42] passGate_hvt
+x3[56] A[57] VDD VSS VDD VSS net2[41] passGate_hvt
+x3[57] A[58] VDD VSS VDD VSS net2[40] passGate_hvt
+x3[58] A[59] VDD VSS VDD VSS net2[39] passGate_hvt
+x3[59] A[60] VDD VSS VDD VSS net2[38] passGate_hvt
+x3[60] A[61] VDD VSS VDD VSS net2[37] passGate_hvt
+x3[61] A[62] VDD VSS VDD VSS net2[36] passGate_hvt
+x3[62] A[63] VDD VSS VDD VSS net2[35] passGate_hvt
+x3[63] A[64] VDD VSS VDD VSS net2[34] passGate_hvt
+x3[64] A[65] VDD VSS VDD VSS net2[33] passGate_hvt
+x3[65] A[66] VDD VSS VDD VSS net2[32] passGate_hvt
+x3[66] A[67] VDD VSS VDD VSS net2[31] passGate_hvt
+x3[67] A[68] VDD VSS VDD VSS net2[30] passGate_hvt
+x3[68] A[69] VDD VSS VDD VSS net2[29] passGate_hvt
+x3[69] A[70] VDD VSS VDD VSS net2[28] passGate_hvt
+x3[70] A[71] VDD VSS VDD VSS net2[27] passGate_hvt
+x3[71] A[72] VDD VSS VDD VSS net2[26] passGate_hvt
+x3[72] A[73] VDD VSS VDD VSS net2[25] passGate_hvt
+x3[73] A[74] VDD VSS VDD VSS net2[24] passGate_hvt
+x3[74] A[75] VDD VSS VDD VSS net2[23] passGate_hvt
+x3[75] A[76] VDD VSS VDD VSS net2[22] passGate_hvt
+x3[76] A[77] VDD VSS VDD VSS net2[21] passGate_hvt
+x3[77] A[78] VDD VSS VDD VSS net2[20] passGate_hvt
+x3[78] A[79] VDD VSS VDD VSS net2[19] passGate_hvt
+x3[79] A[80] VDD VSS VDD VSS net2[18] passGate_hvt
+x3[80] A[81] VDD VSS VDD VSS net2[17] passGate_hvt
+x3[81] A[82] VDD VSS VDD VSS net2[16] passGate_hvt
+x3[82] A[83] VDD VSS VDD VSS net2[15] passGate_hvt
+x3[83] A[84] VDD VSS VDD VSS net2[14] passGate_hvt
+x3[84] A[85] VDD VSS VDD VSS net2[13] passGate_hvt
+x3[85] A[86] VDD VSS VDD VSS net2[12] passGate_hvt
+x3[86] A[87] VDD VSS VDD VSS net2[11] passGate_hvt
+x3[87] A[88] VDD VSS VDD VSS net2[10] passGate_hvt
+x3[88] A[89] VDD VSS VDD VSS net2[9] passGate_hvt
+x3[89] A[90] VDD VSS VDD VSS net2[8] passGate_hvt
+x3[90] A[91] VDD VSS VDD VSS net2[7] passGate_hvt
+x3[91] A[92] VDD VSS VDD VSS net2[6] passGate_hvt
+x3[92] A[93] VDD VSS VDD VSS net2[5] passGate_hvt
+x3[93] A[94] VDD VSS VDD VSS net2[4] passGate_hvt
+x3[94] A[95] VDD VSS VDD VSS net2[3] passGate_hvt
+x3[95] A[96] VDD VSS VDD VSS net2[2] passGate_hvt
+x3[96] A[97] VDD VSS VDD VSS net2[1] passGate_hvt
+x3[97] A[98] VDD VSS VDD VSS net2[0] passGate_hvt
+XM3 A[99] A[98] net3 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net3 NOT_RO_CON VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x4 A[99] RO_CON VSS VDD NOT_RO_CON net5 passGate_hvt
+x5 A[99] RO_CON VSS VDD NOT_RO_CON DUT_GATE passGate_hvt
+XM7 A[100] A[99] net6 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net6 DUT_FOOTER VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x1 A[100] RO_CON VSS VDD NOT_RO_CON DRAIN_SENSE passGate_hvt
+x2 A[100] RO_CON VSS VDD NOT_RO_CON DRAIN_FORCE passGate_hvt
+XM10 A[101] A[100] net8 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM11 net8 NOT_RO_CON VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x3 A[101] VDD VSS VDD NOT_RO_CON net9 passGate_hvt
+x6 A[101] VDD VSS VDD NOT_RO_CON VSS passGate_hvt
+x7 VDD A[1] A[101] VSS inverter
+x8 A[1] VDD VSS VDD VSS net10 passGate_hvt
+x9 A[1] VDD VSS VDD VSS net11 passGate_hvt
+XM1 A[99] A[98] net4 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net4 RO_CON VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 A[100] A[99] net7 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net7 DUT_HEADER VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 A[101] A[100] VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /foss/designs/UNICASS/inverter.sym
+** sch_path: /foss/designs/UNICASS/inverter.sch
+.subckt inverter VDD Out In VSS
+*.PININFO VDD:B Out:B VSS:B In:B
+XM2 Out In VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  passGate_hvt.sym # of pins=6
+** sym_path: /foss/designs/UNICASS/passGate_hvt.sym
+** sch_path: /foss/designs/UNICASS/passGate_hvt.sch
+.subckt passGate_hvt In CLKN VSS VDD CLK Out
+*.PININFO In:B CLKN:B Out:B VSS:B VDD:B CLK:B
+XM2 Out CLKN In VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Out CLK In VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
