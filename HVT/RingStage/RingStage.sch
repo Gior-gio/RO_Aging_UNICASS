@@ -49,7 +49,6 @@ N 130 -290 190 -290 {
 lab=VDD}
 N 130 -250 190 -250 {
 lab=VSS}
-C {/foss/designs/UNICASS/inverter/inverter.sym} 80 0 0 0 {name=x1}
 C {lab_wire.sym} 470 -170 0 0 {name=p75 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 470 -90 0 0 {name=p76 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 470 100 0 0 {name=p1 sig_type=std_logic lab=VDD}
@@ -66,5 +65,6 @@ C {iopin.sym} 130 -290 2 0 {name=p9 lab=VDD}
 C {iopin.sym} 130 -250 2 0 {name=p10 lab=VSS}
 C {lab_wire.sym} -20 0 0 0 {name=p11 sig_type=std_logic lab=In}
 C {lab_wire.sym} 240 0 0 0 {name=p12 sig_type=std_logic lab=Out}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 10 -40 0 0 {name=x2}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 10 230 0 0 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sym} 80 0 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 10 230 0 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 10 -40 0 0 {name=x3}

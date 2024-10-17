@@ -449,19 +449,19 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/foss/designs/UNICASS/RingStage/RingStage.sym} 160 10 0 0 {name=x6[1:97]}
 C {lab_wire.sym} 70 -90 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 70 120 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} -30 10 0 0 {name=p3 sig_type=std_logic lab=A[1:97]}
 C {lab_wire.sym} 320 10 0 0 {name=p4 sig_type=std_logic lab=A[2:98]}
-C {/foss/designs/UNICASS/RingStage/RingStage.sym} 2180 10 0 0 {name=x3}
 C {lab_wire.sym} 2090 -80 0 0 {name=p5 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 2090 120 0 0 {name=p6 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1990 10 0 0 {name=p7 sig_type=std_logic lab=A[101]}
 C {lab_wire.sym} 2340 10 0 0 {name=p9 sig_type=std_logic lab=A[1]}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 380 -40 0 0 {name=x6}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 380 240 0 0 {name=x1}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 920 240 0 0 {name=x2}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 920 -40 0 0 {name=x7}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 1470 -40 0 0 {name=x8}
-C {/foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym} 1470 240 0 0 {name=x9}
+C {/foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym} 160 10 0 0 {name=x4[1:97]}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 380 -40 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 380 240 0 0 {name=x4}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 920 -40 0 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 920 240 0 0 {name=x5}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 1470 240 0 0 {name=x6}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 1470 -40 0 0 {name=x7}
+C {/foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym} 2180 10 0 0 {name=x3}
