@@ -150,5 +150,5 @@ C {iopin.sym} 190 -50 1 0 {name=p7 lab=GND
 
 
 }
-C {passgate.sym} 560 -70 3 0 {name=x1}
-C {passgate.sym} 560 -430 3 1 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 560 -70 3 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 560 -430 3 1 {name=x2}

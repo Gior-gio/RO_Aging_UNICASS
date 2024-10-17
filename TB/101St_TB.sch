@@ -85,6 +85,6 @@ C {lab_pin.sym} 1210 -240 1 0 {name=p10 sig_type=std_logic lab=OUT_B}
 C {lab_pin.sym} 1310 -340 1 0 {name=p11 sig_type=std_logic lab=VDD global=1}
 C {gnd.sym} 1310 -140 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 1410 -240 1 0 {name=p12 sig_type=std_logic lab=OUT_Div}
-C {RO_LVT_101St.sym} 750 -120 0 0 {name=x1}
-C {Buffer.sym} 1010 -120 0 0 {name=x2}
-C {Freq_Divider8.sym} 1240 -170 0 0 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_101St.sym} 750 -120 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/LVT/Buffer.sym} 1010 -120 0 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/Freq_Divider8.sym} 1240 -170 0 0 {name=x3}

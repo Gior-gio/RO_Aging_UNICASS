@@ -41,7 +41,7 @@ N 240 -50 260 -50 {
 lab=GND}
 C {sky130_fd_pr/nfet3_01v8_lvt.sym} 60 -50 0 0 {name=M1
 W=0.45
-L=0.15
+L=0.35
 nf=1
 mult=1
 body=GND

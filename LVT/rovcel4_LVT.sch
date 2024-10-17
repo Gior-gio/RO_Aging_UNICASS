@@ -121,5 +121,5 @@ C {iopin.sym} 180 -460 3 0 {name=p7 lab=VDD
 }
 C {lab_pin.sym} 440 -90 1 1 {name=p8 sig_type=std_logic lab=GND
 }
-C {passgate.sym} 550 -80 3 0 {name=x1}
-C {passgate.sym} 550 -440 3 1 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 550 -80 3 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 550 -440 3 1 {name=x2}
