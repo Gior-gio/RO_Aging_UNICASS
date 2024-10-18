@@ -81,7 +81,7 @@ C {lab_wire.sym} -380 -390 0 0 {name=p7 sig_type=std_logic lab=N_En}
 C {code_shown.sym} 580 -240 0 0 {name=s1 only_toplevel=false 
 value=
 "
-.tran 100p 1200n
+.tran 100p 120n
 .ic v(x1.A0)=100m
 .save V(OUT) V(En) V(N_En)
 "}
@@ -96,7 +96,13 @@ C {lab_wire.sym} 190 -200 0 0 {name=p5 sig_type=std_logic lab=S[0:1]}
 C {lab_wire.sym} 340 -470 0 0 {name=p8 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 340 -120 0 0 {name=p9 sig_type=std_logic lab=GND}
 C {lab_wire.sym} 510 -310 0 0 {name=p10 sig_type=std_logic lab=OUT}
-C {sky130_fd_pr/corner.sym} 610 -420 0 0 {name=CORNER only_toplevel=false corner=TT}
+C {sky130_fd_pr/corner.sym} 610 -420 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+"
+spice_ignore=false}
 C {launcher.sym} 0 -930 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/untitled.raw tran"
