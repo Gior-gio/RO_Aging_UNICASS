@@ -1,0 +1,50 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1728607133
+<< checkpaint >>
+rect -681 0 0 1098
+rect -1313 -2566 3158 0
+rect -1313 -2672 3105 -2566
+rect -1313 -2778 3052 -2672
+<< error_s >>
+rect 685 -902 738 -796
+rect 882 -888 888 -725
+rect 1304 -796 1310 -725
+rect 632 -1008 738 -902
+rect 836 -990 888 -888
+rect 1054 -902 1529 -796
+rect 1001 -1008 1529 -902
+rect 579 -1018 738 -1008
+rect 948 -1018 1529 -1008
+rect 579 -1072 1529 -1018
+rect 579 -1260 738 -1072
+rect 948 -1253 1529 -1072
+rect 948 -1260 1476 -1253
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+use inverter  x1
+timestamp 1728421906
+transform 1 0 -870 0 1 282
+box 904 -1800 1608 -194
+use passGate_hvt  x2
+timestamp 1728421907
+transform 1 0 -186 0 1 294
+box 765 -1812 1556 -456
+use passGate_hvt  x3
+timestamp 1728421907
+transform 1 0 236 0 1 294
+box 765 -1812 1556 -456
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VSS
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 In
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 Out
+port 3 nsew
+<< end >>

@@ -53,7 +53,7 @@ N 440 -230 440 -210 {
 lab=OUT}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 160 -210 0 0 {name=M1
 W=0.45
-L=0.15
+L=0.35
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -121,5 +121,5 @@ C {iopin.sym} 180 -460 3 0 {name=p7 lab=VDD
 }
 C {lab_pin.sym} 440 -90 1 1 {name=p8 sig_type=std_logic lab=GND
 }
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 550 -80 3 0 {name=x1}
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 550 -440 3 1 {name=x2}
+C {passgate.sym} 550 -80 3 0 {name=x1}
+C {passgate.sym} 550 -440 3 1 {name=x2}

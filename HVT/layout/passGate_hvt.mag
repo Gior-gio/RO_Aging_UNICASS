@@ -1,0 +1,83 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1728607135
+<< checkpaint >>
+rect -179 -3178 2763 -148
+<< error_s >>
+rect 906 -674 1114 -508
+rect 1344 -582 1346 -468
+rect 1344 -636 1512 -582
+rect 906 -676 1040 -674
+rect 1114 -676 1208 -674
+rect 1074 -984 1208 -676
+rect 924 -1366 1134 -1337
+rect 926 -1407 1064 -1390
+rect 960 -1441 1064 -1424
+rect 894 -1475 952 -1469
+rect 894 -1509 906 -1475
+rect 926 -1509 956 -1475
+rect 960 -1494 990 -1441
+rect 894 -1515 952 -1509
+rect 894 -1693 952 -1687
+rect 894 -1727 906 -1693
+rect 894 -1733 952 -1727
+<< nwell >>
+rect 1344 -636 1346 -582
+rect 1040 -676 1114 -674
+rect 1040 -984 1074 -676
+<< pwell >>
+rect 1040 -998 1074 -984
+rect 1068 -1182 1074 -998
+rect 1022 -1284 1074 -1182
+rect 924 -1366 1346 -1312
+rect 1160 -1494 1310 -1424
+<< locali >>
+rect 960 -468 1310 -456
+rect 960 -492 994 -468
+rect 1276 -492 1310 -468
+rect 960 -1440 1310 -1424
+rect 960 -1486 994 -1440
+rect 1276 -1486 1310 -1440
+rect 960 -1494 1310 -1486
+<< viali >>
+rect 994 -514 1276 -468
+rect 994 -1486 1276 -1440
+<< metal1 >>
+rect 960 -468 1310 -456
+rect 960 -514 994 -468
+rect 1276 -514 1310 -468
+rect 960 -526 1310 -514
+rect 924 -636 1346 -582
+rect 1022 -676 1114 -674
+rect 1022 -1284 1074 -676
+rect 1102 -856 1168 -802
+rect 1102 -1166 1168 -1112
+rect 1202 -1284 1248 -674
+rect 924 -1366 1346 -1312
+rect 960 -1440 1310 -1424
+rect 960 -1486 994 -1440
+rect 1276 -1486 1310 -1440
+rect 960 -1494 1310 -1486
+use sky130_fd_pr__nfet_01v8_4A3DHF  XM1
+timestamp 1728411784
+transform 1 0 1292 0 1 -1663
+box -211 -255 211 255
+use sky130_fd_pr__pfet_01v8_hvt_SNMNDE  XM2
+timestamp 1728409320
+transform 1 0 923 0 1 -1601
+box -211 -264 211 264
+<< labels >>
+flabel metal1 1022 -1020 1074 -948 0 FreeSans 256 0 0 0 In
+port 0 nsew
+flabel metal1 1202 -1020 1248 -948 0 FreeSans 256 0 0 0 Out
+port 5 nsew
+flabel metal1 960 -526 1160 -456 0 FreeSans 256 0 0 0 VDD
+port 3 nsew
+flabel metal1 924 -636 960 -582 0 FreeSans 256 0 0 0 CLKN
+port 1 nsew
+flabel metal1 924 -1366 1124 -1312 0 FreeSans 256 0 0 0 CLK
+port 4 nsew
+flabel metal1 960 -1494 1160 -1424 0 FreeSans 256 0 0 0 VSS
+port 2 nsew
+<< end >>

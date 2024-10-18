@@ -59,7 +59,7 @@ N 450 -220 450 -200 {
 lab=OUT}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 170 -120 0 0 {name=M0
 W=0.45
-L=0.15
+L=0.35
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -73,7 +73,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 170 -200 0 0 {name=M1
 W=0.45
-L=0.15
+L=0.35
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -150,5 +150,5 @@ C {iopin.sym} 190 -50 1 0 {name=p7 lab=GND
 
 
 }
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 560 -70 3 0 {name=x1}
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 560 -430 3 1 {name=x2}
+C {passgate.sym} 560 -430 3 1 {name=x2}
+C {passgate.sym} 560 -70 3 0 {name=x1}

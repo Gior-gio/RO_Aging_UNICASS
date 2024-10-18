@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/UNICASS/inverter/inverter.sch
+**.subckt inverter VDD Out In VSS
+*.iopin VDD
+*.iopin Out
+*.iopin VSS
+*.iopin In
+XM2 Out In VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+.end

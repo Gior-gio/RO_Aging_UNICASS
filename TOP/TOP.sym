@@ -1,0 +1,51 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 0 -250 0 -20 {}
+L 4 0 -250 190 -250 {}
+L 4 190 -250 190 -20 {}
+L 4 0 0 190 0 {}
+L 4 0 -20 0 0 {}
+L 4 190 -20 190 0 {}
+L 7 -20 -220 0 -220 {}
+L 7 100 -270 100 -250 {}
+L 7 -20 -200 0 -200 {}
+L 7 100 0 100 20 {}
+L 7 -20 -180 0 -180 {}
+L 7 -20 -80 0 -80 {}
+L 7 -20 -60 0 -60 {}
+L 7 -20 -140 0 -140 {}
+L 7 190 -130 210 -130 {}
+L 7 -20 -120 0 -120 {}
+L 7 -20 -20 0 -20 {}
+B 5 -22.5 -222.5 -17.5 -217.5 {name=DUT_FOOTER dir=inout}
+B 5 97.5 -272.5 102.5 -267.5 {name=VDD dir=inout}
+B 5 -22.5 -202.5 -17.5 -197.5 {name=DUT_HEADER dir=inout}
+B 5 97.5 17.5 102.5 22.5 {name=VSS dir=inout}
+B 5 -22.5 -182.5 -17.5 -177.5 {name=DUT_GATE dir=inout}
+B 5 -22.5 -82.5 -17.5 -77.5 {name=NOT_RO_CON dir=inout}
+B 5 -22.5 -62.5 -17.5 -57.5 {name=RO_CON dir=inout}
+B 5 -22.5 -142.5 -17.5 -137.5 {name=DRAIN_SENSE dir=inout}
+B 5 207.5 -132.5 212.5 -127.5 {name=OUT dir=inout}
+B 5 -22.5 -122.5 -17.5 -117.5 {name=DRAIN_FORCE dir=inout}
+B 5 -22.5 -22.5 -17.5 -17.5 {name=S[0:1] dir=inout}
+T {@symname} 68.5 -46 0 0 0.3 0.3 {}
+T {@name} 65 -242 0 0 0.2 0.2 {}
+T {DUT_FOOTER} 75 -224 0 1 0.2 0.2 {}
+T {VDD} 95 -264 0 1 0.2 0.2 {}
+T {DUT_HEADER} 75 -204 0 1 0.2 0.2 {}
+T {VSS} 95 6 0 1 0.2 0.2 {}
+T {DUT_GATE} 65 -184 0 1 0.2 0.2 {}
+T {NOT_RO_CON} 75 -84 0 1 0.2 0.2 {}
+T {RO_CON} 55 -64 0 1 0.2 0.2 {}
+T {DRAIN_SENSE} 75 -144 0 1 0.2 0.2 {}
+T {OUT} 185 -134 0 1 0.2 0.2 {}
+T {DRAIN_FORCE} 75 -124 0 1 0.2 0.2 {}
+T {S[0:1]} 35 -24 0 1 0.2 0.2 {}

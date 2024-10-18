@@ -1,0 +1,78 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1728421585
+<< checkpaint >>
+rect 0 0 1947 260
+rect -1418 -4778 1947 0
+rect -1418 -4831 1894 -4778
+rect -1049 -4884 1894 -4831
+<< error_s >>
+rect 76 -2079 134 -2073
+rect 76 -2113 88 -2079
+rect 246 -2102 280 -2084
+rect 76 -2119 134 -2113
+rect 246 -2138 316 -2102
+rect 263 -2172 334 -2138
+rect 263 -2523 333 -2172
+rect 445 -2240 503 -2234
+rect 445 -2274 457 -2240
+rect 445 -2280 503 -2274
+rect 445 -2440 503 -2434
+rect 445 -2474 457 -2440
+rect 445 -2480 503 -2474
+rect 263 -2559 316 -2523
+rect 27 -3007 186 -2973
+rect 246 -3007 282 -2990
+rect 247 -3008 282 -3007
+rect 247 -3044 318 -3008
+rect 264 -3069 336 -3044
+rect 89 -3109 124 -3075
+rect 247 -3078 336 -3069
+rect 396 -3078 555 -3044
+rect 45 -3234 80 -3168
+rect 133 -3234 168 -3168
+rect 77 -3293 136 -3287
+rect 77 -3327 124 -3293
+rect 77 -3333 136 -3327
+rect 247 -3333 335 -3078
+rect 446 -3146 505 -3140
+rect 446 -3180 493 -3146
+rect 446 -3186 505 -3180
+rect 414 -3296 449 -3230
+rect 502 -3296 537 -3230
+rect 27 -3429 186 -3395
+rect 264 -3429 335 -3333
+rect 446 -3346 505 -3340
+rect 446 -3380 493 -3346
+rect 446 -3386 505 -3380
+rect 616 -3386 651 -3140
+rect 264 -3465 318 -3429
+rect 396 -3482 555 -3448
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+use inverter  x1
+timestamp 1728420485
+transform 1 0 0 0 1 -1200
+box 0 -1333 422 200
+use passGate_hvt  x2
+timestamp 1728420486
+transform 1 0 1 0 1 -1200
+box 0 -2239 422 200
+use passGate_hvt  x3
+timestamp 1728420486
+transform 1 0 2 0 1 -1200
+box 0 -2239 422 200
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VSS
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 In
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 Out
+port 3 nsew
+<< end >>

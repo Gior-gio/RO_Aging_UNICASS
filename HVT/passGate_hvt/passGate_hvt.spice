@@ -1,0 +1,14 @@
+** sch_path: /foss/designs/UNICASS/passGate_hvt/passGate_hvt.sch
+**.subckt passGate_hvt In CLKN VSS VDD CLK Out
+*.iopin In
+*.iopin CLKN
+*.iopin Out
+*.iopin VSS
+*.iopin VDD
+*.iopin CLK
+XM2 Out CLKN In VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Out CLK In VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+.end
