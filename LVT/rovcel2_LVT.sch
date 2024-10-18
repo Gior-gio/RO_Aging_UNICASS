@@ -49,6 +49,6 @@ C {lab_pin.sym} 330 -230 0 1 {name=p69 sig_type=std_logic lab=GND
 C {lab_pin.sym} 250 -130 2 1 {name=p70 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 330 -130 0 1 {name=p71 sig_type=std_logic lab=GND
 }
-C {passgate.sym} 400 -370 3 1 {name=x2}
-C {inv_LVT.sym} 270 -100 0 0 {name=x3}
-C {passgate.sym} 400 10 3 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 400 -370 3 1 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/inv_LVT.sym} 270 -100 0 0 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 400 10 3 0 {name=x1}
