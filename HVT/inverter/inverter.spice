@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/UNICASS/inverter/inverter.sch
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sch
 **.subckt inverter VDD Out In VSS
 *.iopin VDD
 *.iopin Out
