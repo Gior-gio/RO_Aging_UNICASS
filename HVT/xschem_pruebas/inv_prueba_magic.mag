@@ -1,0 +1,26 @@
+magic
+tech sky130
+timestamp 1729529908
+<< checkpaint >>
+rect 0 0 2 9
+use inv_prueba inv_prueba_1
+timestamp 1729529908
+transform 1 0 -1 0 1 1
+box 1 -1 3 3
+use nfet nfet_1
+timestamp 1729529908
+transform 1 0 0 0 1 4
+box 0 0 1 2
+use pfet pfet_1
+timestamp 1729529908
+transform 1 0 0 0 1 7
+box 0 -1 1 1
+use vias_genx241 vias_genx241_1
+timestamp 1729529908
+transform 1 0 0 0 1 8
+box 0 0 0 1
+use vias_genx242 vias_genx242_1
+timestamp 1729529908
+transform 1 0 0 0 1 9
+box 0 0 0 1
+<< end >>

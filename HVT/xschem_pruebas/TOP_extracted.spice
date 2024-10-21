@@ -1,0 +1,25 @@
+* Extracted by KLayout with SKY130 LVS runset on : 19/10/2024 16:59
+
+.SUBCKT TOP
+X$1 VSS In VSS Out sky130_gnd nfet$1
+X$2 VDD VDD In Out pfet$1
+X$3 In vias_gen$3
+X$4 Out vias_gen
+X$5 Out vias_gen
+.ENDS TOP
+
+.SUBCKT vias_gen$3 \$1
+.ENDS vias_gen$3
+
+.SUBCKT vias_gen \$1
+.ENDS vias_gen
+
+.SUBCKT pfet$1 \$1 \$2 \$3 \$4
+M$1 \$4 \$3 \$2 \$1 sky130_fd_pr__pfet_01v8 L=0.15 W=1 AS=0.3 AD=0.3 PS=2.6
++ PD=2.6
+.ENDS pfet$1
+
+.SUBCKT nfet$1 \$1 \$2 \$3 \$4 sky130_gnd
+M$1 \$4 \$2 \$1 sky130_gnd sky130_fd_pr__nfet_01v8 L=0.15 W=1 AS=0.3 AD=0.3
++ PS=2.6 PD=2.6
+.ENDS nfet$1
