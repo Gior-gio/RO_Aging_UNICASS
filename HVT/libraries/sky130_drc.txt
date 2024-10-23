@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>SKY130 DRC runset</description>
- <original-file>/foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage2.gds</original-file>
+ <original-file>prueba_libreria.gds</original-file>
  <generator>drc: script='/foss/pdks/sky130A/libs.tech/klayout/drc/sky130A.lydrc'</generator>
- <top-cell>RingStage2</top-cell>
+ <top-cell>passGate_hvt</top-cell>
  <tags>
  </tags>
  <categories>
@@ -880,7 +880,7 @@
  </categories>
  <cells>
   <cell>
-   <name>RingStage2</name>
+   <name>passGate_hvt</name>
    <variant/>
    <layout-name/>
    <references>

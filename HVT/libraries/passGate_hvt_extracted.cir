@@ -1,0 +1,24 @@
+* Extracted by KLayout with SKY130 LVS runset on : 23/10/2024 05:33
+
+.SUBCKT passGate_hvt
+X$1 Out CLK In sky130_gnd nfet
+X$2 Out CLKN In VDD pfet
+X$3 VDD vias_gen$4
+X$4 VSS vias_gen$7
+.ENDS passGate_hvt
+
+.SUBCKT vias_gen$7 \$1
+.ENDS vias_gen$7
+
+.SUBCKT vias_gen$4 \$1
+.ENDS vias_gen$4
+
+.SUBCKT pfet \$1 \$2 \$3 \$4
+M$1 \$3 \$2 \$1 \$4 sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 AS=0.135 AD=0.135
++ PS=1.5 PD=1.5
+.ENDS pfet
+
+.SUBCKT nfet \$1 \$2 \$3 sky130_gnd
+M$1 \$3 \$2 \$1 sky130_gnd sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 AS=0.135
++ AD=0.135 PS=1.5 PD=1.5
+.ENDS nfet
