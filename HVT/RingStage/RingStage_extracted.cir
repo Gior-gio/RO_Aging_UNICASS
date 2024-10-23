@@ -1,0 +1,56 @@
+* Extracted by KLayout with SKY130 LVS runset on : 23/10/2024 03:35
+
+.SUBCKT vias_gen$2
+.ENDS vias_gen$2
+
+.SUBCKT RingStage
+X$1 Out In VDD VDD sky130_gnd inverter
+X$2 Out VDD VDD \$5 \$6 sky130_gnd VDD passGate_hvt
+X$3 Out vias_gen$5
+X$4 Out VDD VDD \$5 \$6 sky130_gnd VDD passGate_hvt
+X$5 Out vias_gen$5
+.ENDS RingStage
+
+.SUBCKT vias_gen$5 \$1
+.ENDS vias_gen$5
+
+.SUBCKT passGate_hvt In VSS VDD CLKN CLK sky130_gnd \$I1
+X$1 Out CLK In sky130_gnd nfet$1
+X$2 Out CLKN In \$I1 pfet$1
+X$3 VSS vias_gen$1
+X$4 VDD vias_gen$1
+X$5 \$I1 vias_gen
+.ENDS passGate_hvt
+
+.SUBCKT inverter Out In VDD VSS sky130_gnd
+X$1 VSS In VSS Out sky130_gnd nfet
+X$2 VDD VDD In Out pfet
+X$3 VDD vias_gen$1
+X$4 VSS vias_gen$1
+.ENDS inverter
+
+.SUBCKT vias_gen \$1
+.ENDS vias_gen
+
+.SUBCKT pfet$1 \$1 \$2 \$3 \$4
+M$1 \$3 \$2 \$1 \$4 sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 AS=0.135 AD=0.135
++ PS=1.5 PD=1.5
+.ENDS pfet$1
+
+.SUBCKT nfet$1 \$1 \$2 \$3 sky130_gnd
+M$1 \$3 \$2 \$1 sky130_gnd sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 AS=0.135
++ AD=0.135 PS=1.5 PD=1.5
+.ENDS nfet$1
+
+.SUBCKT vias_gen$1 \$1
+.ENDS vias_gen$1
+
+.SUBCKT pfet \$1 \$2 \$3 \$4
+M$1 \$4 \$3 \$2 \$1 sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.9 AS=0.27 AD=0.27
++ PS=2.4 PD=2.4
+.ENDS pfet
+
+.SUBCKT nfet \$1 \$2 \$3 \$4 sky130_gnd
+M$1 \$4 \$2 \$1 sky130_gnd sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 AS=0.135
++ AD=0.135 PS=1.5 PD=1.5
+.ENDS nfet

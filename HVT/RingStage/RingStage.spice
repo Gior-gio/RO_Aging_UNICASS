@@ -1,14 +1,14 @@
-** sch_path: /foss/designs/UNICASS/RingStage/RingStage.sch
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sch
 .subckt RingStage VDD VSS In Out
 *.PININFO In:B Out:B VDD:B VSS:B
 x1 VDD Out In VSS inverter
-x2 Out VDD VSS VDD VSS net1 passGate_hvt
-x3 Out VDD VSS VDD VSS net2 passGate_hvt
+x2 Out VDD VSS VDD VSS net2 passGate_hvt
+x3 Out VDD VSS VDD VSS net1 passGate_hvt
 .ends
 
-* expanding   symbol:  /foss/designs/UNICASS/inverter/inverter.sym # of pins=4
-** sym_path: /foss/designs/UNICASS/inverter/inverter.sym
-** sch_path: /foss/designs/UNICASS/inverter/inverter.sch
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sym # of pins=4
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sch
 .subckt inverter VDD Out In VSS
 *.PININFO VDD:B Out:B VSS:B In:B
 XM2 Out In VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -18,9 +18,9 @@ XM1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) 
 .ends
 
 
-* expanding   symbol:  passGate_hvt.sym # of pins=6
-** sym_path: /foss/designs/UNICASS/passGate_hvt/passGate_hvt.sym
-** sch_path: /foss/designs/UNICASS/passGate_hvt/passGate_hvt.sch
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sch
 .subckt passGate_hvt In CLKN VSS VDD CLK Out
 *.PININFO In:B CLKN:B Out:B VSS:B VDD:B CLK:B
 XM2 Out CLKN In VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
