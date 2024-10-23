@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>SKY130 DRC runset</description>
- <original-file>prueba_libreria.gds</original-file>
- <generator>drc: script='/foss/pdks/sky130A/libs.tech/klayout/drc/sky130A.lydrc'</generator>
- <top-cell>passGate_hvt</top-cell>
+ <original-file>/foss/designs/RO_Aging_UNICASS/HVT/RingOscilator_hvt_101/RingOscilator_hvt_101.gds</original-file>
+ <generator>drc: script='/headless/.klayout/drc/sky130A.lydrc'</generator>
+ <top-cell>RingOscilator_hvt_101</top-cell>
  <tags>
  </tags>
  <categories>
@@ -880,7 +880,7 @@
  </categories>
  <cells>
   <cell>
-   <name>passGate_hvt</name>
+   <name>RingOscilator_hvt_101</name>
    <variant/>
    <layout-name/>
    <references>
