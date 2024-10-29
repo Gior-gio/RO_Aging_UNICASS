@@ -30,5 +30,5 @@ C {lab_pin.sym} 140 -60 0 0 {name=p8 sig_type=std_logic lab=GND}
 C {lab_pin.sym} 40 -140 0 0 {name=p9 sig_type=std_logic lab=IN}
 C {lab_pin.sym} 240 -140 1 0 {name=p10 sig_type=std_logic lab=IN_NEG}
 C {lab_pin.sym} 440 -140 2 0 {name=p11 sig_type=std_logic lab=OUT}
-C {inv_LVT.sym} 260 -60 0 0 {name=x1}
-C {inv_LVT.sym} 440 -60 0 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/inv_LVT/inv_LVT.sym} 260 -60 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/LVT/inv_LVT/inv_LVT.sym} 440 -60 0 0 {name=x2}

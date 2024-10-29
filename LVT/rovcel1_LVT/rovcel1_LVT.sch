@@ -156,5 +156,5 @@ C {iopin.sym} 520 -350 3 0 {name=p4 lab=RON
 
 }
 C {lab_pin.sym} 360 -170 1 1 {name=p3 sig_type=std_logic lab=RO}
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 550 -80 3 0 {name=x1}
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate.sym} 550 -440 3 1 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate/passgate.sym} 550 -80 3 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate/passgate.sym} 550 -440 3 1 {name=x3}
