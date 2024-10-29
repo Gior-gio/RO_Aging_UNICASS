@@ -102,8 +102,8 @@ lab=OUT}
 N 520 230 580 230 {
 lab=S[0:1]}
 C {/foss/designs/RO_Aging_UNICASS/HVT/RingOscilator_hvt_101/RingOscilator_hvt_101.sym} 70 -120 0 0 {name=x1}
-C {RO_LVT_101St.sym} 70 240 0 0 {name=x2}
-C {RO_LVT_13St.sym} 50 570 0 0 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_101St.sym} 70 240 0 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_13St.sym} 50 570 0 0 {name=x3}
 C {lab_wire.sym} 210 -350 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 210 -20 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 210 320 0 0 {name=p3 sig_type=std_logic lab=VDD}
