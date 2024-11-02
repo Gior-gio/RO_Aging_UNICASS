@@ -1,0 +1,17 @@
+Corner	Oscilator 	Frequency
+FF	13 x1		1.196 GHz
+TT	13 x1		1.049 GHz
+SS	13 x1		926.35 MHz
+
+FF	13 x10		906.86 MHz
+TT	13 x10		785.36 MHz
+SS	13 x10		680.27 MHz
+
+FF	101 x1		159.03 MHz
+TT	101 x1		141.71 MHz
+SS	101 x1		125.53 MHz
+
+FF	101 x10		154.82 MHz
+TT	101 x10		135.68 MHZ
+SS	101 x10		120.48 MHz
+
