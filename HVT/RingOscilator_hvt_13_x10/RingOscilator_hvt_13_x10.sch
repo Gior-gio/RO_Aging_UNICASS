@@ -216,7 +216,7 @@ lab=VSS}
 N 2300 10 2340 10 {
 lab=A[1]}
 N 1970 10 2010 10 {
-lab=A[12]}
+lab=A[13]}
 N 1200 -220 1230 -220 {
 lab=A[12]}
 N 1200 -220 1200 -90 {
@@ -276,10 +276,10 @@ model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 480 -180 0 0 {name=M4
-W=19
+W=4.75
 L=0.15
 nf=1
-mult=10
+mult=40
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
