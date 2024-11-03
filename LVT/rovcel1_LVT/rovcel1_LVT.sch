@@ -60,7 +60,7 @@ lab=OUT}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 160 -130 0 0 {name=M0
 W=42
 L=0.35
-nf=10
+nf=20
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -74,7 +74,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 160 -210 0 0 {name=M1
 W=4.2
 L=0.35
-nf=1
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -86,9 +86,9 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 160 -310 0 0 {name=M2
-W=20
+W=19
 L=0.35
-nf=1
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -100,9 +100,9 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 160 -390 0 0 {name=M3
-W=200
+W=190
 L=0.35
-nf=10
+nf=40
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -156,5 +156,5 @@ C {iopin.sym} 520 -350 3 0 {name=p4 lab=RON
 
 }
 C {lab_pin.sym} 360 -170 1 1 {name=p3 sig_type=std_logic lab=RO}
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate/passgate.sym} 550 -80 3 0 {name=x2}
-C {/foss/designs/RO_Aging_UNICASS/LVT/passgate/passgate.sym} 550 -440 3 1 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate_LVT/passgate_LVT.sym} 550 -80 3 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/LVT/passgate_LVT/passgate_LVT.sym} 550 -440 3 1 {name=x3}
