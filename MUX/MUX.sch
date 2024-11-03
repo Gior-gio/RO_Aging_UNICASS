@@ -82,7 +82,7 @@ lab=S[2]}
 N 1040 -290 1040 -280 {
 lab=S[2]B}
 N 1120 -340 1160 -340 {
-lab=R3[0]}
+lab=R2[0]}
 N 1330 -730 1330 -690 {
 lab=VDD}
 N 1270 -730 1330 -730 {
@@ -108,7 +108,7 @@ lab=VSS}
 N 1710 -490 1760 -490 {
 lab=VSS}
 N 1360 -340 1400 -340 {
-lab=R3[0]}
+lab=R2[0]}
 N 1560 -370 1600 -370 {
 lab=VDD}
 N 1560 -300 1600 -300 {
@@ -178,9 +178,9 @@ lab=S[2]B}
 N 1050 0 1050 10 {
 lab=S[2]}
 N 1130 -50 1170 -50 {
-lab=R3[0]}
+lab=R2[0]}
 N 1370 -50 1410 -50 {
-lab=R3[1]}
+lab=R2[1]}
 N 1570 -80 1610 -80 {
 lab=VDD}
 N 1570 -10 1610 -10 {
@@ -250,7 +250,7 @@ lab=S[2]}
 N 1050 260 1050 270 {
 lab=S[2]B}
 N 1130 210 1170 210 {
-lab=R3[1]}
+lab=R2[1]}
 N 140 470 180 470 {
 lab=In[3]}
 N 340 440 380 440 {
@@ -507,7 +507,7 @@ C {MUX_TG.sym} 1030 -200 0 0 {name=X[19]
 C {lab_wire.sym} 920 -340 0 0 {name=p26 sig_type=std_logic lab=R1[0]}
 C {lab_wire.sym} 1160 -370 2 0 {name=p27 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1160 -300 2 0 {name=p28 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1160 -340 2 0 {name=p29 sig_type=std_logic lab=R3[0]}
+C {lab_wire.sym} 1160 -340 2 0 {name=p29 sig_type=std_logic lab=R2[0]}
 C {lab_wire.sym} 1000 -430 0 0 {name=p30 sig_type=std_logic lab=S[2]}
 C {lab_wire.sym} 1000 -260 0 0 {name=p31 sig_type=std_logic lab=S[2]B}
 C {inverter.sym} 1330 -610 0 0 {name=x3}
@@ -522,7 +522,7 @@ C {lab_wire.sym} 1620 -610 0 0 {name=p38 sig_type=std_logic lab=S[3]}
 C {lab_wire.sym} 1960 -610 2 0 {name=p39 sig_type=std_logic lab=S[3]B}
 C {MUX_TG.sym} 1470 -200 0 0 {name=X[22]
 }
-C {lab_wire.sym} 1360 -340 0 0 {name=p40 sig_type=std_logic lab=R3[0]}
+C {lab_wire.sym} 1360 -340 0 0 {name=p40 sig_type=std_logic lab=R2[0]}
 C {lab_wire.sym} 1600 -370 2 0 {name=p41 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1600 -300 2 0 {name=p42 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1600 -340 2 0 {name=p43 sig_type=std_logic lab=Out}
@@ -549,12 +549,12 @@ C {MUX_TG.sym} 1040 90 0 0 {name=X[20]
 C {lab_wire.sym} 930 -50 0 0 {name=p58 sig_type=std_logic lab=R1[1]}
 C {lab_wire.sym} 1170 -80 2 0 {name=p59 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1170 -10 2 0 {name=p60 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1170 -50 2 0 {name=p61 sig_type=std_logic lab=R3[0]}
+C {lab_wire.sym} 1170 -50 2 0 {name=p61 sig_type=std_logic lab=R2[0]}
 C {lab_wire.sym} 1010 -140 0 0 {name=p62 sig_type=std_logic lab=S[2]B}
 C {lab_wire.sym} 1010 30 0 0 {name=p63 sig_type=std_logic lab=S[2]}
 C {MUX_TG.sym} 1480 90 0 0 {name=X[23]
 }
-C {lab_wire.sym} 1370 -50 0 0 {name=p64 sig_type=std_logic lab=R3[1]}
+C {lab_wire.sym} 1370 -50 0 0 {name=p64 sig_type=std_logic lab=R2[1]}
 C {lab_wire.sym} 1610 -80 2 0 {name=p65 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1610 -10 2 0 {name=p66 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1610 -50 2 0 {name=p67 sig_type=std_logic lab=Out}
@@ -581,7 +581,7 @@ C {MUX_TG.sym} 1040 350 0 0 {name=X[21]
 C {lab_wire.sym} 930 210 0 0 {name=p82 sig_type=std_logic lab=R1[2]}
 C {lab_wire.sym} 1170 180 2 0 {name=p83 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1170 250 2 0 {name=p84 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1170 210 2 0 {name=p85 sig_type=std_logic lab=R3[1]}
+C {lab_wire.sym} 1170 210 2 0 {name=p85 sig_type=std_logic lab=R2[1]}
 C {lab_wire.sym} 1010 120 0 0 {name=p86 sig_type=std_logic lab=S[2]}
 C {lab_wire.sym} 1010 290 0 0 {name=p87 sig_type=std_logic lab=S[2]B}
 C {MUX_TG.sym} 250 610 0 0 {name=X[3]

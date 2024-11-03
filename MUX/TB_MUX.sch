@@ -5,6 +5,34 @@ K {}
 V {}
 S {}
 E {}
+B 2 -50 -570 750 -170 {flags=graph
+
+
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-6.0251026e-08
+x2=2.3726701e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+y1=-0.024675033
+y2=2.557293
+
+
+
+color="7 6"
+node="In[11]
+Out"}
 N 230 60 260 60 {
 lab=VSS}
 N 250 -70 250 -50 {
@@ -33,14 +61,10 @@ N -70 30 -70 50 {
 lab=S[3]}
 N -310 -30 -310 -20 {
 lab=GND}
-N -70 -30 -70 -20 {
-lab=GND}
-N -70 -110 -70 -90 {
-lab=In[0:4],In[6:15]}
 N -310 -110 -310 -90 {
-lab=In[5]}
+lab=In[11]}
 N 120 10 160 10 {
-lab=Int[0:15]}
+lab=In[0:15]}
 N 200 90 200 120 {
 lab=S[0:3]}
 N 180 120 200 120 {
@@ -55,42 +79,34 @@ N 250 10 270 10 {
 lab=OUT}
 N 330 10 340 10 {
 lab=GND}
-N 250 -370 290 -370 {
-lab=#net1}
-N -20 -370 30 -370 {
-lab=In[0:15]}
-N 110 -450 370 -450 {
-lab=VDD}
-N 110 -290 370 -290 {
-lab=VSS}
-N 510 -370 550 -370 {
-lab=Int[0:15]}
+N -120 -30 -120 -20 {
+lab=GND}
+N -120 -110 -120 -90 {
+lab=In[0:10]}
+N -150 -110 -120 -110 {
+lab=In[0:10]}
 C {MUX.sym} 180 0 0 0 {name=x1}
-C {vsource.sym} -310 -60 0 0 {name=V1 value="PULSE(0 1.8 1n 0.01n 0.01n 3n 6n)" savecurrent=false}
+C {vsource.sym} -310 -60 0 0 {name=Vin1 value="SINE(900m 900m 5Meg 0 0)" savecurrent=false}
 C {vsource.sym} 320 -70 3 0 {name=V4 value=1.8 savecurrent=false}
 C {gnd.sym} 370 60 3 0 {name=l1 lab=GND}
 C {gnd.sym} 350 -70 3 0 {name=l2 lab=GND}
-C {vsource.sym} -260 80 0 0 {name=V5 value=0 savecurrent=false}
-C {vsource.sym} -190 80 0 0 {name=V6 value=0 savecurrent=false}
-C {vsource.sym} -130 80 0 0 {name=V7 value=1.8 savecurrent=false}
-C {vsource.sym} -70 80 0 0 {name=V8 value=0 savecurrent=false}
+C {vsource.sym} -260 80 0 0 {name=V5 value=1.8 savecurrent=false}
+C {vsource.sym} -190 80 0 0 {name=V6 value="PULSE(1.8 0 1u 0.01u 0.01u)" savecurrent=false}
+C {vsource.sym} -130 80 0 0 {name=V7 value=0 savecurrent=false}
+C {vsource.sym} -70 80 0 0 {name=V8 value=1.8 savecurrent=false}
 C {gnd.sym} -260 130 0 0 {name=l3 lab=GND}
 C {gnd.sym} -190 130 0 0 {name=l4 lab=GND}
 C {gnd.sym} -130 130 0 0 {name=l5 lab=GND}
 C {gnd.sym} -70 130 0 0 {name=l6 lab=GND}
-C {gnd.sym} -70 -20 0 0 {name=l7 lab=GND}
-C {vsource.sym} -70 -60 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} -310 -20 0 0 {name=l8 lab=GND}
-C {lab_wire.sym} -310 -110 0 0 {name=p1 sig_type=std_logic lab=In[5]}
-C {lab_wire.sym} -70 -110 0 0 {name=p2 sig_type=std_logic lab=In[0:4],In[6:15]}
+C {lab_wire.sym} -310 -110 0 0 {name=p1 sig_type=std_logic lab=In[11]}
 C {lab_wire.sym} -260 30 0 0 {name=p3 sig_type=std_logic lab=S[0]}
 C {lab_wire.sym} -190 30 0 0 {name=p4 sig_type=std_logic lab=S[1]}
 C {lab_wire.sym} -130 30 0 0 {name=p5 sig_type=std_logic lab=S[2]}
 C {lab_wire.sym} -70 30 0 0 {name=p6 sig_type=std_logic lab=S[3]}
-C {lab_wire.sym} 120 10 0 0 {name=p7 sig_type=std_logic lab=Int[0:15]}
+C {lab_wire.sym} 120 10 0 0 {name=p7 sig_type=std_logic lab=In[0:15]}
 C {code.sym} -410 -350 0 0 {name=s1 only_toplevel=false value="
-.ic V(In[0:15])=0
-.tran 0.01n 4n
+.tran 0.001u 2u
 .save all
 "}
 C {lab_wire.sym} 180 120 0 0 {name=p8 sig_type=std_logic lab=S[0:3]}
@@ -100,14 +116,15 @@ C {vsource.sym} 330 60 3 0 {name=V3 value=0 savecurrent=false}
 C {lab_wire.sym} 270 60 1 0 {name=p10 sig_type=std_logic lab=VSS}
 C {capa.sym} 300 10 3 0 {name=C1
 m=1
-value=200f
+value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 340 10 3 0 {name=l9 lab=GND}
-C {inverter.sym} 110 -370 0 0 {name=x2}
-C {inverter.sym} 370 -370 0 0 {name=x3}
 C {lab_wire.sym} 260 -70 1 0 {name=p11 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 260 -450 1 0 {name=p12 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 230 -290 1 0 {name=p13 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -20 -370 3 0 {name=p14 sig_type=std_logic lab=In[0:15]}
-C {lab_wire.sym} 550 -370 1 0 {name=p15 sig_type=std_logic lab=Int[0:15]}
+C {launcher.sym} 20 -600 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/TB_MUX.raw tran"
+}
+C {vsource.sym} -120 -60 0 0 {name=Vin[0:10] value=0 savecurrent=false}
+C {gnd.sym} -120 -20 0 0 {name=l7 lab=GND}
+C {lab_wire.sym} -150 -110 0 0 {name=p2 sig_type=std_logic lab=In[0:10]}
