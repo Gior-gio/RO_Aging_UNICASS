@@ -73,4 +73,4 @@ C {lab_pin.sym} 690 -180 0 0 {name=p4 sig_type=std_logic lab=RO }
 C {lab_pin.sym} 690 -320 0 0 {name=p5 sig_type=std_logic lab=DUT_Footer }
 C {lab_pin.sym} 690 -300 0 0 {name=p6 sig_type=std_logic lab=DUT_Header}
 C {lab_pin.sym} 990 -240 2 0 {name=p7 sig_type=std_logic lab=OUT}
-C {RO_LVT_101St.sym} 750 -120 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_101St/RO_LVT_101St.sym} 750 -120 0 0 {name=x1}

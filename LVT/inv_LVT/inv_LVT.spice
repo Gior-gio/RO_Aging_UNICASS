@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/LVT/inv_LVT/inv_LVT.sch
+.subckt inv_LVT VDD IN OUT GND
+*.PININFO VDD:B IN:B OUT:B GND:B
+M1 OUT IN GND GND sky130_fd_pr__nfet_01v8_lvt L=0.35 W=0.42 nf=1 m=1
+M2 OUT IN VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=0.9 nf=1 m=1
+.ends
+.end
