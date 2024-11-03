@@ -1,0 +1,8 @@
+* Extracted by KLayout with SKY130 LVS runset on : 03/11/2024 02:36
+
+.SUBCKT passGate_hvt CLK In Out CLKN VDD sky130_gnd
+M$1 In CLKN Out VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 AS=0.135 AD=0.135
++ PS=1.5 PD=1.5
+M$2 In CLK Out sky130_gnd sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 AS=0.135
++ AD=0.135 PS=1.5 PD=1.5
+.ENDS passGate_hvt
