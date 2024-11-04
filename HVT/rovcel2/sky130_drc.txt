@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>SKY130 DRC runset</description>
- <original-file>/foss/designs/RO_Aging_UNICASS/MUX/TG_x10.gds</original-file>
+ <original-file>rovcel2.gds</original-file>
  <generator>drc: script='/headless/.klayout/drc/sky130A.lydrc'</generator>
- <top-cell>TG_x10</top-cell>
+ <top-cell>rovcel</top-cell>
  <tags>
  </tags>
  <categories>
@@ -880,7 +880,7 @@
  </categories>
  <cells>
   <cell>
-   <name>TG_x10</name>
+   <name>rovcel</name>
    <variant/>
    <layout-name/>
    <references>

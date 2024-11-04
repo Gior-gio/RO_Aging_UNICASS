@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>SKY130 DRC runset</description>
- <original-file/>
+ <original-file>/foss/designs/RO_Aging_UNICASS/HVT/RingOscilator_hvt_13_x10/RingOscilator_hvt_13_x10.gds</original-file>
  <generator>drc: script='/headless/.klayout/drc/sky130A.lydrc'</generator>
- <top-cell>rovcel</top-cell>
+ <top-cell>RingOscilator_hvt_13_x10</top-cell>
  <tags>
  </tags>
  <categories>
@@ -880,7 +880,7 @@
  </categories>
  <cells>
   <cell>
-   <name>rovcel</name>
+   <name>RingOscilator_hvt_13_x10</name>
    <variant/>
    <layout-name/>
    <references>
@@ -888,125 +888,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (30.185,1.76;30.185,6.37)|(30.055,6.37;30.055,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (39.905,1.76;39.905,6.37)|(39.775,6.37;39.775,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (20.465,1.76;20.465,6.37)|(20.335,6.37;20.335,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (17.225,1.76;17.225,6.37)|(17.095,6.37;17.095,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (26.945,1.76;26.945,6.37)|(26.815,6.37;26.815,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (36.665,1.76;36.665,6.37)|(36.535,6.37;36.535,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (13.985,1.76;13.985,6.37)|(13.855,6.37;13.855,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (33.425,1.76;33.425,6.37)|(33.295,6.37;33.295,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (23.705,1.76;23.705,6.37)|(23.575,6.37;23.575,1.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m2.2'</category>
-   <cell>rovcel</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (5.39,7.145;6.905,7.145)|(7.036,7.195;5.259,7.195)</value>
-   </values>
-  </item>
  </items>
 </report-database>

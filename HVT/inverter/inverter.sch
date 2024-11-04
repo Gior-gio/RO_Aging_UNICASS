@@ -34,10 +34,10 @@ lab=In}
 N 70 -110 120 -110 {
 lab=Out}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 50 -170 0 0 {name=M2
-W=19
+W=4.75
 L=0.15
 nf=1
-mult=1
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -53,10 +53,10 @@ C {iopin.sym} 120 -110 0 0 {name=p2 lab=Out}
 C {iopin.sym} 70 20 0 0 {name=p3 lab=VSS}
 C {iopin.sym} -30 -110 2 0 {name=p4 lab=In}
 C {sky130_fd_pr/nfet_01v8.sym} 50 -60 0 0 {name=M1
-W=4.2
+W=2.1
 L=0.15
 nf=1 
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

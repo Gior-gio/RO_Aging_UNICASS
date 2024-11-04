@@ -113,4 +113,4 @@ C {lab_wire.sym} 480 -310 0 0 {name=p6 sig_type=std_logic lab=En}
 C {vsource.sym} 230 -240 0 0 {name=V3 value="PULSE(1.8 0 0 100p 100p 120n 240n)"}
 C {gnd.sym} 230 -170 0 0 {name=l10 lab=GND}
 C {lab_wire.sym} 230 -310 0 0 {name=p7 sig_type=std_logic lab=N_En}
-C {/foss/designs/RO_Aging_UNICASS/HVT/RingOscilator_hvt_101_x1/RingOscilator_hvt_101_x1.sym} 950 -240 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/HVT/RingOscilator_hvt_13_x10/RingOscilator_hvt_13_x10.sym} 950 -240 0 0 {name=x1}

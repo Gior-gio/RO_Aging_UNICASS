@@ -1,0 +1,269 @@
+* Extracted by KLayout with SKY130 LVS runset on : 03/11/2024 21:57
+
+.SUBCKT rovcel
+X$1 VSS vias_gen$1
+X$2 Out IN VSS nfet
+X$3 VSS IN Out nfet
+X$4 VSS vias_gen$7
+X$5 Out vias_gen
+X$6 Out vias_gen
+X$7 \$22 IN Out VDD pfet
+X$8 Out vias_gen$5
+X$9 Out IN \$22 VDD pfet
+X$10 \$22 IN Out VDD pfet
+X$11 Out vias_gen$5
+X$12 Out IN \$22 VDD pfet
+X$13 Out vias_gen$17
+X$14 Out vias_gen$17
+X$15 IN vias_gen$3
+X$16 IN vias_gen$3
+X$17 IN vias_gen$3
+X$18 IN vias_gen$3
+X$19 VDD vias_gen$1
+X$20 \$22 P VDD VDD pfet$1
+X$21 VDD vias_gen$8
+X$22 VDD P \$22 VDD pfet$1
+X$23 \$22 P VDD VDD pfet$1
+X$24 VDD vias_gen$8
+X$25 VDD P \$22 VDD pfet$1
+X$26 \$22 P VDD VDD pfet$1
+X$27 VDD vias_gen$8
+X$28 VDD P \$22 VDD pfet$1
+X$29 \$22 P VDD VDD pfet$1
+X$30 VDD vias_gen$8
+X$31 VDD P \$22 VDD pfet$1
+X$32 \$22 P VDD VDD pfet$1
+X$33 VDD vias_gen$8
+X$34 VDD P \$22 VDD pfet$1
+X$35 \$22 P VDD VDD pfet$1
+X$36 VDD vias_gen$8
+X$37 VDD P \$22 VDD pfet$1
+X$38 \$22 P VDD VDD pfet$1
+X$39 VDD vias_gen$8
+X$40 VDD P \$22 VDD pfet$1
+X$41 \$22 P VDD VDD pfet$1
+X$42 VDD vias_gen$8
+X$43 VDD P \$22 VDD pfet$1
+X$44 \$22 P VDD VDD pfet$1
+X$45 VDD vias_gen$8
+X$46 VDD P \$22 VDD pfet$1
+X$47 \$22 P VDD VDD pfet$1
+X$48 VDD vias_gen$8
+X$49 VDD P \$22 VDD pfet$1
+X$50 \$22 P VDD VDD pfet$1
+X$51 VDD vias_gen$8
+X$52 VDD P \$22 VDD pfet$1
+X$53 \$22 P VDD VDD pfet$1
+X$54 VDD vias_gen$8
+X$55 \$22 P VDD VDD pfet$1
+X$56 VDD vias_gen$8
+X$57 VDD P \$22 VDD pfet$1
+X$58 \$22 P VDD VDD pfet$1
+X$59 VDD vias_gen$8
+X$60 VDD P \$22 VDD pfet$1
+X$61 \$22 P VDD VDD pfet$1
+X$62 VDD vias_gen$8
+X$63 VDD P \$22 VDD pfet$1
+X$64 \$22 P VDD VDD pfet$1
+X$65 VDD vias_gen$8
+X$66 VDD P \$22 VDD pfet$1
+X$67 \$22 P VDD VDD pfet$1
+X$68 VDD vias_gen$8
+X$69 VDD P \$22 VDD pfet$1
+X$70 \$22 P VDD VDD pfet$1
+X$71 VDD vias_gen$8
+X$72 VDD P \$22 VDD pfet$1
+X$73 \$22 P VDD VDD pfet$1
+X$74 VDD vias_gen$8
+X$75 VDD P \$22 VDD pfet$1
+X$76 \$22 P VDD VDD pfet$1
+X$77 VDD vias_gen$8
+X$78 VDD P \$22 VDD pfet$1
+X$79 VDD P \$22 VDD pfet$1
+X$80 VDD vias_gen$8
+X$81 VDD \$I37 vias_gen$9
+X$82 VDD \$I37 vias_gen$10
+X$83 VDD \$I37 vias_gen$9
+X$84 VDD \$I37 vias_gen$10
+X$85 VDD vias_gen$12
+X$86 \$22 vias_gen$7
+X$87 \$22 vias_gen$7
+X$88 \$22 vias_gen$7
+X$89 \$22 vias_gen$7
+X$90 \$22 vias_gen$7
+X$91 \$22 vias_gen$7
+X$92 \$22 vias_gen$7
+X$93 \$22 vias_gen$7
+X$94 \$22 vias_gen$7
+X$95 \$22 vias_gen$7
+X$96 \$22 vias_gen$7
+X$97 \$22 vias_gen$7
+X$98 \$22 vias_gen$7
+X$99 \$22 vias_gen$7
+X$100 \$22 vias_gen$7
+X$101 \$22 vias_gen$7
+X$102 \$22 vias_gen$7
+X$103 \$22 vias_gen$7
+X$104 \$22 vias_gen$7
+X$105 \$22 vias_gen$6
+X$106 \$22 vias_gen$7
+X$107 \$22 vias_gen$7
+X$108 \$22 vias_gen$6
+X$109 P vias_gen$11
+X$110 P vias_gen$11
+X$111 P vias_gen$11
+X$112 P vias_gen$11
+X$113 P vias_gen$11
+X$114 P vias_gen$11
+X$115 P vias_gen$11
+X$116 P vias_gen$11
+X$117 P vias_gen$11
+X$118 P vias_gen$11
+X$119 P vias_gen$11
+X$120 P vias_gen$11
+X$121 P vias_gen$11
+X$122 P vias_gen$11
+X$123 P vias_gen$11
+X$124 P vias_gen$11
+X$125 P vias_gen$11
+X$126 P vias_gen$11
+X$127 P vias_gen$11
+X$128 P vias_gen$11
+M$1 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.425e+12
++ AD=1.5675e+12 PS=10100000 PD=5410000
+M$2 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$3 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$4 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$5 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$6 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$7 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$8 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$9 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$10 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$11 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$12 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$13 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$14 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$15 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$16 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$17 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$18 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$19 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$20 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$21 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$22 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$23 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$24 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$25 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$26 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$27 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$28 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$29 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$30 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$31 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$32 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$33 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$34 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$35 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$36 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$37 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$38 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$39 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$40 \$22 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.425e+12 PS=5410000 PD=10100000
+M$41 \$22 IN Out VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.425e+12 AD=1.5675e+12 PS=10100000 PD=5410000
+M$42 Out IN \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$43 \$22 IN Out VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.5675e+12 PS=5410000 PD=5410000
+M$44 Out IN \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=4750000
++ AS=1.5675e+12 AD=1.425e+12 PS=5410000 PD=10100000
+M$45 Out IN VSS VSS sky130_fd_pr__nfet_01v8 L=150000 W=2100000 AS=630000000000
++ AD=693000000000 PS=4800000 PD=2760000
+M$46 VSS IN Out VSS sky130_fd_pr__nfet_01v8 L=150000 W=2100000 AS=693000000000
++ AD=630000000000 PS=2760000 PD=4800000
+.ENDS rovcel
+
+.SUBCKT vias_gen$3 \$1
+.ENDS vias_gen$3
+
+.SUBCKT vias_gen$17 \$1
+.ENDS vias_gen$17
+
+.SUBCKT nfet \$1 \$2 \$3
+.ENDS nfet
+
+.SUBCKT vias_gen \$1
+.ENDS vias_gen
+
+.SUBCKT vias_gen$6 \$1
+.ENDS vias_gen$6
+
+.SUBCKT vias_gen$1 \$1
+.ENDS vias_gen$1
+
+.SUBCKT vias_gen$5 \$1
+.ENDS vias_gen$5
+
+.SUBCKT vias_gen$8 \$1
+.ENDS vias_gen$8
+
+.SUBCKT vias_gen$7 \$1
+.ENDS vias_gen$7
+
+.SUBCKT vias_gen$12 \$1
+.ENDS vias_gen$12
+
+.SUBCKT vias_gen$9 \$1 \$2
+.ENDS vias_gen$9
+
+.SUBCKT vias_gen$10 \$1 \$2
+.ENDS vias_gen$10
+
+.SUBCKT vias_gen$11 \$1
+.ENDS vias_gen$11
+
+.SUBCKT pfet$1 \$1 \$2 \$3 \$4
+.ENDS pfet$1
+
+.SUBCKT pfet \$1 \$2 \$3 \$4
+.ENDS pfet
