@@ -50,12 +50,12 @@ lab=P}
 N 90 -320 150 -320 {
 lab=N}
 N 330 -190 330 -130 {
-lab=#net2}
+lab=N1}
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 310 -360 0 0 {name=M3
 W=4.75
 L=0.15
-nf=4
-mult=1
+nf=1
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -68,8 +68,8 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8_hvt.sym} 310 -480 0 0 {name=M4
 W=4.75
 L=0.15
-nf=40
-mult=1
+nf=1
+mult=40
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -88,8 +88,8 @@ C {lab_wire.sym} 330 -10 0 0 {name=p18 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 310 -220 0 0 {name=M1
 W=2.1
 L=0.15
-nf=2 
-mult=1
+nf=1 
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

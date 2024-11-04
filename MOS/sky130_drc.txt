@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>SKY130 DRC runset</description>
- <original-file>rovcel.gds</original-file>
+ <original-file>nmos_lvt.gds</original-file>
  <generator>drc: script='/headless/.klayout/drc/sky130A.lydrc'</generator>
- <top-cell>rovcel</top-cell>
+ <top-cell>nmos_lvt</top-cell>
  <tags>
  </tags>
  <categories>
@@ -880,7 +880,7 @@
  </categories>
  <cells>
   <cell>
-   <name>rovcel</name>
+   <name>nmos_lvt</name>
    <variant/>
    <layout-name/>
    <references>

@@ -1,0 +1,100 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/MUX/untitled-1.sch
+**.subckt untitled-1
+x1 VDD VSS Int[0] Int[1] Int[2] Int[3] Int[4] Int[5] Int[6] Int[7] Int[8] Int[9] Int[10] Int[11] Int[12] Int[13] Int[14] Int[15]
++ OUT S[0] S[1] S[2] S[3] MUX
+V1 In[5] GND PULSE(0 1.8 1n 0.01n 0.01n 3n 6n)
+V4 VDD GND 1.8
+V5 S[0] GND 0
+V6 S[1] GND 0
+V7 S[2] GND 1.8
+V8 S[3] GND 0
+V2 In[0] GND 0
+V3 VSS GND 0
+C1 OUT GND 200f m=1
+x2 VDD net1 In[0] VSS inverter
+x3 VDD Int[0] net1 VSS inverter
+**** begin user architecture code
+
+
+.ic V(In[0:15])=0
+.tran 0.01n 4n
+.save all
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  MUX.sym # of pins=5
+** sym_path: /foss/designs/RO_Aging_UNICASS/MUX/MUX.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/MUX/MUX.sch
+.subckt MUX VDD VSS In[0] In[1] In[2] In[3] In[4] In[5] In[6] In[7] In[8] In[9] In[10] In[11] In[12] In[13] In[14] In[15] Out S[0]
++ S[1] S[2] S[3]
+*.iopin VDD
+*.iopin VSS
+*.iopin In[0],In[1],In[2],In[3],In[4],In[5],In[6],In[7],In[8],In[9],In[10],In[11],In[12],In[13],In[14],In[15]
+*.iopin Out
+*.iopin S[0],S[1],S[2],S[3]
+X[0] S[0] VDD R0[0] In[0] VSS S[0]B MUX_TG
+x1 VDD S[0]B S[0] VSS inverter
+X[13] S[1] VDD R1[0] R0[0] VSS S[1]B MUX_TG
+x2 VDD S[1]B S[1] VSS inverter
+X[19] S[2] VDD R3[0] R1[0] VSS S[2]B MUX_TG
+x3 VDD S[2]B S[2] VSS inverter
+x4 VDD S[3]B S[3] VSS inverter
+X[22] S[3] VDD Out R3[0] VSS S[3]B MUX_TG
+X[1] S[0]B VDD R0[0] In[1] VSS S[0] MUX_TG
+X[14] S[1]B VDD R1[0] R0[1] VSS S[1] MUX_TG
+X[20] S[2]B VDD R3[0] R1[1] VSS S[2] MUX_TG
+X[23] S[3]B VDD Out R3[1] VSS S[3] MUX_TG
+X[2] S[0] VDD R0[1] In[2] VSS S[0]B MUX_TG
+X[15] S[1] VDD R1[1] R0[2] VSS S[1]B MUX_TG
+X[21] S[2] VDD R3[1] R1[2] VSS S[2]B MUX_TG
+X[3] S[0]B VDD R0[1] In[3] VSS S[0] MUX_TG
+X[16] S[1]B VDD R1[1] R0[3] VSS S[1] MUX_TG
+X[4] S[0] VDD R0[2] In[4] VSS S[0]B MUX_TG
+X[17] S[1] VDD R1[2] R0[4] VSS S[1]B MUX_TG
+X[5] S[0]B VDD R0[2] In[5] VSS S[0] MUX_TG
+X[18] S[1]B VDD R1[2] R0[5] VSS S[1] MUX_TG
+X[6] S[0] VDD R0[3] In[6] VSS S[0]B MUX_TG
+X[7] S[0]B VDD R0[3] In[7] VSS S[0] MUX_TG
+X[8] S[0] VDD R0[4] In[8] VSS S[0]B MUX_TG
+X[9] S[0]B VDD R0[4] In[9] VSS S[0] MUX_TG
+X[10] S[0] VDD R0[5] In[10] VSS S[0]B MUX_TG
+X[11] S[0]B VDD R0[5] In[11] VSS S[0] MUX_TG
+.ends
+
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /foss/designs/RO_Aging_UNICASS/MUX/inverter.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/MUX/inverter.sch
+.subckt inverter VDD Out In VSS
+*.iopin VDD
+*.iopin Out
+*.iopin VSS
+*.iopin In
+XM3 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 Out In VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  MUX_TG.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/MUX/MUX_TG.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/MUX/MUX_TG.sch
+.subckt MUX_TG AB VDD Out In VSS A
+*.iopin In
+*.iopin Out
+*.iopin VDD
+*.iopin VSS
+*.iopin AB
+*.iopin A
+XM1 In A Out VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 In AB Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+.GLOBAL GND
+.end
