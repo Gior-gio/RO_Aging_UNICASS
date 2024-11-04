@@ -1,8 +1,8 @@
-* Extracted by KLayout with SKY130 LVS runset on : 03/11/2024 02:24
+* Extracted by KLayout with SKY130 LVS runset on : 03/11/2024 23:22
 
-.SUBCKT inv_LVT VDD GND IN OUT
-M$1 VDD IN OUT VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=0.9 AS=0.27 AD=0.27
-+ PS=2.4 PD=2.4
-M$2 GND IN OUT GND sky130_fd_pr__nfet_01v8_lvt L=0.35 W=0.45 AS=0.135 AD=0.135
-+ PS=1.5 PD=1.5
+.SUBCKT inv_LVT GND OUT IN VDD
+M$1 VDD IN OUT VDD sky130_fd_pr__pfet_01v8_lvt L=350000 W=19000000 AS=4.275e+12
++ AD=4.275e+12 PS=30300000 PD=30300000
+M$5 OUT IN GND GND sky130_fd_pr__nfet_01v8_lvt L=350000 W=4200000 AS=1.26e+12
++ AD=1.26e+12 PS=9600000 PD=9600000
 .ENDS inv_LVT

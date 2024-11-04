@@ -1,892 +1,1274 @@
-<?xml version="1.0" encoding="utf-8"?>
-<report-database>
- <description>SKY130 DRC runset</description>
- <original-file>/foss/designs/RO_Aging_UNICASS/LVT/inv_LVT/inv_LVT.gds</original-file>
- <generator>drc: script='/foss/pdks/sky130A/libs.tech/klayout/drc/sky130A.lydrc'</generator>
- <top-cell>inv_LVT</top-cell>
- <tags>
- </tags>
- <categories>
-  <category>
-   <name>li.1</name>
-   <description>li.1 : min. li width : 0.17um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li.1a</name>
-   <description>li.1a : min. li width for the cells s8rf2_xcmvpp_hd5_* : 0.14um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li.3</name>
-   <description>li.3 : min. li spacing : 0.17um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li.3a</name>
-   <description>li.3a : min. li spacing for the cells s8rf2_xcmvpp_hd5_* : 0.14um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li.5</name>
-   <description>li.5 : min. li enclosure of licon of 2 opposite edges : 0.08um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li.6</name>
-   <description>li.6 : min. li area : 0.0561um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ct.1</name>
-   <description>ct.1 : minimum/maximum width of mcon : 0.17um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ct.2</name>
-   <description>ct.2 : min. mcon spacing : 0.19um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ct.4</name>
-   <description>ct.4 : mcon should covered by li</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.1</name>
-   <description>m1.1 : min. m1 width : 0.14um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.2</name>
-   <description>m1.2 : min. m1 spacing : 0.14um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.3ab</name>
-   <description>m1.3ab : min. 3um.m1 spacing m1 : 0.28um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.4</name>
-   <description>m1.4 : min. m1 enclosure of mcon : 0.03um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.4a</name>
-   <description>m1.4a : min. m1 enclosure of mcon for specific cells : 0.005um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.6</name>
-   <description>m1.6 : min. m1 area : 0.083um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.7</name>
-   <description>m1.7 : min. m1 holes area : 0.14um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1.5</name>
-   <description>m1.5 : min. m1 enclosure of mcon of 2 opposite edges : 0.06um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via.4c.5c</name>
-   <description>via.4c.5c : m1 must enclose all via</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via.1a</name>
-   <description>via.1a : minimum/maximum width of via : 0.15um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via.1b</name>
-   <description>via.1b : minimum/maximum width of via in areaid.mt: 0.15um or 0.23um or 0.28um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via.2</name>
-   <description>via.2 : min. via spacing : 0.17um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via.4a</name>
-   <description>via.4a : min. m1 enclosure of 0.15um via : 0.055um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via.4b</name>
-   <description>via.4b : min. m1 enclosure of 0.23um via : 0.03um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via1.5a</name>
-   <description>via1.5a : min. m1 enclosure of 0.15um via of 2 opposite edges : 0.085um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via1.5b</name>
-   <description>via1.5b : min. m1 enclosure of 0.23um via of 2 opposite edges : 0.06um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.1</name>
-   <description>m2.1 : min. m2 width : 0.14um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.2</name>
-   <description>m2.2 : min. m2 spacing : 0.14um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.3ab</name>
-   <description>m2.3ab : min. 3um.m2 spacing m2 : 0.28um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.6</name>
-   <description>m2.6 : min. m2 area : 0.0676um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.7</name>
-   <description>m2.7 : min. m2 holes area : 0.14um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.via</name>
-   <description>m2.via : m2 must enclose via</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.4</name>
-   <description>m2.4 : min. m2 enclosure of via : 0.055um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2.5</name>
-   <description>m2.5 : min. m2 enclosure of via of 2 opposite edges : 0.085um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2</name>
-   <description>via2 : m2 must enclose all via2</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2.1a</name>
-   <description>via2.1a : minimum/maximum width of via2 : 0.2um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2.1b</name>
-   <description>via2.1b : minimum/maximum width of via2 in areaid.mt: 0.2um or 1.2um or 1.5um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2.2</name>
-   <description>via2.2 : min. via2 spacing : 0.2um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2.4</name>
-   <description>via2.4 : min. m2 enclosure of via2 : 0.04um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2.4a</name>
-   <description>via2.4a : min. m2 enclosure of 1.5um via2 : 0.14um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2.5</name>
-   <description>via2.5 : min. m2 enclosure of via2 of 2 opposite edges : 0.085um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.1</name>
-   <description>m3.1 : min. m3 width : 0.3um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.2</name>
-   <description>m3.2 : min. m3 spacing : 0.3um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.3ab</name>
-   <description>m3.3ab : min. 3um.m3 spacing m3 : 0.4um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.6</name>
-   <description>m3.6 : min. m3 area : 0.24um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.via2</name>
-   <description>m3.via2 : m3 must enclose via2</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.4</name>
-   <description>m3.4 : min. m3 enclosure of via2 : 0.065um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via3</name>
-   <description>via3 : m3 must enclose all via3</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via3.1a</name>
-   <description>via3.1a : minimum/maximum width of via3 in areaid.mt: 0.2um or 0.8um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via3.2</name>
-   <description>via3.2 : min. via3 spacing : 0.2um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via3.4</name>
-   <description>via3.4 : min. m3 enclosure of via3 : 0.06um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via3.5</name>
-   <description>via3.5 : min. m2 enclosure of via3 of 2 opposite edges : 0.09um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.1</name>
-   <description>m4.1 : min. m4 width : 0.3um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.2</name>
-   <description>m4.2 : min. m4 spacing : 0.3um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.5ab</name>
-   <description>m4.5ab : min. 3um.m4 spacing m4 : 0.4um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.4</name>
-   <description>m4.4 : min. m4 area : 0.24um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.via3</name>
-   <description>m4.via3 : m4 must enclose via3</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.3</name>
-   <description>m4.3 : min. m4 enclosure of via3 : 0.065um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via4.1a</name>
-   <description>via4.1a : minimum/maximum width of via4 : 0.8um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via4.2</name>
-   <description>via4.2 : min. via4 spacing : 0.8um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via4.4</name>
-   <description>via4.4 : min. m4 enclosure of via4 : 0.19um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via4</name>
-   <description>via4 : m4 must enclose all via4</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m5.1</name>
-   <description>m5.1 : min. m5 width : 1.6um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m5.2</name>
-   <description>m5.2 : min. m5 spacing : 1.6um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m5.via4</name>
-   <description>m5.via4 : m5 must enclose via4</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m5.3</name>
-   <description>m4.3 : min. m5 enclosure of via4 : 0.31um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsm.1</name>
-   <description>nsm.1 : min. nsm width : 3.0um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsm.2</name>
-   <description>nsm.2 : min. nsm spacing : 4.0um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsm.4</name>
-   <description>nsm.4 : min. nsm enclosure of cfom : 3.0um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsm.3</name>
-   <description>nsm.3 : min. nsm spacing to cfom : 1.0um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pad.2</name>
-   <description>pad.2 : min. pad spacing : 1.27um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>dnwell_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on dnwell</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>dnwell_angle</name>
-   <description>x.3a : non 45 degree angle dnwell</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nwell_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on nwell</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nwell_angle</name>
-   <description>x.3a : non 45 degree angle nwell</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pwbm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on pwbm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pwbm_angle</name>
-   <description>x.3a : non 45 degree angle pwbm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pwde_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on pwde</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pwde_angle</name>
-   <description>x.3a : non 45 degree angle pwde</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvtp_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on hvtp</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvtp_angle</name>
-   <description>x.3a : non 45 degree angle hvtp</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvtr_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on hvtr</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvtr_angle</name>
-   <description>x.3a : non 45 degree angle hvtr</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>lvtn_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on lvtn</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>lvtn_angle</name>
-   <description>x.3a : non 45 degree angle lvtn</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ncm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on ncm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ncm_angle</name>
-   <description>x.3a : non 45 degree angle ncm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>diff_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on diff</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>tap_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on tap</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>diff_angle</name>
-   <description>x.2c : non 45 degree angle diff</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>tap_angle</name>
-   <description>x.2c : non 45 degree angle tap</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>tunm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on tunm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>tunm_angle</name>
-   <description>x.3a : non 45 degree angle tunm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>poly_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on poly</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>poly_angle</name>
-   <description>x.2 : non 90 degree angle poly</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>rpm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on rpm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>rpm_angle</name>
-   <description>x.3a : non 45 degree angle rpm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>npc_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on npc</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>npc_angle</name>
-   <description>x.3a : non 45 degree angle npc</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsdm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on nsdm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsdm_angle</name>
-   <description>x.3a : non 45 degree angle nsdm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>psdm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on psdm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>psdm_angle</name>
-   <description>x.3a : non 45 degree angle psdm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>licon_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on licon</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>licon_angle</name>
-   <description>x.2 : non 90 degree angle licon</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on li</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li_angle</name>
-   <description>x.3a : non 45 degree angle li</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ct_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on mcon</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>ct_angle</name>
-   <description>x.2 : non 90 degree angle mcon</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>vpp_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on vpp</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>vpp_angle</name>
-   <description>x.3a : non 45 degree angle vpp</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on m1</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m1_angle</name>
-   <description>x.3a : non 45 degree angle m1</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on via</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via_angle</name>
-   <description>x.2 : non 90 degree angle via</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on m2</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m2_angle</name>
-   <description>x.3a : non 45 degree angle m2</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on via2</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via2_angle</name>
-   <description>x.2 : non 90 degree angle via2</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on m3</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3_angle</name>
-   <description>x.3a : non 45 degree angle m3</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via3_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on via3</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via3_angle</name>
-   <description>x.2 : non 90 degree angle via3</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on nsm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsm_angle</name>
-   <description>x.3a : non 45 degree angle nsm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on m4</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4_angle</name>
-   <description>x.3a : non 45 degree angle m4</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via4_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on via4</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via4_angle</name>
-   <description>x.2 : non 90 degree angle via4</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m5_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on m5</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m5_angle</name>
-   <description>x.3a : non 45 degree angle m5</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pad_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on pad</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pad_angle</name>
-   <description>x.3a : non 45 degree angle pad</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>mf_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on mf</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>mf_angle</name>
-   <description>x.2 : non 90 degree angle mf</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvi_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on hvi</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvi_angle</name>
-   <description>x.3a : non 45 degree angle hvi</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvntm_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on hvntm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>hvntm_angle</name>
-   <description>x.3a : non 45 degree angle hvntm</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>vhvi_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on vhvi</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>vhvi_angle</name>
-   <description>x.3a : non 45 degree angle vhvi</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>uhvi_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on uhvi</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>uhvi_angle</name>
-   <description>x.3a : non 45 degree angle uhvi</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pwell_rs_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on pwell_rs</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>pwell_rs_angle</name>
-   <description>x.3a : non 45 degree angle pwell_rs</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>areaid_re_OFFGRID</name>
-   <description>x.1b : OFFGRID vertex on areaid.re</description>
-   <categories>
-   </categories>
-  </category>
- </categories>
- <cells>
-  <cell>
-   <name>inv_LVT</name>
-   <variant/>
-   <layout-name/>
-   <references>
-   </references>
-  </cell>
- </cells>
- <items>
- </items>
-</report-database>
+#%lvsdb-klayout
+J(
+ W(inv_LVT)
+ U(0.001)
+ L(l36)
+ L(l3)
+ L(l5 '64/20')
+ L(l24 '65/44')
+ L(l6 '66/44')
+ L(l12 '67/44')
+ L(l14 '68/44')
+ L(l16 '69/44')
+ L(l18)
+ L(l20)
+ L(l34)
+ L(l59)
+ L(l61)
+ L(l22)
+ L(l23)
+ L(l71)
+ L(l25)
+ L(l26)
+ L(l27)
+ L(l28)
+ L(l29)
+ L(l30 '69/5')
+ L(l31)
+ L(l32)
+ L(l33)
+ L(l35)
+ L(l37)
+ L(l84)
+ L(l43)
+ L(l42)
+ L(l41)
+ L(l83)
+ L(l40)
+ L(l79)
+ L(l39)
+ L(l77)
+ L(l81)
+ L(l38)
+ L(l76)
+ L(l82)
+ L(l57)
+ L(l8)
+ L(l58)
+ L(l2)
+ L(l65)
+ L(l44)
+ L(l7)
+ L(l67)
+ L(l4)
+ L(l68)
+ L(l10)
+ L(l9)
+ L(l11)
+ L(l13)
+ L(l15)
+ L(l69)
+ L(l60)
+ L(l62)
+ L(l21)
+ L(l17)
+ L(l19)
+ L(l66)
+ L(l45)
+ L(l46)
+ L(l56)
+ L(l55)
+ L(l47)
+ L(l48)
+ L(l54)
+ L(l49)
+ L(l53)
+ L(l50)
+ L(l51)
+ L(l52)
+ L(l85)
+ L(l75)
+ L(l73)
+ L(l74)
+ L(l63)
+ L(l64)
+ L(l70)
+ L(l72)
+ L(l78)
+ L(l80)
+ L(l1)
+ L(l86)
+ C(l36 l36 l37)
+ C(l3 l3 l4)
+ C(l5 l5 l23 l4 l56)
+ C(l24 l24 l25)
+ C(l6 l6 l43 l42 l41 l40 l39 l38 l57 l8 l2 l65 l44 l7 l67 l4 l68 l10 l11 l69 l66 l45 l46 l55 l47 l48 l49 l53 l50 l51 l52 l86)
+ C(l12 l12 l11 l13)
+ C(l14 l14 l13 l15)
+ C(l16 l16 l15 l17)
+ C(l18 l18 l59 l17 l19)
+ C(l20 l20 l61 l21 l19)
+ C(l34 l34 l35)
+ C(l59 l18 l59)
+ C(l61 l20 l61)
+ C(l22 l1)
+ C(l23 l5)
+ C(l71 l70 l72)
+ C(l25 l24)
+ C(l26 l8 l7)
+ C(l27 l9)
+ C(l28 l11)
+ C(l29 l13 l73)
+ C(l30 l15 l74)
+ C(l31 l17 l75)
+ C(l32 l76 l19)
+ C(l33 l77 l21)
+ C(l35 l34)
+ C(l37 l36)
+ C(l84 l84 l76 l75)
+ C(l43 l6 l43)
+ C(l42 l6 l42)
+ C(l41 l6 l41)
+ C(l83 l83 l75 l74)
+ C(l40 l6 l40)
+ C(l79 l79 l78 l80)
+ C(l39 l6 l39)
+ C(l77 l33 l77 l21 l85)
+ C(l81 l81 l73 l80)
+ C(l38 l6 l38)
+ C(l76 l32 l84 l76 l19 l85)
+ C(l82 l82 l73 l74)
+ C(l57 l6 l57)
+ C(l8 l6 l26 l8)
+ C(l58 l58 l2)
+ C(l2 l6 l58 l2 l54 l63 l64 l1)
+ C(l65 l6 l65)
+ C(l44 l6 l44)
+ C(l7 l6 l26 l7)
+ C(l67 l6 l67)
+ C(l4 l3 l5 l6 l4)
+ C(l68 l6 l68)
+ C(l10 l6 l10 l9)
+ C(l9 l27 l10 l9)
+ C(l11 l6 l12 l28 l11)
+ C(l13 l12 l14 l29 l13 l73)
+ C(l15 l14 l16 l30 l15 l74)
+ C(l69 l6 l69)
+ C(l60 l60 l17)
+ C(l62 l62 l19)
+ C(l21 l20 l33 l77 l21)
+ C(l17 l16 l18 l31 l60 l17 l75)
+ C(l19 l18 l20 l32 l76 l62 l19)
+ C(l66 l6 l66)
+ C(l45 l6 l45)
+ C(l46 l6 l46)
+ C(l56 l5 l56)
+ C(l55 l6 l55)
+ C(l47 l6 l47)
+ C(l48 l6 l48)
+ C(l54 l2 l54)
+ C(l49 l6 l49)
+ C(l53 l6 l53)
+ C(l50 l6 l50)
+ C(l51 l6 l51)
+ C(l52 l6 l52)
+ C(l85 l77 l76 l85)
+ C(l75 l31 l84 l83 l17 l75)
+ C(l73 l29 l81 l82 l13 l73)
+ C(l74 l30 l83 l82 l15 l74)
+ C(l63 l2 l63)
+ C(l64 l2 l64)
+ C(l70 l71 l70)
+ C(l72 l71 l72)
+ C(l78 l79 l78)
+ C(l80 l79 l81 l80)
+ C(l1 l22 l2 l1)
+ C(l86 l6 l86)
+ G(l1 GND)
+ H(W B('Must-connect subnets of GND must be connected further up in the hierarchy - this is an error at chip top level') C(inv_LVT) X('must-connect') Q('(-7.845,-4.64;-7.845,-0.5;-2.525,-0.5;-2.525,-4.64)'))
+ K(sky130_fd_pr__pfet_01v8 MOS4)
+ K(sky130_fd_pr__pfet_01v8_lvt MOS4)
+ K(sky130_fd_pr__pfet_01v8_hvt MOS4)
+ K(sky130_fd_pr__pfet_g5v0d10v5 MOS4)
+ K(sky130_fd_pr__nfet_01v8 MOS4)
+ K(sky130_fd_pr__nfet_01v8_lvt MOS4)
+ K(sky130_fd_pr__nfet_03v3_nvt MOS4)
+ K(sky130_fd_pr__nfet_05v0_nvt MOS4)
+ K(sky130_fd_pr__nfet_g5v0d10v5 MOS4)
+ K(sky130_fd_pr__npn_05v5_W1p00L1p00 BJT4)
+ K(sky130_fd_pr__npn_05v5_W1p00L2p00 BJT4)
+ K(sky130_fd_pr__npn_11v0_W1p00L1p00 BJT4)
+ K(sky130_fd_pr__pnp_05v5_W0p68L0p68 BJT3)
+ K(sky130_fd_pr__pnp_05v5_W3p40L3p40 BJT3)
+ K(sky130_fd_pr__diode_pw2nd_05v5 DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__diode_pw2nd_05v5_lvt DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__diode_pw2nd_05v5_nvt DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__diode_pw2nd_11v0 DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__diode_pd2nw_05v5 DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__diode_pd2nw_05v5_lvt DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__diode_pd2nw_05v5_hvt DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__diode_pd2nw_11v0 DIODE
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__photodiode DIODE)
+ K(sky130_fd_pr__res_generic_nd RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_nd_hv RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_pd RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_pd_hv RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_iso_pw RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_po RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_high_po_0p35 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_high_po_0p69 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_high_po_1p41 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_high_po_2p85 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_high_po_5p73 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_xhigh_po_0p35 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_xhigh_po_0p69 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_xhigh_po_1p41 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_xhigh_po_2p85 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_xhigh_po_5p73 RES3
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_l1 RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_m1 RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_m2 RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_m3 RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_m4 RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__res_generic_m5 RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__fuse_m4 RES
+  E(R 0 0)
+  E(L 1 0)
+  E(W 1 0)
+ )
+ K(sky130_fd_pr__model__cap_mim CAP
+  E(C 0 0)
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__model__cap_mim_m4 CAP
+  E(C 0 0)
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__cap_var_lvt CAP3
+  E(C 0 0)
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__cap_var_hvt CAP3
+  E(C 0 0)
+  E(A 1 0)
+  E(P 1 0)
+ )
+ K(sky130_fd_pr__cap_vpp_02p4x04p6_m1m2_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_02p7x06p1_m1m2m3m4_shieldl1_fingercap CAP3)
+ K(sky130_fd_pr__cap_vpp_02p7x11p1_m1m2m3m4_shieldl1_fingercap CAP3)
+ K(sky130_fd_pr__cap_vpp_02p7x21p1_m1m2m3m4_shieldl1_fingercap CAP3)
+ K(sky130_fd_pr__cap_vpp_02p7x41p1_m1m2m3m4_shieldl1_fingercap CAP3)
+ K(sky130_fd_pr__cap_vpp_02p9x06p1_m1m2m3m4_shieldl1_fingercap2 CAP3)
+ K(sky130_fd_pr__cap_vpp_03p9x03p9_m1m2_shieldl1_floatm3 MOS4)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_l1m1m2_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_l1m1m2_noshield_o2subcell CAP3)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_l1m1m2_shieldpo_floatm3 MOS4)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_m1m2m3_shieldl1 CAP3)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_m1m2m3_shieldl1m5_floatm4 MOS4)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_noshield_o2 CAP3)
+ K(sky130_fd_pr__cap_vpp_04p4x04p6_m1m2_shieldl1 CAP3)
+ K(sky130_fd_pr__cap_vpp_05p9x05p9_m1m2m3m4_shieldl1_wafflecap CAP3)
+ K(sky130_fd_pr__cap_vpp_06p8x06p1_l1m1m2m3_shieldpom4 MOS4)
+ K(sky130_fd_pr__cap_vpp_06p8x06p1_m1m2m3_shieldl1m4 MOS4)
+ K(sky130_fd_pr__cap_vpp_08p6x07p8_l1m1m2_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_08p6x07p8_l1m1m2_noshield_o2subcell CAP3)
+ K(sky130_fd_pr__cap_vpp_08p6x07p8_l1m1m2_shieldpo_floatm3 MOS4)
+ K(sky130_fd_pr__cap_vpp_08p6x07p8_m1m2m3_shieldl1 CAP3)
+ K(sky130_fd_pr__cap_vpp_08p6x07p8_m1m2m3_shieldl1m5_floatm4 MOS4)
+ K(sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_08p6x07p8_m1m2_shieldl1 CAP3)
+ K(sky130_fd_pr__cap_vpp_11p3x11p3_m1m2m3m4_shieldl1_wafflecap CAP3)
+ K(sky130_fd_pr__cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5_nhv CAP3)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldpom5_x MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3_shieldm4 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3_shieldpom4 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2_shieldpom3 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldm5 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3_shieldl1 CAP3)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3_shieldl1m5_floatm4 MOS4)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_m1m2_shieldl1 CAP3)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_m1m4_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_11p5x11p7_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_11p5x23p1_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_22p5x11p7_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_22p5x23p1_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_33p6x11p7_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_33p6x23p1_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_44p7x11p7_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_44p7x23p1_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_55p8x11p7_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_55p8x11p7_pol1m1m2m3m4m5_noshield_m5pullin CAP3)
+ K(sky130_fd_pr__cap_vpp_55p8x23p1_pol1m1m2m3m4m5_noshield CAP3)
+ K(sky130_fd_pr__cap_vpp_55p8x23p1_pol1m1m2m3m4m5_noshield_m5pullin CAP3)
+ K(sky130_fd_pr__cap_vpp_55p8x23p1_pol1m1m2m3m4m5_noshield_test CAP3)
+ K(sky130_fd_bs_flash__special_sonosfet_star MOS4)
+ D(D$sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_lvt
+  T(S
+   R(l7 (-475 -2375) (300 4750))
+  )
+  T(G
+   R(l9 (-175 -2375) (350 4750))
+  )
+  T(D
+   R(l7 (175 -2375) (300 4750))
+  )
+  T(B
+   R(l5 (-175 -2375) (350 4750))
+  )
+ )
+ D(D$sky130_fd_pr__pfet_01v8_lvt$1 sky130_fd_pr__pfet_01v8_lvt
+  T(S
+   R(l7 (-475 -2375) (300 4750))
+  )
+  T(G
+   R(l9 (-175 -2375) (350 4750))
+  )
+  T(D
+   R(l7 (175 -2375) (300 4750))
+  )
+  T(B
+   R(l5 (-175 -2375) (350 4750))
+  )
+ )
+ D(D$sky130_fd_pr__nfet_01v8_lvt sky130_fd_pr__nfet_01v8_lvt
+  T(S
+   R(l8 (-475 -1050) (300 2100))
+  )
+  T(G
+   R(l9 (-175 -1050) (350 2100))
+  )
+  T(D
+   R(l8 (175 -1050) (300 2100))
+  )
+  T(B
+   R(l1 (-175 -1050) (350 2100))
+  )
+ )
+ X(inv_LVT
+  R((-7845 -4640) (5330 12950))
+  N(1 I(GND)
+   R(l6 (-6380 -4220) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (130 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -175) (170 170))
+   R(l6 (140 -165) (170 170))
+   R(l6 (130 -170) (170 170))
+   R(l6 (-3010 345) (170 170))
+   R(l6 (-170 -515) (170 170))
+   R(l6 (1505 -290) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (1345 -50) (170 170))
+   R(l6 (-170 175) (170 170))
+   R(l6 (-3360 910) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 -890) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 1270) (170 170))
+   R(l6 (3020 -890) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 550) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 -1610) (170 170))
+   R(l6 (-3360 1990) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 500) (170 170))
+   R(l6 (320 35) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (130 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -175) (170 170))
+   R(l6 (140 -165) (170 170))
+   R(l6 (130 -170) (170 170))
+   R(l6 (180 -375) (170 170))
+   R(l6 (-170 -480) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-1950 -1965) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (200 -1610) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l12 (-2690 -2675) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (-2700 895) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (200 -1610) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l14 (-2740 -2825) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (-4950 170) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   J(l30 GND (-2400 85))
+   R(l8 (-45 415) (300 2100))
+   R(l8 (-670 -2100) (300 2100))
+   Q(l2 (-1645 -2735) (0 3550) (170 0) (0 -3380) (365 0) (0 -170))
+   Q(l2 (0 0) (0 220) (2450 0) (0 -50) (205 0) (0 50) (170 0) (0 -220))
+   R(l2 (-170 220) (170 3330))
+   R(l2 (-3360 0) (535 170))
+   R(l2 (0 -170) (2825 170))
+   R(l11 (-3190 -3720) (3020 170))
+   R(l11 (-3190 -170) (170 3720))
+   R(l11 (3020 -3720) (170 3720))
+   R(l11 (-2825 -3670) (2450 170))
+   R(l11 (-2815 3330) (3020 170))
+   R(l11 (-4165 -4140) (5320 640))
+   R(l11 (-2935 580) (170 1770))
+   R(l11 (200 -1770) (170 1770))
+   R(l13 (-560 -2355) (590 605))
+   R(l13 (-2955 -1240) (5320 640))
+   R(l13 (-2965 600) (230 1730))
+   R(l13 (140 -1730) (230 1730))
+   R(l15 (-2955 -2970) (5320 640))
+   R(l15 (-5320 -640) (5320 640))
+  )
+  N(2 I(OUT)
+   R(l6 (-4315 2625) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 -4490) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-2060 -4490) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 -4490) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-75 -10455) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (1500 -1610) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l12 (-45 4355) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 -4490) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-2060 -4490) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 -4490) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-75 -10455) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (1500 -1610) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l14 (-35 4445) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-2040 -4310) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-220 -10275) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (1860 -1430) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l16 (-2175 2520) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (1810 -600) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-260 1470) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-2090 -4200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-270 -10205) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (1810 -1400) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   R(l16 (-200 200) (200 200))
+   J(l30 OUT (1285 1880))
+   R(l8 (-1710 -3630) (300 2100))
+   R(l8 (-1970 -2100) (300 2100))
+   R(l7 (1495 3980) (300 4750))
+   R(l7 (-2190 -4750) (300 4750))
+   R(l11 (1655 -4700) (170 4650))
+   R(l11 (-170 -4650) (170 4650))
+   R(l11 (-2060 -4650) (170 4650))
+   R(l11 (-170 -4650) (170 4650))
+   R(l11 (-75 -10615) (170 1770))
+   R(l11 (1500 -1770) (170 1770))
+   R(l13 (-75 4215) (230 4610))
+   R(l13 (-230 -4610) (230 4610))
+   R(l13 (-280 -4610) (330 4610))
+   R(l13 (-2170 -4610) (230 4610))
+   R(l13 (-280 -4610) (330 4610))
+   R(l13 (-280 -4610) (230 4610))
+   R(l13 (-410 -10575) (450 1730))
+   R(l13 (-175 -1730) (230 1730))
+   R(l13 (1505 -1730) (450 1730))
+   R(l13 (-515 -1730) (230 1730))
+   R(l15 (1135 1330) (590 990))
+   R(l15 (-3890 -50) (3890 800))
+   R(l15 (-3890 -800) (450 800))
+   R(l15 (1560 -800) (450 800))
+   R(l15 (-450 1165) (330 4610))
+   R(l15 (-2220 -4610) (330 4610))
+   R(l15 (-460 -10575) (450 1730))
+   R(l15 (1560 -1730) (450 1730))
+   R(l60 (-2450 0) (450 2320))
+   R(l60 (1560 -2320) (450 2320))
+   R(l60 (-2340 750) (330 1165))
+   R(l60 (1560 -1165) (330 1165))
+   R(l60 (-2340 -1965) (450 800))
+   R(l60 (1560 -800) (450 800))
+   R(l60 (-450 1165) (330 4610))
+   R(l60 (-2220 -4610) (330 4610))
+   R(l60 (-460 -10575) (450 1730))
+   R(l60 (1560 -1730) (450 1730))
+   R(l17 (-2450 0) (450 2320))
+   R(l17 (1560 -2320) (450 2320))
+   R(l17 (-2340 750) (330 1165))
+   R(l17 (1560 -1165) (330 1165))
+   R(l17 (-2340 -1965) (450 800))
+   R(l17 (1560 -800) (450 800))
+   R(l17 (-450 1165) (330 4610))
+   R(l17 (-2220 -4610) (330 4610))
+   R(l17 (-460 -10575) (450 1730))
+   R(l17 (1560 -1730) (450 1730))
+  )
+  N(3 I(IN)
+   R(l6 (-4640 2045) (170 170))
+   R(l6 (-1410 -170) (170 170))
+   R(l6 (-820 -170) (170 170))
+   R(l6 (2370 -170) (170 170))
+   R(l6 (-945 -3420) (170 170))
+   R(l6 (-1190 -170) (170 170))
+   R(l12 (975 3080) (170 170))
+   R(l12 (-1410 -170) (170 170))
+   R(l12 (-820 -170) (170 170))
+   R(l12 (2370 -170) (170 170))
+   R(l12 (-945 -3420) (170 170))
+   R(l12 (-1190 -170) (170 170))
+   R(l14 (-1050 790) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (1765 -470) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (765 -470) (150 150))
+   R(l14 (-150 170) (150 150))
+   R(l14 (-2075 -470) (150 150))
+   R(l14 (-150 170) (150 150))
+   J(l30 IN (-1940 5))
+   R(l10 (2910 1815) (170 170))
+   R(l10 (-1410 -170) (170 170))
+   R(l10 (-820 -170) (170 170))
+   R(l10 (2370 -170) (170 170))
+   R(l10 (-945 -3420) (170 170))
+   R(l10 (-1190 -170) (170 170))
+   R(l9 (885 3000) (350 330))
+   R(l9 (-350 0) (350 5150))
+   R(l9 (-1590 -5480) (350 330))
+   R(l9 (-350 0) (350 5150))
+   R(l9 (-1000 -5480) (350 330))
+   R(l9 (-350 0) (350 5150))
+   R(l9 (2190 -5480) (350 330))
+   R(l9 (-350 0) (350 5150))
+   R(l9 (-1125 -8730) (350 330))
+   R(l9 (-350 -2830) (350 2500))
+   R(l9 (-1370 0) (350 330))
+   R(l9 (-350 -2830) (350 2500))
+   R(l11 (805 3330) (330 170))
+   R(l11 (-1570 -170) (330 170))
+   R(l11 (-980 -170) (330 170))
+   R(l11 (2210 -170) (330 170))
+   R(l11 (-1105 -3420) (330 170))
+   R(l11 (-1350 -170) (330 170))
+   R(l13 (675 30) (370 665))
+   R(l13 (-1380 -665) (370 665))
+   R(l13 (-1275 660) (370 1925))
+   R(l13 (1545 -1925) (370 1920))
+   R(l13 (-1380 -1920) (370 1925))
+   R(l13 (1555 -1925) (370 1920))
+   R(l13 (-3200 -2580) (370 660))
+   R(l13 (1545 -660) (370 660))
+   R(l13 (545 -660) (370 660))
+   R(l13 (-2295 -660) (370 660))
+   R(l13 (760 1695) (370 230))
+   R(l13 (-1610 -230) (370 230))
+   R(l13 (-1020 -230) (370 230))
+   R(l13 (2170 -230) (370 230))
+   R(l13 (-1145 -3480) (370 230))
+   R(l13 (-1390 -230) (370 230))
+   R(l15 (-2320 665) (4260 660))
+   R(l15 (-4260 0) (590 1080))
+   R(l15 (470 -1740) (370 660))
+   R(l15 (1545 -660) (370 660))
+   R(l15 (545 -660) (370 660))
+   R(l15 (-2295 -660) (370 660))
+  )
+  N(4 I(VDD)
+   R(l5 (-7835 1220) (5320 6780))
+   R(l5 (-4060 -6225) (1560 5850))
+   R(l5 (-320 -5850) (1560 5850))
+   R(l5 (-910 -5850) (1560 5850))
+   R(l5 (-4100 -5850) (1560 5850))
+   R(l6 (-1465 -6100) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (225 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (225 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (160 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (-4210 3810) (170 170))
+   R(l6 (-170 -3770) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (4370 190) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -3050) (170 170))
+   R(l6 (-170 2350) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -1610) (170 170))
+   R(l6 (-170 910) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-4710 4150) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (230 1490) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (210 -170) (170 170))
+   R(l6 (210 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (190 -170) (170 170))
+   R(l6 (135 -170) (170 170))
+   R(l6 (25 -390) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-170 -530) (170 170))
+   R(l6 (-2440 1680) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (-170 -170) (170 170))
+   R(l6 (125 -5260) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-2060 -4490) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (1130 -4490) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (1720 -4490) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l6 (-170 190) (170 170))
+   R(l12 (-4105 790) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (190 -170) (170 170))
+   R(l12 (-2215 -5450) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-2060 -4490) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (1130 -4490) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (1720 -4490) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l12 (-170 190) (170 170))
+   R(l14 (-4155 640) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (-4950 170) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   R(l14 (170 -150) (150 150))
+   J(l30 VDD (-2475 -240))
+   R(l7 (-445 -5490) (300 4750))
+   R(l7 (1590 -4750) (300 4750))
+   R(l7 (-1600 -4750) (300 4750))
+   R(l7 (-2190 -4750) (300 4750))
+   R(l4 (-910 -5720) (170 6000))
+   R(l4 (0 -6000) (4540 170))
+   R(l4 (-170 0) (170 5830))
+   R(l4 (-4710 0) (4710 170))
+   R(l11 (-4710 -6170) (4540 170))
+   R(l11 (-4540 -170) (170 6000))
+   R(l11 (4370 -6000) (170 6000))
+   R(l11 (-4710 0) (4710 170))
+   R(l11 (-5015 -25) (5320 640))
+   R(l11 (-2450 -5765) (170 4650))
+   R(l11 (-2060 -4650) (170 4650))
+   R(l11 (1130 -4650) (170 4650))
+   R(l11 (1720 -4650) (170 4650))
+   R(l13 (-3550 -4630) (390 5105))
+   R(l13 (1300 -5105) (360 5110))
+   R(l13 (1300 -5110) (390 5105))
+   R(l13 (-4530 0) (5320 640))
+   R(l13 (-2480 -5745) (230 4610))
+   R(l13 (-2120 -4610) (230 4610))
+   R(l13 (1070 -4610) (230 4610))
+   R(l13 (1660 -4610) (230 4610))
+   R(l15 (-4370 495) (5320 640))
+   R(l15 (-5320 -640) (5320 640))
+  )
+  P(1 I(GND))
+  P(2 I(OUT))
+  P(3 I(IN))
+  P(4 I(VDD))
+  D(1 D$sky130_fd_pr__pfet_01v8_lvt
+   D(D$sky130_fd_pr__pfet_01v8_lvt$1 Y(650 0))
+   D(D$sky130_fd_pr__pfet_01v8_lvt Y(-1890 0))
+   D(D$sky130_fd_pr__pfet_01v8_lvt$1 Y(-1240 0))
+   C(0 S S)
+   C(1 S D)
+   C(2 S S)
+   C(3 S D)
+   C(0 G G)
+   C(1 G G)
+   C(2 G G)
+   C(3 G G)
+   C(0 D D)
+   C(1 D S)
+   C(2 D D)
+   C(3 D S)
+   C(0 B B)
+   C(1 B B)
+   C(2 B B)
+   C(3 B B)
+   Y(-4555 4870)
+   E(L 350000)
+   E(W 19000000)
+   E(AS 4.275e+12)
+   E(AD 4.275e+12)
+   E(PS 30300000)
+   E(PD 30300000)
+   T(S 4)
+   T(G 3)
+   T(D 2)
+   T(B 4)
+  )
+  D(5 D$sky130_fd_pr__nfet_01v8_lvt
+   D(D$sky130_fd_pr__nfet_01v8_lvt Y(1020 0))
+   C(0 S S)
+   C(1 S D)
+   C(0 G G)
+   C(1 G G)
+   C(0 D D)
+   C(1 D S)
+   C(0 B B)
+   C(1 B B)
+   Y(-5700 -2535)
+   E(L 350000)
+   E(W 4200000)
+   E(AS 1.26e+12)
+   E(AD 1.26e+12)
+   E(PS 9600000)
+   E(PD 9600000)
+   T(S 2)
+   T(G 3)
+   T(D 1)
+   T(B 1)
+  )
+ )
+)
+H(
+ K(SKY130_FD_PR__NFET_01V8_LVT MOS4)
+ K(SKY130_FD_PR__PFET_01V8_LVT MOS4)
+ X(INV_LVT
+  N(1 I(VDD))
+  N(2 I(IN))
+  N(3 I(OUT))
+  N(4 I(GND))
+  P(1 I(VDD))
+  P(2 I(IN))
+  P(3 I(OUT))
+  P(4 I(GND))
+  D(1 SKY130_FD_PR__NFET_01V8_LVT
+   I('1')
+   E(L 350000)
+   E(W 4200000)
+   E(AS 0)
+   E(AD 0)
+   E(PS 0)
+   E(PD 0)
+   T(S 4)
+   T(G 2)
+   T(D 3)
+   T(B 4)
+  )
+  D(2 SKY130_FD_PR__PFET_01V8_LVT
+   I('2')
+   E(L 350000)
+   E(W 19000000)
+   E(AS 0)
+   E(AD 0)
+   E(PS 0)
+   E(PD 0)
+   T(S 1)
+   T(G 2)
+   T(D 3)
+   T(B 1)
+  )
+ )
+)
+Z(
+ X(inv_LVT INV_LVT 1
+  Z(
+   N(1 4 1)
+   N(3 2 1)
+   N(2 3 1)
+   N(4 1 1)
+   P(0 3 1)
+   P(2 1 1)
+   P(1 2 1)
+   P(3 0 1)
+   D(5 1 1)
+   D(1 2 1)
+  )
+ )
+)

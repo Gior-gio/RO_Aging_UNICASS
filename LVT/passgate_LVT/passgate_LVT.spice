@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/LVT/passgate_LVT/passgate_LVT.sch
+.subckt passgate_LVT CLKN IN OUT CLK GND VDD
+*.PININFO CLKN:B CLK:B IN:B OUT:B VDD:B GND:B
+M3 IN CLK OUT GND sky130_fd_pr__nfet_01v8_lvt L=0.35 W=0.45 nf=1 m=1
+M1 IN CLKN OUT VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=0.45 nf=1 m=1
+.ends
+.end

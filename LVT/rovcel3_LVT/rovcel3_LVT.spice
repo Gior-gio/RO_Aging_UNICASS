@@ -1,0 +1,22 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/LVT/rovcel3_LVT/rovcel3_LVT.sch
+.subckt rovcel3_LVT VDD GND RON IN OUT RO DUT_Gate
+*.PININFO OUT:B DUT_Gate:B RON:B RO:B IN:B VDD:B GND:B
+M0 net2 RO GND GND sky130_fd_pr__nfet_01v8_lvt L=0.35 W=2.1 nf=1 m=20
+M1 OUT IN net2 GND sky130_fd_pr__nfet_01v8_lvt L=0.35 W=2.1 nf=1 m=2
+M2 OUT IN net1 VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4.75 nf=1 m=4
+M3 net1 RON VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4.75 nf=1 m=40
+* noconn #net3
+x2 RO OUT net3 RON GND VDD passgate_LVT
+x3 RO OUT DUT_Gate RON GND VDD passgate_LVT
+.ends
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/LVT/passgate_LVT/passgate_LVT.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/LVT/passgate_LVT/passgate_LVT.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/LVT/passgate_LVT/passgate_LVT.sch
+.subckt passgate_LVT CLKN IN OUT CLK GND VDD
+*.PININFO CLKN:B CLK:B IN:B OUT:B VDD:B GND:B
+M3 IN CLK OUT GND sky130_fd_pr__nfet_01v8_lvt L=0.35 W=0.45 nf=1 m=1
+M1 IN CLKN OUT VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=0.45 nf=1 m=1
+.ends
+
+.end

@@ -40,10 +40,10 @@ lab=OUT}
 N 240 -50 260 -50 {
 lab=GND}
 C {sky130_fd_pr/nfet3_01v8_lvt.sym} 60 -50 0 0 {name=M1
-W=4.2
+W=2.1
 L=0.35
-nf=2
-mult=1
+nf=1
+mult=2
 body=GND
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -55,10 +55,10 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 60 -150 0 0 {name=M2
-W=19
+W=4.75
 L=0.35
-nf=4
-mult=1
+nf=1
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
