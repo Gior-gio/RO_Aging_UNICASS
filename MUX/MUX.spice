@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/RO_Aging_UNICASS/MUX/MUX.sch
-**.subckt MUX VDD VSS In[0],In[1],In[2],In[3],In[4],In[5],In[6],In[7],In[8],In[9],In[10],In[11],In[12],In[13],In[14],In[15] Out
+.subckt MUX VDD VSS In[0],In[1],In[2],In[3],In[4],In[5],In[6],In[7],In[8],In[9],In[10],In[11],In[12],In[13],In[14],In[15] Out
 *+ S[0],S[1],S[2],S[3]
 *.iopin VDD
 *.iopin VSS
@@ -45,9 +45,9 @@ X[11] S[0]B VDD R0[5] In[11] VSS S[0] MUX_TG
 *.iopin VSS
 *.iopin AB
 *.iopin A
-XM1 In A Out VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+M1 In A Out VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XM2 In AB Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+M2 In AB Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
 .ends
 
@@ -60,9 +60,9 @@ XM2 In AB Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) *
 *.iopin Out
 *.iopin VSS
 *.iopin In
-XM3 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+M3 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XM1 Out In VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+M1 Out In VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
 .ends
 

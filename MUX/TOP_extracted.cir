@@ -1,0 +1,223 @@
+* Extracted by KLayout with SKY130 LVS runset on : 04/11/2024 01:29
+
+.SUBCKT TOP
+X$1 VDD|VSS vias_gen$5
+X$2 VDD|VSS S[0] \$6 In[11] VSS \$5 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$3 VDD|VSS \$21 S[3] VSS VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue inverter_mux
+X$4 VDD|VSS \$25 S[1] VSS VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue inverter_mux
+X$5 VDD|VSS \$5 S[0] VSS VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue inverter_mux
+X$6 VDD|VSS \$22 S[2] VSS VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue inverter_mux
+X$7 VDD|VSS \$25 \$132 \$139 VDD|VSS S[1]
++ VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue MUX_TG
+X$8 VDD|VSS \$5 \$139 In[0] VDD|VSS S[0] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$9 VDD|VSS \$25 \$80 \$82 VSS S[1] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$10 VDD|VSS S[1] \$132 \$119 VSS \$25 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$11 VDD|VSS \$5 \$119 In[2] VSS S[0] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$12 VDD|VSS S[2] \$94 \$80 VSS \$22 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$13 VDD|VSS S[0] \$82 In[5] VSS \$5 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$14 VDD|VSS S[1] \$14 \$6 VSS \$25 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$15 VDD|VSS \$5 \$18 In[8] VSS S[0] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$16 VDD|VSS \$25 \$14 \$18 VSS S[1] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$17 VDD|VSS S[3] \$11 \$12 VSS \$21 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$18 VDD|VSS \$5 \$62 In[6] VSS S[0] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$19 VDD|VSS \$5 \$6 In[10] VSS S[0] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$20 VDD|VSS S[1] \$80 \$62 VSS \$25 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$21 VDD|VSS \$5 \$82 In[4] VSS S[0] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$22 VDD|VSS \$22 \$94 \$132 VSS S[2] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$23 VDD|VSS S[0] \$139 In[1] VSS \$5 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$24 VDD|VSS \$22 \$12 \$14 VSS S[2] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$25 VDD|VSS \$21 \$11 \$94 VSS S[3] VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$26 VDD|VSS S[0] \$62 In[7] VSS \$5 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$27 VDD|VSS S[0] \$119 In[3] VSS \$5 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$28 VDD|VSS S[0] \$18 In[9] VSS \$5 VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
++ MUX_TG
+X$29 VDD|VSS vias_gen$5
+X$30 VDD|VSS vias_gen$5
+X$31 VDD|VSS vias_gen$5
+X$32 VDD|VSS vias_gen$5
+X$33 VDD|VSS vias_gen$5
+X$34 VDD|VSS vias_gen$5
+X$35 VDD|VSS vias_gen$5
+X$36 VDD|VSS vias_gen$5
+X$37 VDD|VSS vias_gen$5
+X$38 VDD|VSS vias_gen$5
+X$39 VDD|VSS vias_gen$5
+X$40 VDD|VSS vias_gen$5
+X$41 S[0] vias_gen
+X$42 S[0] vias_gen$2
+X$43 S[0] vias_gen
+X$44 S[0] vias_gen
+X$45 S[0] vias_gen
+X$46 S[0] vias_gen
+X$47 S[0] vias_gen
+X$48 S[0] vias_gen
+X$49 S[0] vias_gen
+X$50 S[0] vias_gen
+X$51 S[0] vias_gen
+X$52 S[0] vias_gen
+X$53 S[0] vias_gen
+X$54 S[0] vias_gen
+X$55 S[0] vias_gen
+X$56 S[0] vias_gen
+X$57 S[0] vias_gen
+X$58 S[0] vias_gen
+X$59 S[0] vias_gen
+X$60 S[0] vias_gen
+X$61 S[0] vias_gen
+X$62 S[0] vias_gen
+X$63 S[0] vias_gen
+X$64 S[0] vias_gen
+X$65 VSS vias_gen$5
+X$66 VSS vias_gen$5
+X$67 VSS vias_gen$5
+X$68 VSS vias_gen$5
+X$69 VSS vias_gen$5
+X$70 VSS vias_gen$5
+X$71 VSS vias_gen$5
+X$72 VSS vias_gen$5
+X$73 VSS vias_gen$5
+X$74 VSS vias_gen$5
+X$75 VSS vias_gen$5
+X$76 \$5 vias_gen$3
+X$77 \$5 vias_gen
+X$78 \$5 vias_gen
+X$79 \$5 vias_gen
+X$80 \$5 vias_gen
+X$81 \$5 vias_gen
+X$82 \$5 vias_gen
+X$83 \$5 vias_gen
+X$84 \$5 vias_gen
+X$85 \$5 vias_gen
+X$86 \$5 vias_gen
+X$87 \$5 vias_gen
+X$88 \$5 vias_gen
+X$89 \$5 vias_gen$4
+X$90 \$6 vias_gen$2
+X$91 \$6 vias_gen$2
+X$92 S[3] vias_gen$2
+X$93 S[3] vias_gen
+X$94 S[3] vias_gen
+X$95 S[3] vias_gen
+X$96 \$11 vias_gen$2
+X$97 \$11 vias_gen$2
+X$98 \$12 vias_gen$2
+X$99 \$12 vias_gen$2
+X$100 S[1] vias_gen$2
+X$101 S[1] vias_gen
+X$102 S[1] vias_gen
+X$103 S[1] vias_gen
+X$104 S[1] vias_gen
+X$105 S[1] vias_gen
+X$106 S[1] vias_gen
+X$107 S[1] vias_gen
+X$108 \$14 vias_gen$2
+X$109 \$14 vias_gen$2
+X$110 \$14 vias_gen$2
+X$111 \$18 vias_gen$2
+X$112 \$18 vias_gen$2
+X$113 \$21 vias_gen$3
+X$114 \$21 vias_gen
+X$115 \$21 vias_gen
+X$116 \$21 vias_gen$4
+X$117 \$22 vias_gen$3
+X$118 \$22 vias_gen
+X$119 \$22 vias_gen
+X$120 \$22 vias_gen
+X$121 \$22 vias_gen$4
+X$122 \$25 vias_gen$3
+X$123 \$25 vias_gen
+X$124 \$25 vias_gen
+X$125 \$25 vias_gen
+X$126 \$25 vias_gen
+X$127 \$25 vias_gen
+X$128 \$25 vias_gen
+X$129 \$25 vias_gen$4
+X$130 S[2] vias_gen$2
+X$131 S[2] vias_gen
+X$132 S[2] vias_gen
+X$133 S[2] vias_gen
+X$134 S[2] vias_gen
+X$135 \$62 vias_gen$2
+X$136 \$62 vias_gen$2
+X$137 \$80 vias_gen$2
+X$138 \$80 vias_gen$2
+X$139 \$80 vias_gen$2
+X$140 \$82 vias_gen$2
+X$141 \$82 vias_gen$2
+X$142 \$94 vias_gen$2
+X$143 \$94 vias_gen$2
+X$144 \$94 vias_gen$2
+X$145 \$119 vias_gen$2
+X$146 \$119 vias_gen$2
+X$147 \$132 vias_gen$2
+X$148 \$132 vias_gen$2
+X$149 \$132 vias_gen$2
+X$150 \$139 vias_gen$2
+X$151 \$139 vias_gen$2
+.ENDS TOP
+
+.SUBCKT vias_gen$4 \$1
+.ENDS vias_gen$4
+
+.SUBCKT vias_gen$3 \$1
+.ENDS vias_gen$3
+
+.SUBCKT vias_gen$5 \$1
+.ENDS vias_gen$5
+
+.SUBCKT vias_gen$2 \$1
+.ENDS vias_gen$2
+
+.SUBCKT inverter_mux VSS Out In VDD VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
+M$1 VDD In Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.425 AD=1.5675
++ PS=10.1 PD=5.41
+M$2 Out In VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.5675 AD=1.5675
++ PS=5.41 PD=5.41
+M$3 VDD In Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.5675 AD=1.5675
++ PS=5.41 PD=5.41
+M$4 Out In VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.5675 AD=1.425
++ PS=5.41 PD=10.1
+M$5 Out In VSS VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue sky130_fd_pr__nfet_01v8
++ L=0.15 W=2.1 AS=0.63 AD=0.693 PS=4.8 PD=2.76
+M$6 VSS In Out VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue sky130_fd_pr__nfet_01v8
++ L=0.15 W=2.1 AS=0.693 AD=0.63 PS=2.76 PD=4.8
+.ENDS inverter_mux
+
+.SUBCKT vias_gen \$1
+.ENDS vias_gen
+
+.SUBCKT MUX_TG VSS A Out In VDD AB VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue
+M$1 In AB Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.425 AD=1.5675
++ PS=10.1 PD=5.41
+M$2 Out AB In VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.5675 AD=1.5675
++ PS=5.41 PD=5.41
+M$3 In AB Out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.5675 AD=1.5675
++ PS=5.41 PD=5.41
+M$4 Out AB In VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.75 AS=1.5675 AD=1.425
++ PS=5.41 PD=10.1
+M$5 Out A In VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue sky130_fd_pr__nfet_01v8
++ L=0.15 W=2.1 AS=0.63 AD=0.693 PS=4.8 PD=2.76
+M$6 In A Out VSS\xc2\xa0\x2drd\xc2\xa0scale\x3dtrue sky130_fd_pr__nfet_01v8
++ L=0.15 W=2.1 AS=0.693 AD=0.63 PS=2.76 PD=4.8
+.ENDS MUX_TG
