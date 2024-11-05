@@ -1,0 +1,62 @@
+* Extracted by KLayout with SKY130 LVS runset on : 05/11/2024 13:55
+
+.SUBCKT MUX_TG
+X$1 VSS vias_gen$1
+X$2 Out A In nfet$1
+X$3 A vias_gen$9
+X$4 In A Out nfet$1
+X$5 Out vias_gen
+X$6 Out vias_gen
+X$7 Out vias_gen$4
+X$8 Out AB In VDD pfet
+X$9 In AB Out VDD pfet
+X$10 Out vias_gen$4
+X$11 Out AB In VDD pfet
+X$12 In AB Out VDD pfet
+X$13 Out vias_gen$2
+X$14 Out vias_gen$2
+X$15 In vias_gen$6
+X$16 In vias_gen$8
+X$17 In vias_gen$8
+X$18 VDD vias_gen$1
+X$19 AB vias_gen$9
+M$1 In AB Out VDD sky130_fd_pr__pfet_01v8 L=150000 W=4750000 AS=1.425e+12
++ AD=1.5675e+12 PS=10100000 PD=5410000
+M$2 Out AB In VDD sky130_fd_pr__pfet_01v8 L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$3 In AB Out VDD sky130_fd_pr__pfet_01v8 L=150000 W=4750000 AS=1.5675e+12
++ AD=1.5675e+12 PS=5410000 PD=5410000
+M$4 Out AB In VDD sky130_fd_pr__pfet_01v8 L=150000 W=4750000 AS=1.5675e+12
++ AD=1.425e+12 PS=5410000 PD=10100000
+M$5 Out A In VSS sky130_fd_pr__nfet_01v8 L=150000 W=2100000 AS=630000000000
++ AD=693000000000 PS=4800000 PD=2760000
+M$6 In A Out VSS sky130_fd_pr__nfet_01v8 L=150000 W=2100000 AS=693000000000
++ AD=630000000000 PS=2760000 PD=4800000
+.ENDS MUX_TG
+
+.SUBCKT pfet \$1 \$2 \$3 \$4
+.ENDS pfet
+
+.SUBCKT vias_gen$4 \$1
+.ENDS vias_gen$4
+
+.SUBCKT vias_gen$6 \$1
+.ENDS vias_gen$6
+
+.SUBCKT vias_gen$9 \$1
+.ENDS vias_gen$9
+
+.SUBCKT vias_gen$8 \$1
+.ENDS vias_gen$8
+
+.SUBCKT vias_gen$2 \$1
+.ENDS vias_gen$2
+
+.SUBCKT nfet$1 \$1 \$2 \$3
+.ENDS nfet$1
+
+.SUBCKT vias_gen$1 \$1
+.ENDS vias_gen$1
+
+.SUBCKT vias_gen \$1
+.ENDS vias_gen

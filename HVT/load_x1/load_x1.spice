@@ -1,0 +1,9 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sch
+.subckt load_x1 In Out VDD VSS AB A
+*.PININFO In:B Out:B VDD:B VSS:B AB:B A:B
+M1 In A Out VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+M2 In AB Out VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+.end
