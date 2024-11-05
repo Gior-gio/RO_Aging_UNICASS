@@ -101,7 +101,7 @@ C {iopin.sym} 270 -140 2 0 {name=p24 lab=DUT_Gate}
 C {iopin.sym} 270 -100 2 0 {name=p25 lab=OUT}
 C {lab_pin.sym} 620 -140 1 0 {name=p7 sig_type=std_logic lab=A[9] }
 C {lab_pin.sym} 930 -140 1 0 {name=p29 sig_type=std_logic lab=A[10]}
-C {lab_pin.sym} 1250 -140 1 0 {name=p52 sig_type=std_logic lab=A[11] }
+C {lab_pin.sym} 1250 -140 3 0 {name=p52 sig_type=std_logic lab=A[11] }
 C {iopin.sym} 270 -20 2 0 {name=p17 lab=GND}
 C {iopin.sym} 270 -60 2 0 {name=p8 lab=VDD}
 C {lab_pin.sym} 1060 -600 3 1 {name=p78 sig_type=std_logic lab=VDD}
@@ -136,6 +136,6 @@ C {lab_pin.sym} 670 -120 3 0 {name=p28 sig_type=std_logic lab=RO}
 C {/foss/designs/RO_Aging_UNICASS/LVT/rovcel2_LVT/rovcel2_LVT.sym} 1080 -420 0 1 {name=x1[1:8]}
 C {/foss/designs/RO_Aging_UNICASS/LVT/rovcel2_LVT/rovcel2_LVT.sym} 460 -40 0 0 {name=x2}
 C {/foss/designs/RO_Aging_UNICASS/LVT/rovcel2_LVT/rovcel2_LVT.sym} 1620 -40 0 0 {name=x6}
-C {/foss/designs/RO_Aging_UNICASS/LVT/rovcel1_LVT/rovcel1_LVT.sym} 870 40 0 0 {name=x1}
 C {/foss/designs/RO_Aging_UNICASS/LVT/rovcel3_LVT/rovcel3_LVT.sym} 750 40 0 0 {name=x3}
 C {/foss/designs/RO_Aging_UNICASS/LVT/rovcel4_LVT/rovcel4_LVT.sym} 1290 0 0 0 {name=x4}
+C {/foss/designs/RO_Aging_UNICASS/LVT/rovcel1_x10_LVT/rovcel1_x10_LVT.sym} 870 40 0 0 {name=x1}

@@ -99,7 +99,7 @@ C {lab_pin.sym} 520 -350 0 1 {name=p3 sig_type=std_logic lab=RON
 C {iopin.sym} 520 -260 0 0 {name=p5 lab=OUT}
 C {iopin.sym} 100 -390 2 0 {name=p13 lab=RON
 
-}
+W=4.75}
 C {iopin.sym} 40 -260 2 0 {name=p15 lab=IN
 }
 C {noconn.sym} 440 -430 1 0 {name=l1}

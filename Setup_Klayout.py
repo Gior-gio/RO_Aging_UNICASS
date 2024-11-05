@@ -12,7 +12,8 @@ Arguments:
     both with the SAME name as the cell folder.
 
     To extract the .spice files in xschem, go to Simulation > LVS 
-    and check the option "LVS_Netlist + Top Level is a .spice".
+    and check the option "LVS_Netlist + Top Level is a .subckt", 
+    DESELECT the others and click on "Netlist".
 
     If no arguments are provided, the script will open KLayout in Edit mode.
     Use '--help' or '-h' to display this help message.
@@ -123,7 +124,8 @@ def print_help():
     both with the SAME name as the cell folder.
 
     To extract the .spice files in xschem, go to Simulation > LVS 
-    and check the option "LVS_Netlist + Top Level is a .spice".
+    and check the option "LVS_Netlist + Top Level is a .subckt", 
+    DESELECT the others and click on "Netlist".
 
     If no arguments are provided, the script will open KLayout in Edit mode.
     Use '--help' or '-h' to display this help message.
