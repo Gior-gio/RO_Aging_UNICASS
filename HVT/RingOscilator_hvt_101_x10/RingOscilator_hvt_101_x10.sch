@@ -5,182 +5,8 @@ K {}
 V {}
 S {}
 E {}
-L 4 890 -330 890 330 {}
-P 4 4 890 -330 1140 -330 1140 330 890 330 {}
-N 500 -150 500 -90 {
-lab=#net1}
-N 500 -30 500 50 {
-lab=A[99]}
-N 430 -60 460 -60 {
-lab=A[98]}
-N 430 -60 430 80 {
-lab=A[98]}
-N 430 80 460 80 {
-lab=A[98]}
-N 500 -60 580 -60 {
-lab=VDD}
-N 500 -180 580 -180 {
-lab=VDD}
-N 500 -260 500 -210 {
-lab=VDD}
-N 400 -180 460 -180 {
-lab=NOT_RO_CON}
-N 500 110 500 170 {
-lab=#net2}
-N 500 80 580 80 {
-lab=VSS}
-N 500 230 500 290 {
-lab=VSS}
-N 500 200 580 200 {
-lab=VSS}
-N 430 200 460 200 {
-lab=RO_CON}
-N 400 200 430 200 {
-lab=RO_CON}
-N 400 10 430 10 {
-lab=A[98]}
-N 500 10 570 10 {
-lab=A[99]}
-N 720 -240 720 -200 {
-lab=RO_CON}
-N 720 -70 720 -30 {
-lab=NOT_RO_CON}
-N 720 50 720 80 {
-lab=RO_CON}
-N 720 210 720 250 {
-lab=NOT_RO_CON}
-N 800 -170 840 -170 {
-lab=VDD}
-N 800 -90 840 -90 {
-lab=VSS}
-N 800 -130 840 -130 {
-lab=#net3}
-N 800 110 840 110 {
-lab=VDD}
-N 800 150 840 150 {
-lab=DUT_GATE}
-N 800 190 840 190 {
-lab=VSS}
-N 610 -130 640 -130 {
-lab=A[99]}
-N 610 -130 610 150 {
-lab=A[99]}
-N 610 150 640 150 {
-lab=A[99]}
-N 570 10 610 10 {
-lab=A[99]}
-N 1040 -150 1040 -90 {
-lab=#net4}
-N 1040 -30 1040 50 {
-lab=A[100]}
-N 970 -60 1000 -60 {
-lab=A[99]}
-N 970 -60 970 80 {
-lab=A[99]}
-N 970 80 1000 80 {
-lab=A[99]}
-N 1040 -60 1120 -60 {
-lab=VDD}
-N 1040 -180 1120 -180 {
-lab=VDD}
-N 1040 -260 1040 -210 {
-lab=VDD}
-N 940 -180 1000 -180 {
-lab=DUT_FOOTER}
-N 1040 110 1040 170 {
-lab=#net5}
-N 1040 80 1120 80 {
-lab=VSS}
-N 1040 230 1040 290 {
-lab=VSS}
-N 1040 200 1120 200 {
-lab=VSS}
-N 970 200 1000 200 {
-lab=DUT_HEADER}
-N 940 200 970 200 {
-lab=DUT_HEADER}
-N 940 10 970 10 {
-lab=A[99]}
-N 1040 10 1110 10 {
-lab=A[100]}
-N 1260 -300 1260 -260 {
-lab=RO_CON}
-N 1260 -50 1260 -10 {
-lab=NOT_RO_CON}
-N 1340 -130 1380 -130 {
-lab=DRAIN_SENSE}
-N 1340 150 1380 150 {
-lab=DRAIN_FORCE}
-N 1150 -130 1180 -130 {
-lab=A[100]}
-N 1150 -130 1150 150 {
-lab=A[100]}
-N 1150 150 1180 150 {
-lab=A[100]}
-N 1110 10 1150 10 {
-lab=A[100]}
-N 840 150 890 150 {
-lab=DUT_GATE}
-N 1380 -130 1450 -130 {
-lab=DRAIN_SENSE}
-N 1380 150 1450 150 {
-lab=DRAIN_FORCE}
-N 1590 -30 1590 50 {
-lab=A[101]}
-N 1590 -150 1590 -90 {
-lab=#net6}
-N 1590 -260 1590 -210 {
-lab=VDD}
-N 1590 110 1590 290 {
-lab=VSS}
-N 1590 80 1670 80 {
-lab=VSS}
-N 1590 -60 1670 -60 {
-lab=VDD}
-N 1590 -180 1670 -180 {
-lab=VDD}
-N 1520 -60 1550 -60 {
-lab=A[100]}
-N 1520 -60 1520 80 {
-lab=A[100]}
-N 1520 80 1550 80 {
-lab=A[100]}
-N 1470 10 1520 10 {
-lab=A[100]}
-N 1590 10 1660 10 {
-lab=A[101]}
-N 1450 10 1470 10 {
-lab=A[100]}
-N 1490 -180 1550 -180 {
-lab=NOT_RO_CON}
-N 1810 -240 1810 -200 {
-lab=VDD}
-N 1810 -70 1810 -30 {
-lab=NOT_RO_CON}
-N 1810 50 1810 80 {
-lab=VDD}
-N 1810 210 1810 250 {
-lab=NOT_RO_CON}
-N 1890 -170 1930 -170 {
-lab=VDD}
-N 1890 -90 1930 -90 {
-lab=VSS}
-N 1890 -130 1930 -130 {
-lab=#net7}
-N 1890 110 1930 110 {
-lab=VDD}
-N 1890 150 1930 150 {
-lab=VSS}
-N 1890 190 1930 190 {
-lab=VSS}
-N 1700 -130 1730 -130 {
-lab=A[101]}
-N 1700 -130 1700 150 {
-lab=A[101]}
-N 1700 150 1730 150 {
-lab=A[101]}
-N 1660 10 1700 10 {
-lab=A[101]}
+L 4 920 -320 920 340 {}
+P 4 4 920 -320 1170 -320 1170 340 920 340 {}
 N 590 -590 650 -590 {
 lab=VDD}
 N 590 -550 650 -550 {
@@ -209,194 +35,146 @@ N 70 90 70 130 {
 lab=VSS}
 N 280 10 320 10 {
 lab=A[2:98]}
-N 2090 -100 2090 -70 {
+N 490 -150 490 -100 {
 lab=VDD}
-N 2090 90 2090 130 {
-lab=VSS}
-N 2300 10 2340 10 {
-lab=A[1]}
-N 1970 10 2010 10 {
-lab=A[101]}
-N 1200 -220 1230 -220 {
-lab=A[100]}
-N 1200 -220 1200 -90 {
-lab=A[100]}
-N 1200 -90 1230 -90 {
-lab=A[100]}
-N 1180 -130 1200 -130 {
-lab=A[100]}
-N 1290 -220 1310 -220 {
-lab=DRAIN_SENSE}
-N 1310 -220 1310 -90 {
-lab=DRAIN_SENSE}
-N 1290 -90 1310 -90 {
-lab=DRAIN_SENSE}
-N 1310 -130 1340 -130 {
-lab=DRAIN_SENSE}
-N 1260 -130 1260 -90 {
-lab=VSS}
-N 1260 -220 1260 -180 {
-lab=VDD}
-N 1260 10 1260 50 {
-lab=RO_CON}
-N 1260 260 1260 300 {
+N 390 -60 450 -60 {
 lab=NOT_RO_CON}
-N 1200 90 1230 90 {
-lab=A[100]}
-N 1200 90 1200 220 {
-lab=A[100]}
-N 1200 220 1230 220 {
-lab=A[100]}
-N 1290 90 1310 90 {
-lab=DRAIN_FORCE}
-N 1310 90 1310 220 {
-lab=DRAIN_FORCE}
-N 1290 220 1310 220 {
-lab=DRAIN_FORCE}
-N 1260 180 1260 220 {
+N 490 130 490 190 {
 lab=VSS}
-N 1260 90 1260 130 {
+N 420 90 450 90 {
+lab=RO_CON}
+N 390 90 420 90 {
+lab=RO_CON}
+N 400 10 430 10 {
+lab=A[98]}
+N 510 10 580 10 {
+lab=A[99]}
+N 730 -240 730 -200 {
+lab=RO_CON}
+N 730 -70 730 -30 {
+lab=NOT_RO_CON}
+N 730 50 730 80 {
+lab=RO_CON}
+N 730 210 730 250 {
+lab=NOT_RO_CON}
+N 810 -170 850 -170 {
 lab=VDD}
-N 1310 150 1340 150 {
-lab=DRAIN_FORCE}
-N 1180 150 1200 150 {
+N 810 -90 850 -90 {
+lab=VSS}
+N 810 -130 850 -130 {
+lab=#net1}
+N 810 110 850 110 {
+lab=VDD}
+N 810 150 850 150 {
+lab=DUT_GATE}
+N 810 190 850 190 {
+lab=VSS}
+N 620 -130 650 -130 {
+lab=A[99]}
+N 620 -130 620 150 {
+lab=A[99]}
+N 620 150 650 150 {
+lab=A[99]}
+N 580 10 620 10 {
+lab=A[99]}
+N 1070 -150 1070 -100 {
+lab=VDD}
+N 970 -60 1030 -60 {
+lab=DUT_FOOTER}
+N 1070 130 1070 190 {
+lab=VSS}
+N 1000 90 1030 90 {
+lab=DUT_HEADER}
+N 970 90 1000 90 {
+lab=DUT_HEADER}
+N 980 10 1010 10 {
+lab=A[99]}
+N 1090 10 1160 10 {
 lab=A[100]}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 480 -60 0 0 {name=M3
-W=19
-L=0.15
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 480 -180 0 0 {name=M4
-W=19
-L=0.15
-nf=1
-mult=10
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {lab_wire.sym} 500 -260 0 0 {name=p8 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 580 -180 0 0 {name=p11 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 580 -60 0 0 {name=p15 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 580 80 0 0 {name=p16 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 580 200 0 0 {name=p17 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 500 290 0 0 {name=p18 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 420 10 0 0 {name=p19 sig_type=std_logic lab=A[98]}
-C {lab_wire.sym} 570 10 0 0 {name=p20 sig_type=std_logic lab=A[99]}
-C {lab_wire.sym} 840 -170 0 0 {name=p23 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 840 -90 0 0 {name=p24 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 840 110 0 0 {name=p25 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 840 190 0 0 {name=p26 sig_type=std_logic lab=VSS}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1020 -60 0 0 {name=M7
-W=19
-L=0.15
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1020 -180 0 0 {name=M8
-W=19
-L=0.15
-nf=1
-mult=10
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {lab_wire.sym} 1040 -260 0 0 {name=p29 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1120 -180 0 0 {name=p30 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1120 -60 0 0 {name=p31 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1120 80 0 0 {name=p32 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1120 200 0 0 {name=p33 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1040 290 0 0 {name=p34 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 960 10 0 0 {name=p35 sig_type=std_logic lab=A[99]}
-C {lab_wire.sym} 1110 10 0 0 {name=p36 sig_type=std_logic lab=A[100]}
-C {lab_wire.sym} 1260 -180 0 0 {name=p39 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1260 -110 0 0 {name=p40 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 460 -180 0 0 {name=p45 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} 450 200 0 0 {name=p21 sig_type=std_logic lab=RO_CON}
-C {lab_wire.sym} 720 70 0 0 {name=p22 sig_type=std_logic lab=RO_CON}
-C {lab_wire.sym} 720 -220 0 0 {name=p27 sig_type=std_logic lab=RO_CON}
-C {lab_wire.sym} 720 -30 0 0 {name=p28 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} 720 250 0 0 {name=p37 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} 890 150 0 0 {name=p38 sig_type=std_logic lab=DUT_GATE}
-C {lab_wire.sym} 990 -180 0 0 {name=p43 sig_type=std_logic lab=DUT_FOOTER}
-C {lab_wire.sym} 990 200 0 0 {name=p44 sig_type=std_logic lab=DUT_HEADER}
-C {lab_wire.sym} 1260 -280 0 0 {name=p46 sig_type=std_logic lab=RO_CON}
-C {lab_wire.sym} 1260 -10 0 0 {name=p47 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} 1450 -130 0 0 {name=p50 sig_type=std_logic lab=DRAIN_SENSE}
-C {lab_wire.sym} 1450 150 0 0 {name=p51 sig_type=std_logic lab=DRAIN_FORCE}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1570 -60 0 0 {name=M10
-W=19
-L=0.15
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1570 -180 0 0 {name=M11
-W=19
-L=0.15
-nf=1
-mult=10
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {lab_wire.sym} 1590 290 0 0 {name=p52 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1590 -260 0 0 {name=p53 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1670 -180 0 0 {name=p54 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1670 -60 0 0 {name=p55 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1670 80 0 0 {name=p56 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1490 10 0 0 {name=p57 sig_type=std_logic lab=A[100]}
-C {lab_wire.sym} 1660 10 0 0 {name=p58 sig_type=std_logic lab=A[101]}
-C {lab_wire.sym} 1540 -180 0 0 {name=p59 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} 1930 -170 0 0 {name=p60 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1930 -90 0 0 {name=p61 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1930 110 0 0 {name=p62 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1930 190 0 0 {name=p63 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1810 -220 0 0 {name=p64 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1810 -30 0 0 {name=p65 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} 1810 70 0 0 {name=p66 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1810 250 0 0 {name=p67 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} 1930 150 0 0 {name=p68 sig_type=std_logic lab=VSS}
+N 1200 -130 1200 150 {
+lab=A[100]}
+N 1200 150 1230 150 {
+lab=A[100]}
+N 1160 10 1200 10 {
+lab=A[100]}
+N 850 150 900 150 {
+lab=DUT_GATE}
+N 1700 -150 1700 -100 {
+lab=VDD}
+N 1700 100 1700 280 {
+lab=VSS}
+N 1590 10 1640 10 {
+lab=A[100]}
+N 1720 10 1790 10 {
+lab=A[101]}
+N 1600 -60 1660 -60 {
+lab=NOT_RO_CON}
+N 1940 -240 1940 -200 {
+lab=VDD}
+N 1940 -70 1940 -30 {
+lab=NOT_RO_CON}
+N 1940 50 1940 80 {
+lab=VDD}
+N 1940 210 1940 250 {
+lab=NOT_RO_CON}
+N 2020 -170 2060 -170 {
+lab=VDD}
+N 2020 -90 2060 -90 {
+lab=VSS}
+N 2020 -130 2060 -130 {
+lab=#net2}
+N 2020 110 2060 110 {
+lab=VDD}
+N 2020 150 2060 150 {
+lab=VSS}
+N 2020 190 2060 190 {
+lab=VSS}
+N 1830 -130 1860 -130 {
+lab=A[101]}
+N 1830 -130 1830 150 {
+lab=A[101]}
+N 1830 150 1860 150 {
+lab=A[101]}
+N 1790 10 1830 10 {
+lab=A[101]}
+N 2220 -100 2220 -70 {
+lab=VDD}
+N 2220 90 2220 130 {
+lab=VSS}
+N 2430 10 2470 10 {
+lab=A[1]}
+N 2100 10 2140 10 {
+lab=A[101]}
+N 1230 150 1250 150 {
+lab=A[100]}
+N 1300 -230 1300 -190 {
+lab=RO_CON}
+N 1300 -70 1300 -30 {
+lab=NOT_RO_CON}
+N 1440 -130 1480 -130 {
+lab=DRAIN_SENSE}
+N 1200 -130 1230 -130 {
+lab=A[100]}
+N 1480 -130 1550 -130 {
+lab=DRAIN_SENSE}
+N 1410 -130 1440 -130 {
+lab=DRAIN_SENSE}
+N 1350 -70 1350 -30 {
+lab=VSS}
+N 1350 -230 1350 -190 {
+lab=VDD}
+N 1300 50 1300 90 {
+lab=RO_CON}
+N 1300 210 1300 250 {
+lab=NOT_RO_CON}
+N 1410 150 1450 150 {
+lab=#net3}
+N 1450 150 1520 150 {
+lab=#net3}
+N 1350 210 1350 250 {
+lab=VSS}
+N 1350 50 1350 90 {
+lab=VDD}
 C {iopin.sym} 590 -590 2 0 {name=p81 lab=VDD}
 C {iopin.sym} 590 -550 2 0 {name=p82 lab=VSS}
 C {iopin.sym} 590 -510 2 0 {name=p83 lab=NOT_RO_CON}
@@ -407,147 +185,67 @@ C {iopin.sym} 890 -510 2 0 {name=p87 lab=DUT_GATE}
 C {iopin.sym} 890 -470 2 0 {name=p88 lab=DRAIN_SENSE}
 C {iopin.sym} 890 -430 2 0 {name=p89 lab=DRAIN_FORCE}
 C {iopin.sym} 590 -430 2 0 {name=p90 lab=A[1]}
-C {sky130_fd_pr/nfet_01v8.sym} 480 80 0 0 {name=M1
-W=4.2
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 480 200 0 0 {name=M2
-W=42
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1020 80 0 0 {name=M5
-W=4.2
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1020 200 0 0 {name=M6
-W=42
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1570 80 0 0 {name=M9
-W=4.2
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {lab_wire.sym} 70 -90 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 70 120 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} -30 10 0 0 {name=p3 sig_type=std_logic lab=A[1:97]}
 C {lab_wire.sym} 320 10 0 0 {name=p4 sig_type=std_logic lab=A[2:98]}
-C {lab_wire.sym} 2090 -80 0 0 {name=p5 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 2090 120 0 0 {name=p6 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1990 10 0 0 {name=p7 sig_type=std_logic lab=A[101]}
-C {lab_wire.sym} 2340 10 0 0 {name=p9 sig_type=std_logic lab=A[1]}
 C {/foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym} 160 10 0 0 {name=x4[1:97]}
-C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 380 -40 0 0 {name=x1}
-C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 380 240 0 0 {name=x4}
-C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 1470 240 0 0 {name=x6}
-C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 1470 -40 0 0 {name=x7}
-C {/foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym} 2180 10 0 0 {name=x3}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1260 -240 1 0 {name=M12
-W=19
-L=0.15
-nf=1
-mult=10
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1260 -70 3 0 {name=M13
-W=42
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {lab_wire.sym} 1260 130 0 0 {name=p10 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 1260 200 0 0 {name=p12 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} 1260 30 0 0 {name=p13 sig_type=std_logic lab=RO_CON}
-C {lab_wire.sym} 1260 300 0 0 {name=p14 sig_type=std_logic lab=NOT_RO_CON}
-C {sky130_fd_pr/pfet_01v8_hvt.sym} 1260 70 1 0 {name=M14
-W=19
-L=0.15
-nf=1
-mult=10
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1260 240 3 0 {name=M15
-W=42
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
+C {lab_wire.sym} 490 -150 0 0 {name=p41 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 490 190 0 0 {name=p42 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 420 10 0 0 {name=p48 sig_type=std_logic lab=A[98]}
+C {lab_wire.sym} 580 10 0 0 {name=p49 sig_type=std_logic lab=A[99]}
+C {lab_wire.sym} 850 -170 0 0 {name=p69 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 850 -90 0 0 {name=p70 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 850 110 0 0 {name=p71 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 850 190 0 0 {name=p72 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1070 -150 0 0 {name=p73 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1070 190 0 0 {name=p74 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1000 10 0 0 {name=p75 sig_type=std_logic lab=A[99]}
+C {lab_wire.sym} 1160 10 0 0 {name=p76 sig_type=std_logic lab=A[100]}
+C {lab_wire.sym} 450 -60 0 0 {name=p79 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} 440 90 0 0 {name=p80 sig_type=std_logic lab=RO_CON}
+C {lab_wire.sym} 730 70 0 0 {name=p91 sig_type=std_logic lab=RO_CON}
+C {lab_wire.sym} 730 -220 0 0 {name=p92 sig_type=std_logic lab=RO_CON}
+C {lab_wire.sym} 730 -30 0 0 {name=p93 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} 730 250 0 0 {name=p94 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} 900 150 0 0 {name=p95 sig_type=std_logic lab=DUT_GATE}
+C {lab_wire.sym} 1020 -60 0 0 {name=p96 sig_type=std_logic lab=DUT_FOOTER}
+C {lab_wire.sym} 1020 90 0 0 {name=p97 sig_type=std_logic lab=DUT_HEADER}
+C {lab_wire.sym} 1700 280 0 0 {name=p102 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1700 -150 0 0 {name=p103 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1610 10 0 0 {name=p104 sig_type=std_logic lab=A[100]}
+C {lab_wire.sym} 1790 10 0 0 {name=p105 sig_type=std_logic lab=A[101]}
+C {lab_wire.sym} 1650 -60 0 0 {name=p106 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} 2060 -170 0 0 {name=p107 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 2060 -90 0 0 {name=p108 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 2060 110 0 0 {name=p109 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 2060 190 0 0 {name=p110 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1940 -220 0 0 {name=p111 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1940 -30 0 0 {name=p112 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} 1940 70 0 0 {name=p113 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1940 250 0 0 {name=p114 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} 2060 150 0 0 {name=p115 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 2220 -80 0 0 {name=p116 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 2220 120 0 0 {name=p117 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 2120 10 0 0 {name=p118 sig_type=std_logic lab=A[101]}
+C {lab_wire.sym} 2470 10 0 0 {name=p119 sig_type=std_logic lab=A[1]}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 390 -40 0 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 390 240 0 0 {name=x5}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 1600 240 0 0 {name=x8}
+C {/foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym} 1600 -40 0 0 {name=x9}
+C {/foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym} 2310 10 0 0 {name=x10}
+C {/foss/designs/RO_Aging_UNICASS/HVT/rovcel/rovcel.sym} 470 20 0 0 {name=x11}
+C {/foss/designs/RO_Aging_UNICASS/HVT/rovcel/rovcel.sym} 1050 20 0 0 {name=x12}
+C {/foss/designs/RO_Aging_UNICASS/HVT/rovcel2/rovcel2.sym} 1680 20 0 0 {name=x13}
+C {lab_wire.sym} 1350 -220 0 0 {name=p39 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1350 -50 0 0 {name=p40 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1300 -210 0 0 {name=p46 sig_type=std_logic lab=RO_CON}
+C {lab_wire.sym} 1300 -30 0 0 {name=p47 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} 1550 -130 0 0 {name=p50 sig_type=std_logic lab=DRAIN_SENSE}
+C {/foss/designs/RO_Aging_UNICASS/HVT/load_x10/load_x10.sym} 1320 -130 0 0 {name=x1}
+C {lab_wire.sym} 1520 150 0 0 {name=p101 sig_type=std_logic lab=DRAIN_FORCE}
+C {lab_wire.sym} 1350 70 0 0 {name=p5 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 1350 240 0 0 {name=p6 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 1300 70 0 0 {name=p7 sig_type=std_logic lab=RO_CON}
+C {lab_wire.sym} 1300 250 0 0 {name=p8 sig_type=std_logic lab=NOT_RO_CON}
+C {load_x1.sym} 1320 150 0 0 {name=x3}

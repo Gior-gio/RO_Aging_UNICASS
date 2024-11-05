@@ -1,0 +1,8 @@
+* Extracted by KLayout with SKY130 LVS runset on : 05/11/2024 13:59
+
+.SUBCKT load_x1 VSS A Out In VDD AB
+M$1 In AB Out VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=19000000 AS=6.1275e+12
++ AD=6.1275e+12 PS=26330000 PD=26330000
+M$5 Out A In VSS sky130_fd_pr__nfet_01v8 L=150000 W=4200000 AS=1.323e+12
++ AD=1.323e+12 PS=7560000 PD=7560000
+.ENDS load_x1
