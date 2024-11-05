@@ -170,9 +170,9 @@ lab=RO_CON}
 N 1310 210 1310 250 {
 lab=NOT_RO_CON}
 N 1420 150 1460 150 {
-lab=#net3}
+lab=DRAIN_FORCE}
 N 1460 150 1530 150 {
-lab=#net3}
+lab=DRAIN_FORCE}
 N 1360 210 1360 250 {
 lab=VSS}
 N 1360 50 1360 90 {
@@ -250,4 +250,4 @@ C {lab_wire.sym} 1360 70 0 0 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1360 240 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1310 70 0 0 {name=p12 sig_type=std_logic lab=RO_CON}
 C {lab_wire.sym} 1310 250 0 0 {name=p13 sig_type=std_logic lab=NOT_RO_CON}
-C {load_x1.sym} 1330 150 0 0 {name=x10}
+C {/foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sym} 1330 150 0 0 {name=x10}

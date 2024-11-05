@@ -1,4 +1,4 @@
-* Extracted by KLayout with SKY130 LVS runset on : 03/11/2024 21:56
+* Extracted by KLayout with SKY130 LVS runset on : 05/11/2024 15:06
 
 .SUBCKT rovcel2 VSS Out IN VDD P
 M$1 VDD P \$22 VDD sky130_fd_pr__pfet_01v8_hvt L=150000 W=190000000
