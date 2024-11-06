@@ -15,17 +15,11 @@ x4 A[11] RO_CON VSS VDD NOT_RO_CON DUT_GATE passGate_hvt
 x6 A[13] VDD VSS VDD NOT_RO_CON VSS passGate_hvt
 x7 A[13] VDD VSS VDD NOT_RO_CON net2 passGate_hvt
 x3 VDD VSS A[13] A[1] RingStage
-M12 A[12] RO_CON DRAIN_SENSE VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=19 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10
-M13 A[12] NOT_RO_CON DRAIN_SENSE VSS sky130_fd_pr__nfet_01v8 L=0.15 W=42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-M14 A[12] RO_CON DRAIN_FORCE VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=19 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10
-M15 A[12] NOT_RO_CON DRAIN_FORCE VSS sky130_fd_pr__nfet_01v8 L=0.15 W=42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 x2 VDD VSS A[10] A[11] NOT_RO_CON RO_CON rovcel
 x5 VDD VSS A[11] A[12] DUT_FOOTER DUT_HEADER rovcel
 x8 VDD VSS A[12] A[13] NOT_RO_CON rovcel2
+x9 RO_CON VDD DRAIN_FORCE A[12] VSS NOT_RO_CON load_x10
+x10 RO_CON VDD DRAIN_SENSE A[12] VSS NOT_RO_CON load_x1
 .ends
 
 * expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym # of pins=4
@@ -33,9 +27,20 @@ x8 VDD VSS A[12] A[13] NOT_RO_CON rovcel2
 ** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sch
 .subckt RingStage VDD VSS In Out
 *.PININFO In:B Out:B VDD:B VSS:B
-x1 VDD Out In VSS inverter
-x2 Out VDD VSS VDD VSS net2 passGate_hvt
-x3 Out VDD VSS VDD VSS net1 passGate_hvt
+M2 Out In VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+M1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+M3 Out VDD net1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+M4 Out VSS net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+M5 Out VDD net2 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+M6 Out VSS net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+* noconn #net1
+* noconn #net2
 .ends
 
 
@@ -81,15 +86,27 @@ M1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * 
 .ends
 
 
-* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sym # of pins=4
-** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sym
-** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sch
-.subckt inverter VDD Out In VSS
-*.PININFO VDD:B Out:B VSS:B In:B
-M2 Out In VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
-M1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/load_x10/load_x10.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/load_x10/load_x10.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/load_x10/load_x10.sch
+.subckt load_x10 AB VDD Out In VSS A
+*.PININFO In:B Out:B VDD:B VSS:B AB:B A:B
+M1 In A Out VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=20 m=20
+M2 In AB Out VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=40 m=40
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sch
+.subckt load_x1 AB VDD Out In VSS A
+*.PININFO In:B Out:B VDD:B VSS:B AB:B A:B
+M1 In A Out VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+M2 In AB Out VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
 .ends
 
 .end
