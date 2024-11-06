@@ -1,0 +1,106 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/RingOscilator_hvt_13_x1/RingOscilator_hvt_13_x1.sch
+.subckt RingOscilator_hvt_13_x1 DUT_FOOTER VDD DUT_HEADER VSS DUT_GATE NOT_RO_CON RO_CON DRAIN_SENSE A[1] DRAIN_FORCE
+*.PININFO VDD:B VSS:B NOT_RO_CON:B RO_CON:B DUT_FOOTER:B DUT_HEADER:B DUT_GATE:B DRAIN_SENSE:B DRAIN_FORCE:B A[1]:B
+x4[1] VDD VSS A[1] A[2] RingStage
+x4[2] VDD VSS A[2] A[3] RingStage
+x4[3] VDD VSS A[3] A[4] RingStage
+x4[4] VDD VSS A[4] A[5] RingStage
+x4[5] VDD VSS A[5] A[6] RingStage
+x4[6] VDD VSS A[6] A[7] RingStage
+x4[7] VDD VSS A[7] A[8] RingStage
+x4[8] VDD VSS A[8] A[9] RingStage
+x4[9] VDD VSS A[9] A[10] RingStage
+x2 A[11] RO_CON VSS VDD NOT_RO_CON net1 passGate_hvt
+x5 A[11] RO_CON VSS VDD NOT_RO_CON DUT_GATE passGate_hvt
+x8 A[13] VDD VSS VDD NOT_RO_CON VSS passGate_hvt
+x9 A[13] VDD VSS VDD NOT_RO_CON net2 passGate_hvt
+x10 VDD VSS A[13] A[1] RingStage
+x11 VDD VSS A[10] A[11] NOT_RO_CON RO_CON rovcel
+x12 VDD VSS A[11] A[12] DUT_FOOTER DUT_HEADER rovcel
+x13 VDD VSS A[12] A[13] NOT_RO_CON rovcel2
+x1 RO_CON VDD DRAIN_SENSE A[12] VSS NOT_RO_CON load_x1
+x3 RO_CON VDD DRAIN_FORCE A[12] VSS NOT_RO_CON load_x1
+* noconn #net2
+* noconn #net1
+.ends
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym # of pins=4
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sch
+.subckt RingStage VDD VSS In Out
+*.PININFO In:B Out:B VDD:B VSS:B
+x1 VDD Out In VSS inverter
+x2 Out VDD VSS VDD VSS net2 passGate_hvt
+x3 Out VDD VSS VDD VSS net1 passGate_hvt
+* noconn #net3
+* noconn #net1
+* noconn #net2
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/passGate_hvt/passGate_hvt.sch
+.subckt passGate_hvt In CLKN VSS VDD CLK Out
+*.PININFO In:B CLKN:B Out:B VSS:B VDD:B CLK:B
+M2 Out CLKN In VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+M1 Out CLK In VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/rovcel/rovcel.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/rovcel/rovcel.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/rovcel/rovcel.sch
+.subckt rovcel VDD VSS In Out P N
+*.PININFO VDD:B VSS:B In:B Out:B P:B N:B
+M3 Out In net1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+M4 net1 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=40 m=40
+M1 Out In net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+M0 net2 N VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=20 m=20
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/rovcel2/rovcel2.sym # of pins=5
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/rovcel2/rovcel2.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/rovcel2/rovcel2.sch
+.subckt rovcel2 VDD VSS In Out P
+*.PININFO VDD:B VSS:B In:B Out:B P:B
+M3 Out In net1 VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+M4 net1 P VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=40 m=40
+M1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sch
+.subckt load_x1 AB VDD Out In VSS A
+*.PININFO In:B Out:B VDD:B VSS:B AB:B A:B
+M1 In A Out VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+M2 In AB Out VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sym # of pins=4
+** sym_path: /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/HVT/inverter/inverter.sch
+.subckt inverter VDD Out In VSS
+*.PININFO VDD:B Out:B VSS:B In:B
+M2 Out In VDD VDD sky130_fd_pr__pfet_01v8_hvt L=0.15 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+M1 Out In VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+.end
