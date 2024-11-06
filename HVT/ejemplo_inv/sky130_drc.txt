@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>SKY130 DRC runset</description>
- <original-file>RingOscilator_hvt_13_x10.gds</original-file>
+ <original-file>/foss/designs/RO_Aging_UNICASS/HVT/ejemplo_inv/inv.gds</original-file>
  <generator>drc: script='/headless/.klayout/drc/sky130A.lydrc'</generator>
- <top-cell>RingOscilator_hvt_13_x10</top-cell>
+ <top-cell>inv</top-cell>
  <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
  </tags>
  <categories>
   <category>
@@ -880,7 +904,7 @@
  </categories>
  <cells>
   <cell>
-   <name>RingOscilator_hvt_13_x10</name>
+   <name>inv</name>
    <variant/>
    <layout-name/>
    <references>
