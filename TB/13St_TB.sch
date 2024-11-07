@@ -88,4 +88,4 @@ C {gnd.sym} 1300 -120 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 1400 -220 1 0 {name=p11 sig_type=std_logic lab=OUT_Div}
 C {/foss/designs/RO_Aging_UNICASS/LVT/Buffer/Buffer.sym} 1000 -100 0 0 {name=x2}
 C {/foss/designs/RO_Aging_UNICASS/LVT/Freq_Divider8/Freq_Divider8.sym} 1230 -150 0 0 {name=x3}
-C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_101St/RO_LVT_101St.sym} 740 -100 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_13St_x1/RO_LVT_13St_x1.sym} 720 -100 0 0 {name=x1}
