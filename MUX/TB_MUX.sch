@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-6.0251026e-08
-x2=2.3726701e-06
+x1=2.2895463e-07
+x2=2.3814479e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -30,9 +30,10 @@ y2=2.557293
 
 
 
-color="7 6"
-node="In[11]
-Out"}
+color="6 7"
+node="dout[9]
+
+dout[11]"}
 N 230 60 260 60 {
 lab=VSS}
 N 250 -70 250 -50 {
@@ -85,6 +86,40 @@ N -120 -110 -120 -90 {
 lab=In[0:10]}
 N -150 -110 -120 -110 {
 lab=In[0:10]}
+N 130 340 160 340 {
+lab=VSS}
+N 140 210 140 230 {
+lab=VDD}
+N 100 210 130 210 {
+lab=VDD}
+N 130 210 140 210 {
+lab=VDD}
+N 140 230 160 230 {
+lab=VDD}
+N 230 290 270 290 {
+lab=Dout[0:15]}
+N 190 370 190 400 {
+lab=S[0:3]}
+N 190 400 210 400 {
+lab=S[0:3]}
+N 90 340 130 340 {
+lab=VSS}
+N 140 290 160 290 {
+lab=Din}
+N 120 290 140 290 {
+lab=Din}
+N -320 310 -320 320 {
+lab=GND}
+N -320 230 -320 250 {
+lab=Din}
+N 270 290 290 290 {
+lab=Dout[0:15]}
+N 350 290 390 290 {
+lab=GND}
+N 390 290 390 320 {
+lab=GND}
+N 390 320 420 320 {
+lab=GND}
 C {MUX.sym} 180 0 0 0 {name=x1}
 C {vsource.sym} -310 -60 0 0 {name=Vin1 value="SINE(900m 900m 5Meg 0 0)" savecurrent=false}
 C {vsource.sym} 320 -70 3 0 {name=V4 value=1.8 savecurrent=false}
@@ -128,3 +163,18 @@ tclcommand="xschem raw_read $netlist_dir/TB_MUX.raw tran"
 C {vsource.sym} -120 -60 0 0 {name=Vin[0:10] value=0 savecurrent=false}
 C {gnd.sym} -120 -20 0 0 {name=l7 lab=GND}
 C {lab_wire.sym} -150 -110 0 0 {name=p2 sig_type=std_logic lab=In[0:10]}
+C {lab_wire.sym} 210 400 0 1 {name=p13 sig_type=std_logic lab=S[0:3]}
+C {lab_wire.sym} 120 290 3 1 {name=p14 sig_type=std_logic lab=Din}
+C {lab_wire.sym} 120 340 3 1 {name=p15 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} 130 210 3 1 {name=p16 sig_type=std_logic lab=VDD}
+C {vsource.sym} -320 280 0 0 {name=Vin2 value="SINE(900m 900m 5Meg 0 0)" savecurrent=false}
+C {gnd.sym} -320 320 0 0 {name=l10 lab=GND}
+C {lab_wire.sym} -320 230 0 0 {name=p17 sig_type=std_logic lab=Din}
+C {gnd.sym} 420 320 3 0 {name=l11 lab=GND}
+C {capa.sym} 320 290 3 0 {name=C2
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {lab_wire.sym} 240 290 1 0 {name=p12 sig_type=std_logic lab=Dout[0:15]}
+C {Demux.sym} 190 450 0 0 {name=x2}
