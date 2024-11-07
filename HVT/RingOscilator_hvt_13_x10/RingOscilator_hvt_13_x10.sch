@@ -244,10 +244,10 @@ C {/foss/designs/RO_Aging_UNICASS/HVT/RingStage/RingStage.sym} 2300 10 0 0 {name
 C {/foss/designs/RO_Aging_UNICASS/HVT/rovcel/rovcel.sym} 460 20 0 0 {name=x2}
 C {/foss/designs/RO_Aging_UNICASS/HVT/rovcel/rovcel.sym} 1040 20 0 0 {name=x5}
 C {/foss/designs/RO_Aging_UNICASS/HVT/rovcel2/rovcel2.sym} 1670 20 0 0 {name=x8}
-C {/foss/designs/RO_Aging_UNICASS/HVT/load_x10/load_x10.sym} 1310 -130 0 0 {name=x9}
+C {/foss/designs/RO_Aging_UNICASS/HVT/load_x10/load_x10.sym} 1330 150 0 0 {name=x9}
 C {lab_wire.sym} 1530 150 0 0 {name=p101 sig_type=std_logic lab=DRAIN_FORCE}
 C {lab_wire.sym} 1360 70 0 0 {name=p10 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1360 240 0 0 {name=p11 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1310 70 0 0 {name=p12 sig_type=std_logic lab=RO_CON}
 C {lab_wire.sym} 1310 250 0 0 {name=p13 sig_type=std_logic lab=NOT_RO_CON}
-C {/foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sym} 1330 150 0 0 {name=x10}
+C {/foss/designs/RO_Aging_UNICASS/HVT/load_x1/load_x1.sym} 1310 -130 0 0 {name=x10}
