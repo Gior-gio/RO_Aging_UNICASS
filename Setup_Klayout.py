@@ -88,7 +88,7 @@ def klayout_ini(cell_path=None, lvs_sub="GND"):
             "-rd", f"target_netlist={cir_file}",
             "-rd", f"lvs_sub={lvs_sub}",  # Use the provided or default lvs_sub value
             "-rd", "thr=16",
-            "-rd", "run_mode=deep",
+            "-rd", "run_mode=flat", #"flat" mode seems to avoid some problems with instantiated cells
             "-rd", "spice_net_names=true",
             "-rd", "spice_comments=false",
             "-rd", "scale=true",
