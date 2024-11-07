@@ -1,32 +1,6 @@
-* Extracted by KLayout with SKY130 LVS runset on : 03/11/2024 20:12
+* Extracted by KLayout with SKY130 LVS runset on : 07/11/2024 15:30
 
-.SUBCKT pmos_lvt
-X$1 \$3 VG VD nfet
-X$2 VD VG \$3 nfet
-X$3 VD vias_gen$4
-X$4 VD vias_gen$4
-X$5 VB vias_gen$3
-X$6 VB \$I13 vias_gen$1
-X$7 VB \$I13 vias_gen$2
-X$8 VB \$I13 vias_gen$2
-X$9 VB \$I13 vias_gen$1
-M$1 VD VG \$3 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2.1 AS=0.63
-+ AD=0.693 PS=4.8 PD=2.76
-M$2 \$3 VG VD sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2.1 AS=0.693
-+ AD=0.63 PS=2.76 PD=4.8
+.SUBCKT pmos_lvt VSS VG VS VD
+M$1 VS VG VD VSS sky130_fd_pr__pfet_01v8_lvt L=350000 W=19000000 AS=4.275e+12
++ AD=4.275e+12 PS=30300000 PD=30300000
 .ENDS pmos_lvt
-
-.SUBCKT vias_gen$4 \$1
-.ENDS vias_gen$4
-
-.SUBCKT vias_gen$3 \$1
-.ENDS vias_gen$3
-
-.SUBCKT vias_gen$2 \$1 \$2
-.ENDS vias_gen$2
-
-.SUBCKT vias_gen$1 \$1 \$2
-.ENDS vias_gen$1
-
-.SUBCKT nfet \$1 \$2 \$3
-.ENDS nfet

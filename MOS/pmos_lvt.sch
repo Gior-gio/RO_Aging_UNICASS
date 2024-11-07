@@ -14,7 +14,7 @@ lab=VG}
 N 110 -40 110 20 {
 lab=VD}
 C {iopin.sym} 110 -150 0 0 {name=p1 lab=VS}
-C {iopin.sym} 220 -70 2 1 {name=p2 lab=VB}
+C {iopin.sym} 220 -70 2 1 {name=p2 lab=VSS}
 C {iopin.sym} 10 -70 2 0 {name=p4 lab=VG}
 C {iopin.sym} 110 20 0 0 {name=p5 lab=VD}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 90 -70 0 0 {name=M1

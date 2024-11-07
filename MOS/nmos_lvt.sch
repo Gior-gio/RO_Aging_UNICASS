@@ -8,13 +8,12 @@ E {}
 N 110 -380 110 -330 {
 lab=VS}
 N 110 -410 220 -410 {
-lab=VB}
+lab=VSS}
 N 10 -410 70 -410 {
 lab=VG}
 N 110 -500 110 -440 {
 lab=VD}
 C {iopin.sym} 110 -330 2 1 {name=p1 lab=VS}
-C {iopin.sym} 220 -410 2 1 {name=p2 lab=VB}
 C {iopin.sym} 10 -410 0 1 {name=p4 lab=VG}
 C {iopin.sym} 110 -500 2 1 {name=p5 lab=VD}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 90 -410 0 0 {name=M1
@@ -31,3 +30,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
+C {iopin.sym} 220 -410 2 1 {name=p2 lab=VSS}

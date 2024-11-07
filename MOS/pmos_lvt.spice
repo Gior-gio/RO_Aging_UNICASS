@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/MOS/pmos_lvt.sch
+.subckt pmos_lvt VS VB VG VD
+*.PININFO VS:B VB:B VG:B VD:B
+M1 VD VG VS VB sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+.end
