@@ -41,24 +41,15 @@ N 1080 -180 1080 -140 {
 lab=GND}
 N 1160 -220 1240 -220 {
 lab=OUT_B}
-N 1300 -320 1300 -280 {
+N 1320 -320 1320 -280 {
 lab=VDD}
-N 1300 -160 1300 -120 {
+N 1320 -170 1320 -130 {
 lab=GND}
-N 1360 -220 1440 -220 {
+N 1400 -220 1480 -220 {
 lab=OUT_Div}
+N 1240 -220 1250 -220 {lab=OUT_B}
+N 1370 -220 1400 -220 {lab=OUT_Div}
 C {vsource.sym} 450 -200 0 0 {name=V1 value=1.8 savecurrent=false}
-C {devices/code.sym} 390 -480 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval(@value )"
-value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
-.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
-"
-spice_ignore=false
-place=header}
-C {code_shown.sym} 520 -450 0 0 {name=s1 only_toplevel=false value=".tran 20p 100n 
-.ic V(OUT)=0.1
-.save all"}
 C {gnd.sym} 450 -150 0 0 {name=l2 lab=GND}
 C {lab_pin.sym} 450 -270 1 0 {name=p2 sig_type=std_logic lab=VDD global=1}
 C {vsource.sym} 360 -200 0 0 {name=V2 value=1.8 savecurrent=false}
@@ -83,9 +74,19 @@ C {lab_pin.sym} 980 -220 1 0 {name=p7 sig_type=std_logic lab=OUT}
 C {lab_pin.sym} 1080 -300 1 0 {name=p8 sig_type=std_logic lab=VDD global=1}
 C {gnd.sym} 1080 -140 0 0 {name=l7 lab=GND}
 C {lab_pin.sym} 1200 -220 1 0 {name=p9 sig_type=std_logic lab=OUT_B}
-C {lab_pin.sym} 1300 -320 1 0 {name=p10 sig_type=std_logic lab=VDD global=1}
-C {gnd.sym} 1300 -120 0 0 {name=l8 lab=GND}
-C {lab_pin.sym} 1400 -220 1 0 {name=p11 sig_type=std_logic lab=OUT_Div}
+C {lab_pin.sym} 1320 -320 1 0 {name=p10 sig_type=std_logic lab=VDD global=1}
+C {gnd.sym} 1320 -130 0 0 {name=l8 lab=GND}
+C {lab_pin.sym} 1440 -220 1 0 {name=p11 sig_type=std_logic lab=OUT_Div}
 C {/foss/designs/RO_Aging_UNICASS/LVT/Buffer/Buffer.sym} 1000 -100 0 0 {name=x2}
-C {/foss/designs/RO_Aging_UNICASS/LVT/Freq_Divider8/Freq_Divider8.sym} 1230 -150 0 0 {name=x3}
 C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_13St_x1/RO_LVT_13St_x1.sym} 720 -100 0 0 {name=x1}
+C {code_shown.sym} 570 -450 0 0 {name=spice only_toplevel=false value=".tran 250n 1.1m
+.ic V(OUT)=0.1
+.save all"}
+C {devices/code.sym} 400 -520 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
+"
+spice_ignore=false}
+C {DIV.sym} 1210 -150 0 0 {name=x3}

@@ -41,9 +41,9 @@ N 1090 -200 1090 -160 {
 lab=GND}
 N 1170 -240 1250 -240 {
 lab=OUT_B}
-N 1310 -340 1310 -300 {
+N 1320 -340 1320 -300 {
 lab=VDD}
-N 1310 -180 1310 -140 {
+N 1320 -180 1320 -140 {
 lab=GND}
 N 1370 -240 1450 -240 {
 lab=OUT_Div}
@@ -55,7 +55,7 @@ value=".lib $::SKYWATER_MODELS/sky130.lib.spice tt
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false}
-C {code_shown.sym} 520 -450 0 0 {name=s1 only_toplevel=false value=".tran 20p 100n 
+C {code_shown.sym} 520 -450 0 0 {name=s1 only_toplevel=false value=".tran 250n 1m 
 .ic V(OUT)=0.1
 .save all"}
 C {gnd.sym} 450 -150 0 0 {name=l2 lab=GND}
@@ -82,9 +82,9 @@ C {lab_pin.sym} 990 -240 1 0 {name=p8 sig_type=std_logic lab=OUT}
 C {lab_pin.sym} 1090 -320 1 0 {name=p9 sig_type=std_logic lab=VDD global=1}
 C {gnd.sym} 1090 -160 0 0 {name=l7 lab=GND}
 C {lab_pin.sym} 1210 -240 1 0 {name=p10 sig_type=std_logic lab=OUT_B}
-C {lab_pin.sym} 1310 -340 1 0 {name=p11 sig_type=std_logic lab=VDD global=1}
-C {gnd.sym} 1310 -140 0 0 {name=l8 lab=GND}
+C {lab_pin.sym} 1320 -340 1 0 {name=p11 sig_type=std_logic lab=VDD global=1}
+C {gnd.sym} 1320 -140 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 1410 -240 1 0 {name=p12 sig_type=std_logic lab=OUT_Div}
-C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_101St/RO_LVT_101St.sym} 750 -120 0 0 {name=x1}
 C {/foss/designs/RO_Aging_UNICASS/LVT/Buffer/Buffer.sym} 1010 -120 0 0 {name=x2}
-C {/foss/designs/RO_Aging_UNICASS/LVT/Freq_Divider8/Freq_Divider8.sym} 1240 -170 0 0 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/LVT/RO_LVT_101St_x10/RO_LVT_101St_x10.sym} 750 -120 0 0 {name=x4}
+C {DIV.sym} 1210 -170 0 0 {name=x3}

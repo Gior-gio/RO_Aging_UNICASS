@@ -1,0 +1,95 @@
+** sch_path: /foss/designs/RO_Aging_UNICASS/TB/DIV_TB.sch
+**.subckt DIV_TB
+V1 VDD GND 1.8
+V2 Vin GND pulse(0 1.8 1ps 5ps 5ps 0.5us 1us)
+x1 VDD Vout Vin GND DIV
+**** begin user architecture code
+
+.tran 100n 1m
+.save all
+
+ .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  DIV.sym # of pins=4
+** sym_path: /foss/designs/RO_Aging_UNICASS/DIV/DIV.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/DIV/DIV.sch
+.subckt DIV VDD OUT IN GND
+*.iopin GND
+*.iopin IN
+*.iopin VDD
+*.iopin OUT
+x1 VDD A[0] A[0] net2 IN GND FF
+* noconn #net2
+x2 VDD A[1] A[1] net3 A[0] GND FF
+* noconn #net3
+x3[7] VDD OUT OUT net1 A[8] GND FF
+x3[6] VDD A[8] A[8] net1 A[7] GND FF
+x3[5] VDD A[7] A[7] net1 A[6] GND FF
+x3[4] VDD A[6] A[6] net1 A[5] GND FF
+x3[3] VDD A[5] A[5] net1 A[4] GND FF
+x3[2] VDD A[4] A[4] net1 A[3] GND FF
+x3[1] VDD A[3] A[3] net1 A[2] GND FF
+x3[0] VDD A[2] A[2] net1 A[1] GND FF
+* noconn #net1
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/DIV/FF/FF.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/DIV/FF/FF.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/DIV/FF/FF.sch
+.subckt FF VDD D Q_N Q CLK GND
+*.iopin GND
+*.iopin CLK
+*.iopin VDD
+*.iopin Q
+*.iopin Q_N
+*.iopin D
+x1 CLK VDD net1 D GND CLKN passgate_DIV
+x2 VDD net2 net1 GND inv_DIV
+x3 CLKN VDD net1 net4 GND CLK passgate_DIV
+x4 VDD net4 net2 GND inv_DIV
+x5 CLKN VDD net3 net2 GND CLK passgate_DIV
+x6 VDD Q net3 GND inv_DIV
+x7 CLK VDD net3 Q GND CLKN passgate_DIV
+x8 VDD Q_N Q GND inv_DIV
+x10 VDD CLKN CLK GND inv_DIV
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/DIV/passgate_DIV/passgate_DIV.sym # of pins=6
+** sym_path: /foss/designs/RO_Aging_UNICASS/DIV/passgate_DIV/passgate_DIV.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/DIV/passgate_DIV/passgate_DIV.sch
+.subckt passgate_DIV CLKN VDD OUT IN GND CLK
+*.iopin VDD
+*.iopin OUT
+*.iopin GND
+*.iopin IN
+*.iopin CLKN
+*.iopin CLK
+XM3 IN CLK OUT GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 IN CLKN OUT VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/RO_Aging_UNICASS/DIV/inv_DIV/inv_DIV.sym # of pins=4
+** sym_path: /foss/designs/RO_Aging_UNICASS/DIV/inv_DIV/inv_DIV.sym
+** sch_path: /foss/designs/RO_Aging_UNICASS/DIV/inv_DIV/inv_DIV.sch
+.subckt inv_DIV VDD OUT IN GND
+*.iopin VDD
+*.iopin OUT
+*.iopin GND
+*.iopin IN
+XM3 OUT IN GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end

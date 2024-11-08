@@ -43,13 +43,13 @@ N 250 -240 280 -240 {
 lab=VDD}
 N 100 -140 180 -140 {
 lab=#net1}
-N 60 -520 90 -520 {
+N 60 -360 90 -360 {
 lab=VDD}
-N 60 -500 90 -500 {
+N 60 -340 90 -340 {
 lab=VSS}
-N 60 -480 90 -480 {
+N 60 -320 90 -320 {
 lab=Vin}
-N 60 -460 90 -460 {
+N 60 -300 90 -300 {
 lab=Vout}
 C {lab_pin.sym} 30 -130 0 0 {name=p6 sig_type=std_logic lab=Vin
 
@@ -121,13 +121,13 @@ C {lab_pin.sym} 250 -140 0 0 {name=p4 sig_type=std_logic lab=Vout
 
 
 }
-C {iopin.sym} 90 -520 0 0 {name=p5 lab=VDD
+C {iopin.sym} 90 -360 0 0 {name=p5 lab=VDD
 }
-C {iopin.sym} 90 -480 0 0 {name=p9 lab=Vin
+C {iopin.sym} 90 -320 0 0 {name=p9 lab=Vin
 
 
 }
-C {iopin.sym} 90 -460 0 0 {name=p10 lab=Vout
+C {iopin.sym} 90 -300 0 0 {name=p10 lab=Vout
 
 
 }
@@ -139,6 +139,6 @@ C {lab_pin.sym} 250 -40 0 0 {name=p2 sig_type=std_logic lab=VSS
 
 
 }
-C {iopin.sym} 90 -500 0 0 {name=p7 lab=VSS
+C {iopin.sym} 90 -340 0 0 {name=p7 lab=VSS
 
 }
