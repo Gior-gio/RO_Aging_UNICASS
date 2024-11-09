@@ -41,7 +41,7 @@ C {iopin.sym} 80 -160 2 0 {name=p4 lab=IN}
 C {sky130_fd_pr/nfet_01v8.sym} 160 -110 0 0 {name=M3
 W=1
 L=0.15
-nf=1 
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"

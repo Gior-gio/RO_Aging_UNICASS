@@ -49,4 +49,4 @@ C {lab_pin.sym} 500 -220 2 1 {name=p3 sig_type=std_logic lab=Vin
 
 }
 C {gnd.sym} 630 -120 0 0 {name=l1 lab=GND}
-C {DIV.sym} 520 -150 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/DIV/DIV.sym} 520 -150 0 0 {name=x2}
