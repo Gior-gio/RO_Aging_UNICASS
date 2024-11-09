@@ -1,4 +1,4 @@
-* Extracted by KLayout with SKY130 LVS runset on : 09/11/2024 11:11
+* Extracted by KLayout with SKY130 LVS runset on : 09/11/2024 17:04
 
 .SUBCKT inv_DIV GND OUT IN VDD
 M$1 VDD IN OUT VDD sky130_fd_pr__pfet_01v8 L=150000 W=2000000 AS=600000000000
