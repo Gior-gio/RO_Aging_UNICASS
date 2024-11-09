@@ -46,7 +46,7 @@ C {lab_pin.sym} 370 -20 2 1 {name=p13 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 300 -150 2 1 {name=p5 sig_type=std_logic lab=A[0]
 }
-C {noconn.sym} 440 -150 0 1 {name=l1}
+C {noconn.sym} 440 -150 0 1 {name=l1[0]}
 C {lab_pin.sym} 300 -90 2 1 {name=p6 sig_type=std_logic lab=IN
 }
 C {/foss/designs/RO_Aging_UNICASS/DIV/FF/FF.sym} 500 -120 0 0 {name=x2}
@@ -55,7 +55,7 @@ C {lab_pin.sym} 590 -220 2 1 {name=p7 sig_type=std_logic lab=VDD
 C {lab_pin.sym} 590 -20 2 1 {name=p8 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 800 -90 2 1 {name=p10 sig_type=std_logic lab=A[8:1]}
-C {noconn.sym} 660 -150 0 1 {name=l2}
+C {noconn.sym} 660 -150 0 1 {name=l2[1]}
 C {lab_pin.sym} 480 -70 0 0 {name=p9 sig_type=std_logic lab=A[0]}
 C {/foss/designs/RO_Aging_UNICASS/DIV/FF/FF.sym} 780 -120 0 0 {name=x3[7:0]}
 C {lab_pin.sym} 870 -220 2 1 {name=p11 sig_type=std_logic lab=VDD
@@ -63,7 +63,7 @@ C {lab_pin.sym} 870 -220 2 1 {name=p11 sig_type=std_logic lab=VDD
 C {lab_pin.sym} 870 -20 2 1 {name=p15 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 950 -90 2 0 {name=p16 sig_type=std_logic lab=OUT,A[8:2]}
-C {noconn.sym} 950 -150 0 1 {name=l3}
+C {noconn.sym} 950 -150 0 1 {name=l3[9:2]}
 C {lab_pin.sym} 520 -150 2 1 {name=p14 sig_type=std_logic lab=A[1]}
 C {lab_pin.sym} 800 -150 2 1 {name=p18 sig_type=std_logic lab=OUT,A[8:2]}
 C {lab_pin.sym} 660 -90 2 0 {name=p17 sig_type=std_logic lab=A[1]}
