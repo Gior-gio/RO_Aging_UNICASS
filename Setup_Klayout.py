@@ -2,11 +2,12 @@
 Setup_Klayout.py (WIP):
 
 Arguments:
-    CELL_PATH   Path to the cell directory, in the form /path/to/lib_path/cell_name.
-    LVS_SUB     Optional substrate ground (default: GND).
+    CELL_PATH           Path to the cell directory, in the form /path/to/lib_path/cell_name.
+    LVS_SUB             Optional substrate ground (default: GND).
+    SET_KLAYOUT_HOME    If false, default Home is used, if true, PDK Home is used
     
     Example:
-    python3 Setup_Klayout.py /foss/designs/RO_Aging_UNICASS/LVT/inv_LVT VSS
+    python3 Setup_Klayout.py --cell_path /route/to/cellpath --set_klayout_home --lvs_sub VSS
     
     Remember that CELL_PATH should contain a .gds and a .spice file 
     both with the SAME name as the cell folder.
@@ -20,22 +21,27 @@ Arguments:
 '''
 import os
 import subprocess
+import argparse
 
-def klayout_ini(cell_path=None, lvs_sub="GND"):
+def klayout_ini(cell_path=None, set_klayout_home=False, lvs_sub="GND"):
     """
-    Function to run KLayout with LVS settings based on given cell path and optional substrate ground.
+    Function to run KLayout with LVS settings based on given cell path, optional substrate ground, 
+    and an option to set KLAYOUT_HOME.
     """
     # Retrieve the PDK_ROOT and PDK environment variables
     pdk_root = os.getenv("PDK_ROOT")
     pdk = os.getenv("PDK")
 
-    if not pdk_root or not pdk:
-        print("Error: PDK_ROOT and/or PDK environment variables are not set.")
-        return
-
-    # Set the KLAYOUT_HOME environment variable
-    klayout_home = os.path.join(pdk_root, pdk, "libs.tech", "klayout")
-    os.environ["KLAYOUT_HOME"] = klayout_home
+    if set_klayout_home:
+        if not pdk_root or not pdk:
+            print("Error: PDK_ROOT and/or PDK environment variables are not set.")
+            return
+        # Set the KLAYOUT_HOME environment variable
+        klayout_home = os.path.join(pdk_root, pdk, "libs.tech", "klayout")
+        os.environ["KLAYOUT_HOME"] = klayout_home
+        print(f"KLAYOUT_HOME set to: {klayout_home}")
+    else:
+        print("KLAYOUT_HOME not set; using KLayout's default configuration.")
 
     # If CELL_PATH is not provided, run only the basic command and show a message
     if not cell_path:
@@ -79,7 +85,8 @@ def klayout_ini(cell_path=None, lvs_sub="GND"):
         else:
             print(f"Using specified substrate node: '{lvs_sub}'")
 
-        # Command to execute LVS with the specified or default lvs_sub value
+        # Command to execute LVS with the specified or default lvs_sub value, 
+        # and open the .gds file directly in KLayout with the -s option.
         command = [
             "klayout",
             "-rd", f"input={gds_file}",
@@ -88,7 +95,7 @@ def klayout_ini(cell_path=None, lvs_sub="GND"):
             "-rd", f"target_netlist={cir_file}",
             "-rd", f"lvs_sub={lvs_sub}",  # Use the provided or default lvs_sub value
             "-rd", "thr=16",
-            "-rd", "run_mode=flat", #"flat" mode seems to avoid some problems with instantiated cells
+            "-rd", "run_mode=flat",  # "flat" mode seems to avoid some problems with instantiated cells
             "-rd", "spice_net_names=true",
             "-rd", "spice_comments=false",
             "-rd", "scale=true",
@@ -99,6 +106,7 @@ def klayout_ini(cell_path=None, lvs_sub="GND"):
             "-rd", "combine=false",
             "-rd", "purge=false",
             "-rd", "purge_nets=false",
+            "-s", gds_file,  # Open the .gds file directly in KLayout
             "-e",  # Launch in Edit mode
         ]
 
@@ -109,43 +117,23 @@ def klayout_ini(cell_path=None, lvs_sub="GND"):
     except Exception as e:
         print(f"Error executing command: {e}")
 
-def print_help():
-    help_text = """
-    Usage: python Setup_Klayout.py [CELL_PATH] [LVS_SUB]
-    
-    Arguments:
-    CELL_PATH   Path to the cell directory, in the form /path/to/lib_path/cell_name.
-    LVS_SUB     Optional substrate ground (default: GND).
-    
-    Example:
-    python3 Setup_Klayout.py /foss/designs/RO_Aging_UNICASS/LVT/inv_LVT VSS
-    
-    Remember that CELL_PATH should contain a .gds and a .spice file 
-    both with the SAME name as the cell folder.
+def main():
+    parser = argparse.ArgumentParser(
+        description="Setup script for KLayout with optional settings.",
+        epilog="""Example:
+        python3 Setup_Klayout.py --cell_path /route/to/cellpath --set_klayout_home --lvs_sub VSS
+        
+        >> Remember that CELL_PATH should contain a .gds and a .spice file both with the SAME name as the cell folder.
+        To extract the .spice files in xschem, go to Simulation > LVS and check the option "LVS_Netlist + Top Level is a .subckt",
+        DESELECT the others and click on "Netlist"."""
+    )
+    parser.add_argument("--cell_path", type=str, help="Path to the cell directory, e.g., /path/to/lib_path/cell_name.")
+    parser.add_argument("--set_klayout_home", action="store_true", help="Set KLAYOUT_HOME based on the PDK.")
+    parser.add_argument("--lvs_sub", type=str, default="GND", help="Substrate ground node (default: GND).")
 
-    To extract the .spice files in xschem, go to Simulation > LVS 
-    and check the option "LVS_Netlist + Top Level is a .subckt", 
-    DESELECT the others and click on "Netlist".
+    args = parser.parse_args()
 
-    If no arguments are provided, the script will open KLayout in Edit mode.
-    Use '--help' or '-h' to display this help message.
-    """
-    print(help_text)
+    klayout_ini(cell_path=args.cell_path, set_klayout_home=args.set_klayout_home, lvs_sub=args.lvs_sub)
 
-# Usage example
 if __name__ == "__main__":
-    import sys
-    # Display help if needed
-    if len(sys.argv) > 1 and sys.argv[1] in ["--help", "-h"]:
-        print_help()
-    elif len(sys.argv) < 2:
-        klayout_ini()  # Runs only the basic KLayout command if no arguments
-    elif len(sys.argv) == 2:
-        # CELL_PATH provided, use default lvs_sub
-        cell_path = sys.argv[1]
-        klayout_ini(cell_path)
-    else:
-        # CELL_PATH and LVS_SUB provided
-        cell_path = sys.argv[1]
-        lvs_sub = sys.argv[2]
-        klayout_ini(cell_path, lvs_sub)
+    main()
