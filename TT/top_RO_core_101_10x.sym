@@ -1,0 +1,53 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -530 -110 -530 10 {}
+L 4 -530 90 -310 90 {}
+L 4 -300 -110 -300 10 {}
+L 4 -530 -110 -310 -110 {}
+L 4 -310 -110 -300 -110 {}
+L 4 -310 90 -300 90 {}
+L 4 -530 10 -530 90 {}
+L 4 -300 10 -300 90 {}
+L 7 -420 -130 -420 -110 {}
+L 7 -420 90 -420 110 {}
+L 7 -550 -90 -530 -90 {}
+L 7 -550 -70 -530 -70 {}
+L 7 -550 -30 -530 -30 {}
+L 7 -300 -20 -280 -20 {}
+L 7 -550 30 -530 30 {}
+L 7 -550 10 -530 10 {}
+L 7 -550 80 -530 80 {}
+L 7 -550 60 -530 60 {}
+L 7 -300 0 -280 0 {}
+B 5 -422.5 -132.5 -417.5 -127.5 {name=VDD dir=inout}
+B 5 -422.5 107.5 -417.5 112.5 {name=VSS dir=inout}
+B 5 -552.5 -92.5 -547.5 -87.5 {name=n_RO_control dir=inout}
+B 5 -552.5 -72.5 -547.5 -67.5 {name=RO_control dir=inout}
+B 5 -552.5 -32.5 -547.5 -27.5 {name=DUT_gate dir=inout}
+B 5 -282.5 -22.5 -277.5 -17.5 {name=Vout dir=inout}
+B 5 -552.5 27.5 -547.5 32.5 {name=DUT_Header dir=inout}
+B 5 -552.5 7.5 -547.5 12.5 {name=DUT_Footer dir=inout}
+B 5 -552.5 77.5 -547.5 82.5 {name=Drain_Force dir=inout}
+B 5 -552.5 57.5 -547.5 62.5 {name=Drain_Sense dir=inout}
+B 5 -282.5 -2.5 -277.5 2.5 {name=extra_load dir=inout}
+T {@symname} -457.5 -56 0 0 0.3 0.3 {}
+T {@name} -435 -22 0 0 0.2 0.2 {}
+T {VDD} -405 -104 0 1 0.2 0.2 {}
+T {VSS} -425 84 2 1 0.2 0.2 {}
+T {n_RO_control} -525 -86 2 1 0.2 0.2 {}
+T {RO_control} -525 -66 2 1 0.2 0.2 {}
+T {DUT_gate} -525 -26 2 1 0.2 0.2 {}
+T {Vout} -305 -24 0 1 0.2 0.2 {}
+T {DUT_Header} -525 34 2 1 0.2 0.2 {}
+T {DUT_Footer} -525 14 2 1 0.2 0.2 {}
+T {Drain_Force} -525 84 2 1 0.2 0.2 {}
+T {Drain_Sense} -525 64 2 1 0.2 0.2 {}
+T {extra_load} -305 -4 0 1 0.2 0.2 {}
