@@ -43,8 +43,6 @@ N -440 -150 -380 -150 {
 lab=n_RO_control}
 N -500 -280 -500 -220 {
 lab=Vout}
-C {/foss/designs/Projects/RO_reliability/xschem/tristate_inv.sym} -410 -230 0 0 {name=x1}
-C {/foss/designs/Projects/RO_reliability/xschem/tgate.sym} -440 -510 3 0 {name=x2}
 C {iopin.sym} -940 -450 0 1 {name=p1 lab=VDD}
 C {lab_wire.sym} -700 -420 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} -580 -350 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -71,4 +69,6 @@ C {lab_wire.sym} -500 -520 0 0 {name=p23 sig_type=std_logic lab=Drain_Sense}
 C {iopin.sym} -940 -190 0 1 {name=p24 lab=Drain_Sense}
 C {iopin.sym} -940 -140 0 1 {name=p25 lab=RO_control}
 C {iopin.sym} -940 -100 0 1 {name=p26 lab=n_RO_control}
-C {/foss/designs/Projects/RO_reliability/xschem/tgate_force.sym} -480 -420 3 1 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/TT/tristate_inv.sym} -410 -230 0 0 {name=x4}
+C {/foss/designs/RO_Aging_UNICASS/TT/tgate_force.sym} -480 -420 3 1 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/TT/tgate.sym} -440 -510 3 0 {name=x3}

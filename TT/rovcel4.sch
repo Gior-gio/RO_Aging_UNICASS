@@ -6,11 +6,11 @@ V {}
 S {}
 E {}
 N 40 -100 120 -100 {
-lab=#net1}
+lab=Vout}
 N 120 -180 120 -100 {
-lab=#net1}
+lab=Vout}
 N 120 -100 120 -10 {
-lab=#net1}
+lab=Vout}
 N 50 -10 100 -10 {
 lab=VDD}
 N 50 -180 100 -180 {
@@ -32,18 +32,15 @@ lab=VSS}
 N 120 120 120 170 {
 lab=VSS}
 N 120 -110 160 -110 {
-lab=#net1}
+lab=Vout}
 N 40 -310 100 -310 {
 lab=VSS}
 N 20 -250 70 -250 {
 lab=VDD}
 N 120 -360 120 -310 {
-lab=#net2}
+lab=#net1}
 N 180 -250 250 -250 {
 lab=VSS}
-C {/foss/designs/Projects/RO_reliability/xschem/inv1.sym} 240 -80 0 0 {name=x1}
-C {/foss/designs/Projects/RO_reliability/xschem/tgate.sym} 180 -340 3 0 {name=x2}
-C {/foss/designs/Projects/RO_reliability/xschem/tgate.sym} 180 150 3 1 {name=x3}
 C {iopin.sym} -340 -270 2 0 {name=p1 lab=VDD}
 C {iopin.sym} -340 -230 2 0 {name=p2 lab=VSS}
 C {lab_wire.sym} -100 -210 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -65,3 +62,6 @@ C {iopin.sym} 290 -130 2 1 {name=p17 lab=Vout
 C {lab_wire.sym} 120 170 0 1 {name=p18 sig_type=std_logic lab=VSS}
 C {noconn.sym} 120 -360 0 0 {name=l1}
 C {lab_wire.sym} 160 -110 0 1 {name=p19 sig_type=std_logic lab=Vout}
+C {/foss/designs/RO_Aging_UNICASS/TT/inv1.sym} 240 -80 0 0 {name=x4}
+C {/foss/designs/RO_Aging_UNICASS/TT/tgate.sym} 180 150 3 1 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/TT/tgate.sym} 180 -340 3 0 {name=x5}

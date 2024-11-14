@@ -77,9 +77,6 @@ N 1870 -550 1950 -550 {
 lab=Vout}
 N 930 -780 980 -780 {
 lab=A[95:1],Vout}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel2.sym} 610 -750 0 1 {name=x1[1:96]}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel3.sym} 1090 -460 0 0 {name=x2}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel2.sym} 650 -520 0 0 {name=x3}
 C {iopin.sym} 220 -810 2 0 {name=p1 lab=VDD}
 C {lab_wire.sym} 820 -870 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 440 -660 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -108,11 +105,9 @@ C {lab_wire.sym} 1190 -450 0 1 {name=p26 sig_type=std_logic lab=Drain_Force}
 C {iopin.sym} 230 -450 2 0 {name=p27 lab=Drain_Force}
 C {iopin.sym} 230 -410 2 0 {name=p28 lab=Drain_Sense}
 C {lab_wire.sym} 1190 -430 0 1 {name=p29 sig_type=std_logic lab=Drain_Sense}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel4.sym} 1860 -500 0 0 {name=x5}
 C {lab_wire.sym} 1440 -570 0 0 {name=p30 sig_type=std_logic lab=n_RO_control}
 C {lab_wire.sym} 1510 -660 0 0 {name=p31 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1510 -440 0 0 {name=p32 sig_type=std_logic lab=VSS}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel2.sym} 2000 -520 0 0 {name=x6}
 C {lab_wire.sym} 1790 -660 0 0 {name=p33 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1790 -440 0 0 {name=p34 sig_type=std_logic lab=VSS}
 C {iopin.sym} 1950 -550 2 1 {name=p36 lab=Vout}
@@ -122,4 +117,9 @@ C {lab_wire.sym} 560 -550 0 0 {name=p39 sig_type=std_logic lab=A[97]}
 C {lab_wire.sym} 370 -550 0 0 {name=p40 sig_type=std_logic lab=A[96]}
 C {lab_wire.sym} 720 -780 0 0 {name=p41 sig_type=std_logic lab=A[96:1]}
 C {lab_wire.sym} 970 -780 0 0 {name=p42 sig_type=std_logic lab=A[95:1],Vout}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel1_10.sym} 720 -490 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel2.sym} 650 -520 0 0 {name=x4}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel2.sym} 2000 -520 0 0 {name=x7}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel2.sym} 610 -750 0 1 {name=x8[1:96]}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel1_10.sym} 720 -490 0 0 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel3.sym} 1090 -460 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel4.sym} 1860 -500 0 0 {name=x2}

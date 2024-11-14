@@ -113,65 +113,65 @@ N 20 290 20 340 {
 lab=MUX1,MUX2,MUX3,MUX4}
 N -100 210 -20 210 {
 lab=Vout[1:12]}
-N -1880 -380 -1810 -380 {
+N -2160 -380 -2090 -380 {
 lab=RO_CON}
-N -1880 -330 -1810 -330 {
+N -2160 -330 -2090 -330 {
 lab=VSS}
-N -1880 -440 -1810 -440 {
+N -2160 -440 -2090 -440 {
 lab=VDD}
-N -1780 -300 -1780 -250 {
+N -2060 -300 -2060 -250 {
 lab=MUX1,MUX2,MUX3,MUX4}
-N -1740 -380 -1650 -380 {
+N -2020 -380 -1930 -380 {
 lab=RC[1:12]}
-N -1880 -100 -1810 -100 {
+N -2160 -100 -2090 -100 {
 lab=NOT_RO_CON}
-N -1880 -50 -1810 -50 {
+N -2160 -50 -2090 -50 {
 lab=VSS}
-N -1880 -160 -1810 -160 {
+N -2160 -160 -2090 -160 {
 lab=VDD}
-N -1780 -20 -1780 30 {
+N -2060 -20 -2060 30 {
 lab=MUX1,MUX2,MUX3,MUX4}
-N -1740 -100 -1650 -100 {
+N -2020 -100 -1930 -100 {
 lab=nRC[1:12]}
-N -1880 180 -1810 180 {
+N -2160 180 -2090 180 {
 lab=DUT_HEADER}
-N -1880 230 -1810 230 {
+N -2160 230 -2090 230 {
 lab=VSS}
-N -1880 120 -1810 120 {
+N -2160 120 -2090 120 {
 lab=VDD}
-N -1780 260 -1780 310 {
+N -2060 260 -2060 310 {
 lab=MUX1,MUX2,MUX3,MUX4}
-N -1740 180 -1650 180 {
+N -2020 180 -1930 180 {
 lab=DH[1:12]}
-N -1880 470 -1810 470 {
+N -2160 470 -2090 470 {
 lab=DUT_FOOTER}
-N -1880 520 -1810 520 {
+N -2160 520 -2090 520 {
 lab=VSS}
-N -1880 410 -1810 410 {
+N -2160 410 -2090 410 {
 lab=VDD}
-N -1780 550 -1780 600 {
+N -2060 550 -2060 600 {
 lab=MUX1,MUX2,MUX3,MUX4}
-N -1740 470 -1650 470 {
+N -2020 470 -1930 470 {
 lab=DF[1:12]}
-N -1880 770 -1810 770 {
+N -2160 770 -2090 770 {
 lab=DUT_GATE}
-N -1880 820 -1810 820 {
+N -2160 820 -2090 820 {
 lab=VSS}
-N -1880 710 -1810 710 {
+N -2160 710 -2090 710 {
 lab=VDD}
-N -1780 850 -1780 900 {
+N -2060 850 -2060 900 {
 lab=MUX1,MUX2,MUX3,MUX4}
-N -1740 770 -1650 770 {
+N -2020 770 -1930 770 {
 lab=DG[1:12]}
-N -1880 1060 -1810 1060 {
+N -2160 1060 -2090 1060 {
 lab=DRAIN_FORCE}
-N -1880 1110 -1810 1110 {
+N -2160 1110 -2090 1110 {
 lab=VSS}
-N -1880 1000 -1810 1000 {
+N -2160 1000 -2090 1000 {
 lab=VDD}
-N -1780 1140 -1780 1190 {
+N -2060 1140 -2060 1190 {
 lab=MUX1,MUX2,MUX3,MUX4}
-N -1740 1060 -1650 1060 {
+N -2020 1060 -1930 1060 {
 lab=DrF[1:12]}
 N 360 -120 420 -120 {
 lab=MUX2}
@@ -276,13 +276,101 @@ lab=nRC[5]}
 N -1070 -290 -1000 -290 {
 lab=RC[5]}
 N -140 -240 -60 -240 {
-lab=#net1}
+lab=A[1:12]}
 N 10 -180 10 -120 {
-lab=#net2}
+lab=VSS}
 N 10 -370 10 -300 {
-lab=#net3}
+lab=VDD}
 N 60 -240 150 -240 {
-lab=#net4}
+lab=Vout[1:12]}
+N -1630 -440 -1550 -440 {
+lab=nRC[1]}
+N -1630 -420 -1550 -420 {
+lab=RC[1]}
+N -1630 -380 -1550 -380 {
+lab=DG[1]}
+N -1630 -340 -1550 -340 {
+lab=DF[1]}
+N -1630 -320 -1550 -320 {
+lab=DH[1]}
+N -1630 -290 -1550 -290 {
+lab=D_Sense[1]}
+N -1630 -270 -1550 -270 {
+lab=DrF[1]}
+N -1420 -510 -1420 -480 {
+lab=VDD}
+N -1420 -240 -1420 -200 {
+lab=VSS}
+N -1280 -370 -1220 -370 {
+lab=A[1]}
+N -1630 -90 -1550 -90 {
+lab=nRC[2]}
+N -1630 -70 -1550 -70 {
+lab=RC[2]}
+N -1630 -30 -1550 -30 {
+lab=DG[2]}
+N -1630 10 -1550 10 {
+lab=DF[2]}
+N -1630 30 -1550 30 {
+lab=DH[2]}
+N -1630 60 -1550 60 {
+lab=D_Sense[2]}
+N -1630 80 -1550 80 {
+lab=DrF[2]}
+N -1420 -160 -1420 -130 {
+lab=VDD}
+N -1420 110 -1420 150 {
+lab=VSS}
+N -1280 -20 -1220 -20 {
+lab=A[2]}
+N -1420 220 -1420 250 {
+lab=VDD}
+N -1420 490 -1420 530 {
+lab=VSS}
+N -1280 360 -1220 360 {
+lab=A[3]}
+N -1420 640 -1420 670 {
+lab=VDD}
+N -1420 910 -1420 950 {
+lab=VSS}
+N -1280 780 -1220 780 {
+lab=A[4]}
+N -1630 290 -1550 290 {
+lab=nRC[3]}
+N -1630 310 -1550 310 {
+lab=RC[3]}
+N -1630 350 -1550 350 {
+lab=DG[3]}
+N -1630 390 -1550 390 {
+lab=DF[3]}
+N -1630 410 -1550 410 {
+lab=DH[3]}
+N -1630 440 -1550 440 {
+lab=D_Sense[3]}
+N -1630 460 -1550 460 {
+lab=DrF[3]}
+N -1630 710 -1550 710 {
+lab=nRC[4]}
+N -1630 730 -1550 730 {
+lab=RC[4]}
+N -1630 770 -1550 770 {
+lab=DG[4]}
+N -1630 810 -1550 810 {
+lab=DF[4]}
+N -1630 830 -1550 830 {
+lab=DH[4]}
+N -1630 860 -1550 860 {
+lab=D_Sense[4]}
+N -1630 880 -1550 880 {
+lab=DrF[4]}
+N -1280 -350 -1220 -350 {
+lab=#net1}
+N -1280 0 -1220 0 {
+lab=#net1}
+N -1280 380 -1220 380 {
+lab=#net1}
+N -1280 800 -1220 800 {
+lab=#net1}
 C {lab_wire.sym} -850 670 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} -860 -500 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} -860 -240 2 1 {name=p4 sig_type=std_logic lab=VSS}
@@ -335,36 +423,36 @@ C {/foss/designs/RO_Aging_UNICASS/MUX/MUX.sym} 0 200 0 0 {name=x10}
 C {lab_wire.sym} 100 150 0 0 {name=p31 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 100 260 2 1 {name=p32 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 100 210 0 0 {name=p33 sig_type=std_logic lab=OUT}
-C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -1780 -220 0 0 {name=x5}
-C {lab_wire.sym} -1840 -440 0 0 {name=p34 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1840 -330 0 0 {name=p35 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -1840 -380 0 0 {name=p36 sig_type=std_logic lab=RO_CON}
-C {lab_wire.sym} -1780 -250 0 0 {name=p98 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
-C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -1780 60 0 0 {name=x11}
-C {lab_wire.sym} -1840 -160 0 0 {name=p99 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1840 -50 0 0 {name=p100 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -1840 -100 0 0 {name=p101 sig_type=std_logic lab=NOT_RO_CON}
-C {lab_wire.sym} -1780 30 0 0 {name=p102 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
-C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -1780 340 0 0 {name=x12}
-C {lab_wire.sym} -1840 120 0 0 {name=p103 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1840 230 0 0 {name=p104 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -1780 310 0 0 {name=p106 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
-C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -1780 630 0 0 {name=x13}
-C {lab_wire.sym} -1840 410 0 0 {name=p107 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1840 520 0 0 {name=p108 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -1780 600 0 0 {name=p110 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
-C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -1780 930 0 0 {name=x14}
-C {lab_wire.sym} -1840 710 0 0 {name=p111 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1840 820 0 0 {name=p112 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -1780 900 0 0 {name=p114 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
-C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -1780 1220 0 0 {name=x15}
-C {lab_wire.sym} -1840 1000 0 0 {name=p115 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1840 1110 0 0 {name=p116 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -1780 1190 0 0 {name=p118 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
-C {lab_wire.sym} -1830 180 0 0 {name=p105 sig_type=std_logic lab=DUT_HEADER}
-C {lab_wire.sym} -1830 470 0 0 {name=p109 sig_type=std_logic lab=DUT_FOOTER}
-C {lab_wire.sym} -1830 770 0 0 {name=p113 sig_type=std_logic lab=DUT_GATE}
-C {lab_wire.sym} -1840 1060 0 0 {name=p117 sig_type=std_logic lab=DRAIN_FORCE}
+C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -2060 -220 0 0 {name=x5}
+C {lab_wire.sym} -2120 -440 0 0 {name=p34 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -2120 -330 0 0 {name=p35 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -2120 -380 0 0 {name=p36 sig_type=std_logic lab=RO_CON}
+C {lab_wire.sym} -2060 -250 0 0 {name=p98 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
+C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -2060 60 0 0 {name=x11}
+C {lab_wire.sym} -2120 -160 0 0 {name=p99 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -2120 -50 0 0 {name=p100 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -2120 -100 0 0 {name=p101 sig_type=std_logic lab=NOT_RO_CON}
+C {lab_wire.sym} -2060 30 0 0 {name=p102 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
+C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -2060 340 0 0 {name=x12}
+C {lab_wire.sym} -2120 120 0 0 {name=p103 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -2120 230 0 0 {name=p104 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -2060 310 0 0 {name=p106 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
+C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -2060 630 0 0 {name=x13}
+C {lab_wire.sym} -2120 410 0 0 {name=p107 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -2120 520 0 0 {name=p108 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -2060 600 0 0 {name=p110 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
+C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -2060 930 0 0 {name=x14}
+C {lab_wire.sym} -2120 710 0 0 {name=p111 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -2120 820 0 0 {name=p112 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -2060 900 0 0 {name=p114 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
+C {/foss/designs/RO_Aging_UNICASS/MUX/Demux.sym} -2060 1220 0 0 {name=x15}
+C {lab_wire.sym} -2120 1000 0 0 {name=p115 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -2120 1110 0 0 {name=p116 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -2060 1190 0 0 {name=p118 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
+C {lab_wire.sym} -2110 180 0 0 {name=p105 sig_type=std_logic lab=DUT_HEADER}
+C {lab_wire.sym} -2110 470 0 0 {name=p109 sig_type=std_logic lab=DUT_FOOTER}
+C {lab_wire.sym} -2110 770 0 0 {name=p113 sig_type=std_logic lab=DUT_GATE}
+C {lab_wire.sym} -2120 1060 0 0 {name=p117 sig_type=std_logic lab=DRAIN_FORCE}
 C {iopin.sym} 360 -120 2 0 {name=p119 lab=MUX2}
 C {iopin.sym} 360 -90 2 0 {name=p120 lab=MUX3}
 C {iopin.sym} 360 -60 2 0 {name=p121 lab=MUX4}
@@ -374,12 +462,12 @@ C {lab_wire.sym} 100 570 2 1 {name=p123 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 170 520 0 0 {name=p124 sig_type=std_logic lab=DRAIN_SENSE}
 C {lab_wire.sym} 20 330 0 0 {name=p125 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
 C {lab_wire.sym} 20 640 0 0 {name=p126 sig_type=std_logic lab=MUX1,MUX2,MUX3,MUX4}
-C {lab_wire.sym} -1660 -380 0 0 {name=p127 sig_type=std_logic lab=RC[1:12]}
-C {lab_wire.sym} -1660 -100 0 0 {name=p128 sig_type=std_logic lab=nRC[1:12]}
-C {lab_wire.sym} -1660 180 0 0 {name=p129 sig_type=std_logic lab=DH[1:12]}
-C {lab_wire.sym} -1660 470 0 0 {name=p130 sig_type=std_logic lab=DF[1:12]}
-C {lab_wire.sym} -1660 770 0 0 {name=p131 sig_type=std_logic lab=DG[1:12]}
-C {lab_wire.sym} -1660 1060 0 0 {name=p132 sig_type=std_logic lab=DrF[1:12]}
+C {lab_wire.sym} -1940 -380 0 0 {name=p127 sig_type=std_logic lab=RC[1:12]}
+C {lab_wire.sym} -1940 -100 0 0 {name=p128 sig_type=std_logic lab=nRC[1:12]}
+C {lab_wire.sym} -1940 180 0 0 {name=p129 sig_type=std_logic lab=DH[1:12]}
+C {lab_wire.sym} -1940 470 0 0 {name=p130 sig_type=std_logic lab=DF[1:12]}
+C {lab_wire.sym} -1940 770 0 0 {name=p131 sig_type=std_logic lab=DG[1:12]}
+C {lab_wire.sym} -1940 1060 0 0 {name=p132 sig_type=std_logic lab=DrF[1:12]}
 C {lab_wire.sym} -510 890 0 0 {name=p133 sig_type=std_logic lab=RC[12]}
 C {lab_wire.sym} -510 870 0 0 {name=p55 sig_type=std_logic lab=nRC[12]}
 C {lab_wire.sym} -50 520 0 0 {name=p56 sig_type=std_logic lab=D_Sense[1:12]}
@@ -438,3 +526,51 @@ C {lab_wire.sym} 150 -240 0 0 {name=p135 sig_type=std_logic lab=Vout[1:12]}
 C {lab_wire.sym} -90 -240 0 0 {name=p136 sig_type=std_logic lab=A[1:12]}
 C {lab_wire.sym} 10 -340 0 0 {name=p137 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 10 -160 2 1 {name=p138 sig_type=std_logic lab=VSS}
+C {/foss/designs/RO_Aging_UNICASS/TT/top_RO_core_13.sym} -1580 -220 0 0 {name=x17}
+C {/foss/designs/RO_Aging_UNICASS/TT/top_RO_core_13_10x.sym} -1100 -20 0 0 {name=x18}
+C {/foss/designs/RO_Aging_UNICASS/TT/top_RO_core_101.sym} -1080 370 0 0 {name=x19}
+C {/foss/designs/RO_Aging_UNICASS/TT/top_RO_core_101_10x.sym} -1000 800 0 0 {name=x20}
+C {lab_wire.sym} -1420 -490 0 0 {name=p139 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -1420 -230 2 1 {name=p140 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -1580 -420 0 0 {name=p141 sig_type=std_logic lab=RC[1]}
+C {lab_wire.sym} -1580 -440 0 0 {name=p142 sig_type=std_logic lab=nRC[1]}
+C {lab_wire.sym} -1580 -290 0 0 {name=p143 sig_type=std_logic lab=D_Sense[1]}
+C {lab_wire.sym} -1580 -270 0 0 {name=p144 sig_type=std_logic lab=DrF[1]}
+C {lab_wire.sym} -1580 -380 0 0 {name=p145 sig_type=std_logic lab=DG[1]}
+C {lab_wire.sym} -1580 -340 0 0 {name=p146 sig_type=std_logic lab=DF[1]}
+C {lab_wire.sym} -1580 -320 0 0 {name=p147 sig_type=std_logic lab=DH[1]}
+C {lab_wire.sym} -1230 -370 0 0 {name=p148 sig_type=std_logic lab=A[1]}
+C {lab_wire.sym} -1580 -70 0 0 {name=p149 sig_type=std_logic lab=RC[2]}
+C {lab_wire.sym} -1580 -90 0 0 {name=p150 sig_type=std_logic lab=nRC[2]}
+C {lab_wire.sym} -1580 60 0 0 {name=p151 sig_type=std_logic lab=D_Sense[2]}
+C {lab_wire.sym} -1580 80 0 0 {name=p152 sig_type=std_logic lab=DrF[2]}
+C {lab_wire.sym} -1580 -30 0 0 {name=p153 sig_type=std_logic lab=DG[2]}
+C {lab_wire.sym} -1580 10 0 0 {name=p154 sig_type=std_logic lab=DF[2]}
+C {lab_wire.sym} -1580 30 0 0 {name=p155 sig_type=std_logic lab=DH[2]}
+C {lab_wire.sym} -1420 -140 0 0 {name=p156 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -1420 120 2 1 {name=p157 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -1230 -20 0 0 {name=p158 sig_type=std_logic lab=A[2]}
+C {lab_wire.sym} -1420 240 0 0 {name=p159 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -1420 500 2 1 {name=p160 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -1230 360 0 0 {name=p161 sig_type=std_logic lab=A[3]}
+C {lab_wire.sym} -1420 660 0 0 {name=p162 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -1420 920 2 1 {name=p163 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -1230 780 0 0 {name=p164 sig_type=std_logic lab=A[4]}
+C {lab_wire.sym} -1580 310 0 0 {name=p165 sig_type=std_logic lab=RC[3]}
+C {lab_wire.sym} -1580 290 0 0 {name=p166 sig_type=std_logic lab=nRC[3]}
+C {lab_wire.sym} -1580 440 0 0 {name=p167 sig_type=std_logic lab=D_Sense[3]}
+C {lab_wire.sym} -1580 460 0 0 {name=p168 sig_type=std_logic lab=DrF[3]}
+C {lab_wire.sym} -1580 350 0 0 {name=p169 sig_type=std_logic lab=DG[3]}
+C {lab_wire.sym} -1580 390 0 0 {name=p170 sig_type=std_logic lab=DF[3]}
+C {lab_wire.sym} -1580 410 0 0 {name=p171 sig_type=std_logic lab=DH[3]}
+C {lab_wire.sym} -1580 730 0 0 {name=p172 sig_type=std_logic lab=RC[4]}
+C {lab_wire.sym} -1580 710 0 0 {name=p173 sig_type=std_logic lab=nRC[4]}
+C {lab_wire.sym} -1580 860 0 0 {name=p174 sig_type=std_logic lab=D_Sense[4]}
+C {lab_wire.sym} -1580 880 0 0 {name=p175 sig_type=std_logic lab=DrF[4]}
+C {lab_wire.sym} -1580 770 0 0 {name=p176 sig_type=std_logic lab=DG[4]}
+C {lab_wire.sym} -1580 810 0 0 {name=p177 sig_type=std_logic lab=DF[4]}
+C {lab_wire.sym} -1580 830 0 0 {name=p178 sig_type=std_logic lab=DH[4]}
+C {noconn.sym} -1220 -350 0 1 {name=l1}
+C {noconn.sym} -1220 0 0 1 {name=l2}
+C {noconn.sym} -1220 380 0 1 {name=l3}
+C {noconn.sym} -1220 800 0 1 {name=l4}

@@ -77,9 +77,6 @@ N 1790 -320 1870 -320 {
 lab=Vout}
 N 850 -550 900 -550 {
 lab=A[95:1],Vout}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel2.sym} 530 -520 0 1 {name=x1[1:96]}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel3.sym} 1010 -230 0 0 {name=x2}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel2.sym} 570 -290 0 0 {name=x3}
 C {iopin.sym} 140 -580 2 0 {name=p1 lab=VDD}
 C {lab_wire.sym} 740 -640 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 360 -430 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -92,7 +89,6 @@ C {iopin.sym} 150 -420 2 0 {name=p9 lab=n_RO_control}
 C {iopin.sym} 150 -380 2 0 {name=p10 lab=RO_control}
 C {lab_wire.sym} 570 -340 0 0 {name=p11 sig_type=std_logic lab=n_RO_control}
 C {lab_wire.sym} 570 -300 0 0 {name=p12 sig_type=std_logic lab=RO_control}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel1.sym} 1310 -310 0 0 {name=x4}
 C {lab_wire.sym} 940 -430 0 0 {name=p13 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 940 -210 0 0 {name=p14 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 720 -210 0 1 {name=p15 sig_type=std_logic lab=DUT_gate}
@@ -109,11 +105,9 @@ C {lab_wire.sym} 1110 -220 0 1 {name=p26 sig_type=std_logic lab=Drain_Force}
 C {iopin.sym} 150 -220 2 0 {name=p27 lab=Drain_Force}
 C {iopin.sym} 150 -180 2 0 {name=p28 lab=Drain_Sense}
 C {lab_wire.sym} 1110 -200 0 1 {name=p29 sig_type=std_logic lab=Drain_Sense}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel4.sym} 1780 -270 0 0 {name=x5}
 C {lab_wire.sym} 1360 -340 0 0 {name=p30 sig_type=std_logic lab=n_RO_control}
 C {lab_wire.sym} 1430 -430 0 0 {name=p31 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1430 -210 0 0 {name=p32 sig_type=std_logic lab=VSS}
-C {/foss/designs/Projects/RO_reliability/xschem/rovcel2.sym} 1920 -290 0 0 {name=x6}
 C {lab_wire.sym} 1710 -430 0 0 {name=p33 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1710 -210 0 0 {name=p34 sig_type=std_logic lab=VSS}
 C {iopin.sym} 1870 -320 2 1 {name=p36 lab=Vout}
@@ -123,3 +117,9 @@ C {lab_wire.sym} 480 -320 0 0 {name=p39 sig_type=std_logic lab=A[97]}
 C {lab_wire.sym} 290 -320 0 0 {name=p40 sig_type=std_logic lab=A[96]}
 C {lab_wire.sym} 640 -550 0 0 {name=p41 sig_type=std_logic lab=A[96:1]}
 C {lab_wire.sym} 890 -550 0 0 {name=p42 sig_type=std_logic lab=A[95:1],Vout}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel2.sym} 570 -290 0 0 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel2.sym} 1920 -290 0 0 {name=x7}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel2.sym} 530 -520 0 1 {name=x3[1:96]}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel3.sym} 1010 -230 0 0 {name=x3}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel1.sym} 1310 -310 0 0 {name=x2}
+C {/foss/designs/RO_Aging_UNICASS/TT/rovcel4.sym} 1780 -270 0 0 {name=x4}

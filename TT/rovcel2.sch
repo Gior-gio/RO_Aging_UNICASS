@@ -41,9 +41,6 @@ N 220 -210 250 -210 {
 lab=VDD}
 N 360 -210 400 -210 {
 lab=VSS}
-C {/foss/designs/Projects/RO_reliability/xschem/inverter_RO_rel.sym} 270 -50 0 0 {name=x1}
-C {/foss/designs/Projects/RO_reliability/xschem/tgate.sym} 360 -300 3 0 {name=x2}
-C {/foss/designs/Projects/RO_reliability/xschem/tgate.sym} 360 100 3 1 {name=x3}
 C {iopin.sym} -140 -240 2 0 {name=p1 lab=VDD}
 C {iopin.sym} -140 -200 2 0 {name=p2 lab=VSS}
 C {lab_wire.sym} 90 -190 0 0 {name=p3 sig_type=std_logic lab=VDD}
@@ -62,3 +59,6 @@ C {lab_wire.sym} 400 -210 0 1 {name=p15 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 400 10 0 1 {name=p16 sig_type=std_logic lab=VSS}
 C {noconn.sym} 300 -300 2 0 {name=l1}
 C {noconn.sym} 300 100 2 0 {name=l2}
+C {/foss/designs/RO_Aging_UNICASS/TT/inverter_RO_rel.sym} 270 -50 0 0 {name=x5}
+C {/foss/designs/RO_Aging_UNICASS/TT/tgate.sym} 360 100 3 1 {name=x1}
+C {/foss/designs/RO_Aging_UNICASS/TT/tgate.sym} 360 -300 3 0 {name=x3}
