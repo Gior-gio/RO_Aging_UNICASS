@@ -1,4 +1,4 @@
-* Extracted by KLayout with SKY130 LVS runset on : 10/11/2024 16:20
+* Extracted by KLayout with SKY130 LVS runset on : 21/11/2024 23:17
 
 .SUBCKT RO_LVT_101St_x10 RON GND DUT_Gate RO DUT_Header VDD DUT_Footer
 + Drain_Sense Drain_Force OUT
