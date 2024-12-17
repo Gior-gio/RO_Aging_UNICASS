@@ -4,9 +4,9 @@ This repository contains the design and implementation of Ring Oscillators (ROs)
 
 The design explores transistors with three threshold voltage types:
 
-**Typical** Vth (standard transistors),
-**Low** Vth (LVT),
-**High** Vth (HVT).
+- **Typical** Vth (standard transistors),
+- **Low** Vth (LVT),
+- **High** Vth (HVT).
 
 ### Design Overview
 The schematic illustrates the core structure of the ROs and its primary components.
